@@ -1,0 +1,205 @@
+.register {
+  position: relative;
+  min-width: 1000px;
+}
+
+.register-bg {
+  width: 100%;
+}
+
+.register-top-area {
+  margin-top: 12%;
+}
+
+.register-container {
+  position: relative;
+  text-align: center;
+}
+
+.register-logo-img {
+  width: 16%;
+}
+
+.register-title {
+  margin: 1% 0 0; 
+}
+
+.register-title-img {
+  width: 20%;
+}
+
+.register-area {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.register-link-are {
+  margin: 3% 0;
+  padding: 0 0%;
+}
+
+.register-link {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 36.5%;
+}
+
+.register-link-up {
+  width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.register-link-bottom {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  /* height: 5.5vw; */
+}
+
+.register-link-bottom-dmm {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+
+.register-link-up-row-img {
+  width: 100%;
+}
+
+.register-link-bottom img {
+  width: auto;
+  height: 64px;
+}
+
+.register-link-bottom-dmm img {
+  width: auto;
+  height: 65px;
+}
+
+.register-link-img {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.register-link-img-dmm {
+  
+}
+
+.register-link-img:hover {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.register-reward-area {
+  margin-top: 10%;
+}
+
+.register-reward-title-img {
+  width: 30%;
+}
+
+.register-reward-list-area {
+  margin-top: 5%;
+}
+
+.register-reward-list-img {
+  width: 40%;
+}
+
+.register-mail-title {
+  font-weight: bold;
+  font-size: 150%;
+  text-align: center;
+  margin: 2%;
+}
+
+.register-mail-note {
+  border: solid 1px;
+  margin: 4%;
+  padding: 4%;
+}
+
+.register-mail-link {
+  color: #2390a6;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+
+  .register {
+    min-width: 100%
+  }
+
+  .register-top-area {
+    margin-top: 30%;
+  }
+
+  .register-logo-img {
+    width: 40%;
+  }
+
+  .register-title-img {
+    margin: 2% 0;
+    width: 58%;
+  }
+
+  .register-link {
+    display: inline-block;
+    width: 35%;
+  }
+  
+  .register-link-are {
+    margin: 3% 0;
+    padding: 0 0%;
+  }
+
+  .register-link-img {
+    width: 45%;
+  }
+
+  .register-link-up-row-img {
+    width: 100%;
+    height: 40px;
+  }
+
+  .register-link-up {
+    width: 360px;
+  }
+
+  .register-link-bottom {
+    margin-top: 2%;
+    /* width: 40%; */
+    /* height: 46px; */
+  }
+
+  .register-reward-title-img {
+    width: 80%;
+  }
+
+  .register-reward-area {
+    margin-top: 20%;
+  }
+
+  .register-reward-list-img {
+    width: 91%;
+  }
+
+  .register-link-bottom img {
+    height: 40.9px;
+  }
+
+  .register-link-bottom-dmm {
+    display: none;
+  }
+}
