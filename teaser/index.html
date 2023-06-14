@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7, minimum-scale=0.7, maximum-scale=1.4, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" media="all" href="css/common.css?ver=20230613">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js?ver=20230613"></script>
+</head>
+<body>
+    <header id="header" class="animate bg">
+        <h1 class="logo"><a href="#" class="btn_logo"><img src="img/common/header_logo.png" alt="라그나돌"></a></h1>
+        <div class="header_menu">
+            <a href="#" class="btn_menu youtube"></a>
+            <a href="#" class="btn_menu twitter"></a>
+            <a href="#" class="btn_menu url"></a>
+
+            <div id="popup_share">
+                <a href="#" title="닫기" class="btn_close"></a>
+                <div class="share_box">
+                    <a href="#" class="btn_share facebook"></a>
+                    <a href="#" class="btn_share twitter"></a>
+                </div>
+                <div class="url_box">
+                    <input type="text" readonly value="https://ragnador.kr" class="input_url">
+                    <a href="#" title="URL 복사" class="btn_copy"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="content" class="animate">
+        <div class="content_wrap content_top">
+            <div class="top_video">
+                <div class="video_wrap">
+                    <video src="video/bg.mp4" autoplay muted loop class="video"></video>
+                </div>
+            </div>
+            <div class="text_box">
+                <div class="title_box animate">
+                    <img src="img/main/top_title.png" alt="라그나돌" class="title">
+                </div>
+                <div class="btn_box animate">
+                    <a href="#" class="btn_video">
+                        <img src="img/main/top_btn_video.png" alt="영상" class="title">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="animate bg">
+        <p class="copyright">©Grams. All rights Reserved. Published by WEBZEN</p>
+    </footer>
+
+    <!-- 팝업 -->
+    <div id="popup_video">
+        <a href="#" class="btn_close"></a>
+        <div class="video_wrap">
+            <div class="video_box">
+                <iframe src="https://www.youtube.com/embed/KhEeWiN__kM" frameborder="0" allowfullscreen="" class="video"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
