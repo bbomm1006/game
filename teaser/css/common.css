@@ -122,9 +122,9 @@ body{min-height:600px;overflow:hidden;overflow-y:auto;background:#000}
 
 /* 헤더 */
 #header{position:fixed;left:0;top:0;right:0;z-index:100}
-#header .logo{position:absolute;left:10px;top:15px}
+/* #header .logo{position:absolute;left:10px;top:15px}
 #header .logo a,
-#header .logo img{display:block}
+#header .logo img{display:block} */
 #header .header_menu{display:flex;align-items:center;justify-content:center;gap:0 10px;position:absolute;right:25px;top:25px}
 #header .header_menu .btn_menu{display:block;width:40px;height:40px}
 #header .header_menu .btn_menu.youtube{background:url("../img/common/header_share_youtube.png") no-repeat center center}
@@ -148,14 +148,12 @@ body{min-height:600px;overflow:hidden;overflow-y:auto;background:#000}
 
 /* 컨텐츠 */
 #content{height:calc(100vh);overflow:hidden;background:url('../img/main/top_bg.png') center no-repeat;background-size: cover;}
-#content::before{display:block;content:"";position:absolute;left:0;top:0;right:0;bottom:0;background:url("../img/main/top_bg_lt.png") no-repeat left top;background-size:cover;z-index:3}
-#content::after{display:block;content:"";position:absolute;left:0;top:0;right:0;bottom:0;background:url("../img/main/top_bg_rb.png") no-repeat right bottom;background-size:cover;z-index:3}
 .content_wrap{position:relative;height:calc(100vh)}
-.content_top .content_box{display:block;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:10}
+.content_top .content_box{display:block;position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);z-index:10}
 .content_top .content_box img,
 .content_top .content_box span{display:block}
 .content_top .content_box .title_box{display:flex;justify-content:center}
-.content_top .content_box .youtube_box{position:relative;display:flex;justify-content:center;margin:20px 0 0;padding-bottom: 56.25%;height: 0;}
+.content_top .content_box .youtube_box{position:relative;display:flex;justify-content:center;margin:20px 0 5px;padding-bottom: 56.25%;height: 0;}
 .content_top .content_box .youtube_box iframe {position: absolute;top:0;left:0;width:100%;height:100%;}
 
 @media screen and (max-width:780px) {
@@ -165,24 +163,22 @@ body{min-height:600px;overflow:hidden;overflow-y:auto;background:#000}
     .mo {display: block !important;}
 
     #content {background-image: url('../img/main/top_bg_m.png');overflow-y: scroll;}
-    #content::before,
-    #content::after{display:none}
 
-    #header{background:rgba(21,25,34,0.8);height:74px}
-    #header .logo{left:5px;top:7px}
+    #header{height:74px}
+    /* #header .logo{left:5px;top:7px} */
     #header .header_menu{gap:0;right:0;top:0}
-    #header .header_menu .btn_menu{display:block;width:74px;height:74px;border-left:1px solid rgba(255,255,255,0.17)}
-    #header .header_menu .btn_menu.youtube{background:url("../img/common/header_share_youtube_m.png") no-repeat center center}
-    #header .header_menu .btn_menu.twitter{background:url("../img/common/header_share_twitter_m.png") no-repeat center center}
-    #header .header_menu .btn_menu.url{background:url("../img/common/header_share_url_m.png") no-repeat center center}
+    #header .header_menu .btn_menu{display:block;width:65px;height:65px;}
+    #header .header_menu .btn_menu.youtube{background-size: 50%;}
+    #header .header_menu .btn_menu.twitter{background-size: 50%;}
+    #header .header_menu .btn_menu.url{background-size: 50%;}
 
     #popup_share{top:70px;right:0}
 
     #footer .copyright{font-size:1.1em}
     
     .content_top .content_box {width: 100%;}
-    .content_top .content_box .title_box {width:50%;margin:0 auto;}
+    .content_top .content_box .title_box {width:60%;margin:0 auto;}
     .content_top .content_box .title_box img {width: 100%;}
-    .content_top .content_box .youtube_box {margin: 20px 32px 0;}
+    .content_top .content_box .youtube_box {margin: 20px 32px 40px;}
     .content_top .content_box .period_box img {width: 100%;}
 }
