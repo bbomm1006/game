@@ -101,7 +101,7 @@ body *,
 .content_top .youtube_box.animate{transform:scale(2);transition-delay:1.3s}
 .content_top .youtube_box.animate.on{opacity:1;transform:scale(1)}
 
-.content_top .period_box.animate {opacity:0;transform:translateY(-130px) scale(2);animation:animate_bottom_title 1.2s ease-out;animation-delay:2s;animation-fill-mode:forwards}
+.content_top .period_box.animate {opacity:0;transform:translateY(-130px) scale(2);animation:animate_bottom_title 1.2s ease-out;animation-delay:1.3s;animation-fill-mode:forwards}
 @keyframes animate_bottom_title {
     0% {opacity:0;transform:translateY(-130px) scale(2)}
     50% {opacity:0;transform:translateY(-130px) scale(1)}
