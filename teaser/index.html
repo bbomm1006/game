@@ -9,11 +9,14 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
 
-    <meta property="og:url" content="">
-    <meta property="og:title" content="">
+    <meta property="og:url" content="https://ragnador.webzen.co.kr">
+    <meta property="og:title" content="라그나돌">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="image/og_image.jpg" />
     <meta property="og:description" content="">
+
+    <link rel="icon" href="image/favicon.png">
+    <link rel="shortcut icon" type="favicon.ico" href="image/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://image.webzen.kr/template/css/common.css" />
     <link rel="stylesheet" media="all" href="css/common.css">
@@ -22,7 +25,6 @@
 </head>
 <body>
     <header id="header" class="animate bg">
-        <!-- <h1 class="logo"><a href="#" class="btn_logo"><img src="img/common/header_logo.png" alt="라그나돌"></a></h1> -->
         <div class="header_menu">
             <a href="https://www.youtube.com/@WEBZENTV" target="_blank" class="btn_menu youtube"></a>
             <a href="https://twitter.com/Ragnador_kr" target="_blank" class="btn_menu twitter"></a>
@@ -31,12 +33,9 @@
             <div id="popup_share">
                 <a href="#" title="닫기" class="btn_close"></a>
                 <div class="share_box">
-                    <a href="#" class="btn_share facebook"></a>
-                    <a href="#" class="btn_share twitter"></a>
-                </div>
-                <div class="url_box">
-                    <input type="text" readonly value="https://ragnador.kr" class="input_url">
-                    <a href="#" title="URL 복사" class="btn_copy"></a>
+                    <a href="#" title="페이스북 바로가기" class="btn_share facebook"></a>
+                    <a href="https://twitter.com/Ragnador_kr" target="_blank" title="트위터 바로가기" class="btn_share twitter"></a>
+                    <a href="#" title="URL 복사하기" class="btn_share copy"></a>
                 </div>
             </div>
         </div>
@@ -46,15 +45,14 @@
         <div class="content_wrap content_top">
             <div class="content_box">
                 <div class="title_box animate">
-                    <img src="img/main/top_title.png" alt="라그나돌" class="title pc"/>
-                    <img src="img/main/top_title_m.png" alt="라그나돌" class="title mo"/>
+                    <img src="image/main/top_title.png" alt="라그나돌" class="title"/>
                 </div>
                 <div class="youtube_box animate">
-                    <iframe src="https://www.youtube.com/embed/KhEeWiN__kM?controls=0" title="YouTube video player" frameborder="0"></iframe>
+                    <iframe src="https://www.youtube.com/embed/KhEeWiN__kM" title="라그나돌 티저 영상" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="period_box animate">
-                    <img src="img/main/top_period.png" alt="2023년 7월 12일 사전예약 개시" class="pc"/>
-                    <img src="img/main/top_period_m.png" alt="2023년 7월 12일 사전예약 개시" class="mo"/>
+                    <img src="image/main/top_period.png" alt="2023년 7월 12일 사전예약 개시" class="pc"/>
+                    <img src="image/main/top_period_m.png" alt="2023년 7월 12일 사전예약 개시" class="mo"/>
                 </div>
             </div>
         </div>
@@ -63,5 +61,26 @@
     <footer id="footer" class="animate bg">
         <p class="copyright">©Grams. All rights Reserved. Published by WEBZEN</p>
     </footer>
+
+    <!-- 사전 예약 팝업 -->
+    <div id="popup" class="teaser_popup animate">
+        <span class="popup_mask"></span>
+        <div class="popup_contents">
+            <div class="inner">
+                <img src="image/main/popup_bg.png" alt="사전예약 안내 팝업" class="bg" />
+                <div class="btn_box">
+                    <a href="https://twitter.com/Ragnador_kr" target="_blank" class="btn" title="라그나돌 공식 트위터 바로가기"></a>
+                </div>
+
+                <p class="popup_checkbox">
+                    <input type="checkbox" id="check1">
+                    <label for="check1">오늘 하루 그만 보기</label>
+                </p>
+
+                <a href="#" class="btn_close" title="팝업 닫기"></a>
+            </div>
+        </div>
+    </div>
+    <!-- //사전 예약 팝업 -->
 </body>
 </html>
