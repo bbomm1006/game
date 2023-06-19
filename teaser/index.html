@@ -33,13 +33,19 @@
             <div id="popup_share">
                 <a href="#" title="닫기" class="btn_close"></a>
                 <div class="share_box">
-                    <a href="#" title="페이스북 공유하기" class="btn_share facebook"></a>
-                    <a href="#" title="트위터 공유하기" class="btn_share twitter"></a>
-                    <a href="#" title="URL 복사하기" class="btn_share copy"></a>
+                    <a href="#" onclick="SNS.facebook();return false;" title="페이스북 공유하기" class="btn_share facebook"></a>
+                    <a href="#" onclick="SNS.twitter();return false;" title="트위터 공유하기" class="btn_share twitter"></a>
+
+                    <input type="text" id="text" value="https://ragnador.webzen.co.kr" style="display: none;"/>
+                    <input type="button" onclick="urlCopy()" value="URL 복사하기" class="btn_share copy"/>
                 </div>
             </div>
         </div>
     </header>
+
+    <script>
+        
+    </script>
 
     <div id="content" class="animate">
         <div class="content_wrap content_top">
