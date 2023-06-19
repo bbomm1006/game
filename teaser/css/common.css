@@ -98,14 +98,14 @@ html,body{background:#000}
 }
 
 .content_top .youtube_box.animate{transform:translateX(-100px);transition-delay:1.6s}
-.content_top .youtube_box.animate.on{opacity:1;transform:translateX(0);margin-left:auto}
+.content_top .youtube_box.animate.on{opacity:1;transform:translateX(0);}
 
-.content_top .period_box.animate {opacity:0;transform:translateY(-130px);animation:animate_bottom_title 1.1s ease-out;animation-delay:1.1s;animation-fill-mode:forwards}
+.content_top .period_box.animate {opacity:0;transform:translateX(100px);animation:animate_bottom_title 1.1s ease-out;animation-delay:1s;animation-fill-mode:forwards}
 @keyframes animate_bottom_title {
-    0% {opacity:0;transform:translateY(-130px) scale(1)}
-    50% {opacity:0;transform:translateY(-130px) scale(1)}
-    60% {opacity:0;transform:translateY(-130px) scale(1)}
-    100% {opacity:1;transform:translateY(0) scale(1)}
+    0% {opacity:0;transform:translateX(100px);}
+    50% {opacity:0;transform:translateX(100px);}
+    60% {opacity:0;transform:translateX(100px);}
+    100% {opacity:1;transform:translateX(0);}
 }
 
 #header.animate,
