@@ -132,7 +132,7 @@ body{min-height:860px;overflow:hidden;overflow-y:auto;background:#000}
 #popup_share{display:none;position:absolute;right:-1px;top:43px;width:42px;height:138px;background:url("../image/common/share_bg.png") no-repeat 0 0;z-index:110}
 #popup_share .btn_close{background: transparent; position: fixed; top:0; left:0; width:100%; height:100%; z-index: 1; cursor: default; }
 #popup_share .share_box{position: relative; z-index: 10;}
-#popup_share .share_box .btn_share{display:block;width:42px;height:42px;background: transparent;background:url("../image/common/share_bg.png") no-repeat 0 0;}
+#popup_share .share_box .btn_share{display:block;width:42px;height:42px;background:url("../image/common/share_bg.png") no-repeat 0 0;}
 #popup_share .share_box .btn_share.facebook{background-position-y:0;height: 50px;}
 #popup_share .share_box .btn_share.twitter{margin-top: 1px;background-position-y:-50px;}
 #popup_share .share_box .btn_share.copy{margin-top: 1px;background-position-y:-94px;height: 43px;font-size: 0;text-indent: -9999px; cursor: pointer;}
@@ -213,13 +213,18 @@ body{min-height:860px;overflow:hidden;overflow-y:auto;background:#000}
     #header .header_menu .btn_menu.youtube{background-image:url("../image/common/header_share_youtube_m.png")}
     #header .header_menu .btn_menu.twitter{background-image:url("../image/common/header_share_twitter_m.png")}
     #header .header_menu .btn_menu.url{background-image:url("../image/common/header_share_url_m.png")}
-    #header .header_menu .btn_menu {background-size: 45%; width:50px; height:50px;}
+    #header .header_menu .btn_menu{background-size: 45%; width:50px; height:50px;}
+    
+    #popup_share{top:50px;right:0;width:52px;height:171px;background-image:url("../image/common/share_bg_m.png");background-size:auto 100%;}
+    #popup_share .share_box .btn_share{width:52px;height:52px;background-image:url("../image/common/share_bg_m.png");background-size:200% auto;}
 
-    #popup_share{top:50px;right:0}
+    #popup_share .share_box .btn_share.facebook{height: 60px;}
+    #popup_share .share_box .btn_share.twitter{margin-top: 2px;background-position-y:-60px;}
+    #popup_share .share_box .btn_share.copy{margin-top: 2px;background-position-y:-1115px;height: 54px;}
 
-    #popup .popup_contents{ max-width:90%}
+    #popup .popup_contents{max-width:90%}
     #popup .popup_contents .btn_box{top: 70%;}
-    #popup .popup_contents .btn_box a{ width:50%; background-size: 100% auto;}
+    #popup .popup_contents .btn_box a{width:50%; background-size: 100% auto;}
 
     #footer .copyright{font-size:1.1em}
     .content_top .content_box{width: 100%}
