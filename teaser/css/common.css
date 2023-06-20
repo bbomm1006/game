@@ -113,22 +113,6 @@ html,body{background:#000}
 #header.animate.on,
 #footer.animate.on{opacity:2}
 
-.wrap-canvas {
-    z-index: 99;
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden
-}
-
-.wrap-canvas img {
-    visibility: hidden
-}
-
 /* //에니메이션 */
 
 /* pc / mo */
@@ -225,7 +209,11 @@ body{min-height:860px;overflow:hidden;overflow-y:auto;background:#000}
     .content_top .content_box{ top: auto; left: auto; transform: none;position: relative;}
 
     #header{height:74px}
-    #header .header_menu{gap:0 5px;right:10px;top:10px}
+    #header .header_menu{gap:0 5px;right:15px;top:15px}
+    #header .header_menu .btn_menu.youtube{background-image:url("../image/common/header_share_youtube_m.png")}
+    #header .header_menu .btn_menu.twitter{background-image:url("../image/common/header_share_twitter_m.png")}
+    #header .header_menu .btn_menu.url{background-image:url("../image/common/header_share_url_m.png")}
+    #header .header_menu .btn_menu {background-size: 45%; width:50px; height:50px;}
 
     #popup_share{top:50px;right:0}
 
