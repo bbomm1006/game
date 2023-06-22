@@ -97,7 +97,7 @@ html,body{background:#000}
     100% {opacity:1;transform:translateY(0) scale(1)}
 }
 @media screen and (max-width:780px) {
-    .content_top .title_box.animate{transform:translateY(110%) scale(2);animation:animate_top_title_m 1.2s ease-out;}
+    .content_top .title_box.animate{opacity:0;transform:translateY(110%) scale(2);animation:animate_top_title_m 1.2s ease-out;animation-delay:0.5s;animation-fill-mode:forwards}
 }
 @keyframes animate_top_title_m {
     0% {opacity:0;transform:translateY(110%) scale(2)}
