@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7, minimum-scale=0.7, maximum-scale=1.4, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta property="og:url" content="https://ragnador.webzen.co.kr">
+    <meta property="og:title" content="라그나돌">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="image/img_meta.jpg" />
+    <meta property="og:description" content="">
+
+    <link rel="icon" href="image/favicon.png">
+    <link rel="shortcut icon" type="favicon.ico" href="image/favicon.png">
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/swiper-bundle.min.css">
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://image.webzen.kr/template/css/common.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/common.css">
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <script src="js/detectmobilebrowser.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header id="header" class="animate bg">
+        <h1 class="logo"><a href="#" class="btn_logo"><img src="img/common/header_logo.png" alt="라그나돌"></a></h1>
+        <div class="header_menu">
+            <a href="https://www.youtube.com/@WEBZENTV" target="_blank" title="유튜브 바로가기" class="btn_menu youtube"></a>
+            <a href="https://twitter.com/Ragnador_kr" target="_blank" title="트위터 바로가기" class="btn_menu twitter"></a>
+            <a href="#" class="btn_menu url" title="공유하기"></a>
+            <a href="#" class="btn_community" title="커뮤니티 바로가기"></a>
+            <a href="#" class="btn_mobile" title="모바일 메뉴 열기"></a>
+
+            <div id="popup_share">
+                <a href="#" onclick="SNS.facebook();return false;" title="페이스북 공유하기" class="btn_share facebook"></a>
+                <a href="#" onclick="SNS.twitter();return false;" title="트위터 공유하기" class="btn_share twitter"></a>
+                <input type="text" id="text" value="https://ragnador.webzen.co.kr" style="display: none;"/>
+                <input type="button" onclick="urlCopy()" value="URL 복사하기" class="btn_share url"/>
+            </div>
+        </div>
+    </header>
+    <div id="header_menu">
+        <div class="menu_wrap">
+            <a href="#" class="btn_close"></a>
+            <div class="header_top">
+                <h1 class="logo"><a href="#" class="btn_logo"><img src="img/common/header_menu_logo.png" alt="라그나돌"></a></h1>
+            </div>
+            <div class="header_mid">
+                <ul class="menu_list scrollY">
+                    <li><a href="#" data-tab="reserve" class="btn_menu">사전예약</a></li>                    
+                    <li><a href="#" data-tab="story" class="btn_menu">세계관</a></li>
+                    <li><a href="#" data-tab="char" class="btn_menu">캐릭터</a></li>
+                    <li><a href="#" data-tab="feature" class="btn_menu">게임 특징</a></li>
+                    <li><a href="#" data-tab="media" class="btn_menu">미디어</a></li>
+                    <li><a href="https://www.webzen.co.kr" data-tab="event" class="btn_menu">CBT</a></li>
+                </ul>
+                <div class="header_menu">
+                    <a href="#" class="btn_menu user"></a>
+                    <a href="#" class="btn_menu youtube"></a>
+                    <a href="#" class="btn_menu twitter"></a>
+                    <a href="#" class="btn_menu url"></a>
+                </div>
+            </div>
+            <a href="#" class="btn_download"><img src="img/common/header_menu_icon.png" alt="" class="icon"><img src="img/common/header_download_text.png" alt="Download" class="text"></a>
+        </div>
+    </div>
+
+    <!-- fixed 메뉴 -->
+    <div id="fixed_menu">
+        <ul class="menu_list">
+            <li><a href="#" data-tab="reserve" class="btn_menu"><span class="eng">Reservation</span><span class="kor">사전예약</span></a></li>            
+            <li><a href="#" data-tab="story" class="btn_menu"><span class="eng">Story</span><span class="kor">세계관</span></a></li>
+            <li><a href="#" data-tab="char" class="btn_menu"><span class="eng">Character</span><span class="kor">캐릭터</span></a></li>
+            <li><a href="#" data-tab="feature" class="btn_menu"><span class="eng">Feature</span><span class="kor">게임 특징</span></a></li>
+            <li><a href="#" data-tab="media" class="btn_menu"><span class="eng">Media</span><span class="kor">미디어</span></a></li>
+            <li><a href="https://www.webzen.co.kr" class="btn_menu"><span class="eng">CBT</span><span class="kor">CBT</span></a></li>
+        </ul>
+        <a href="#" title="Download" class="btn_download"><span class="icon"></span></a>
+    </div>
+
+    <div id="content" class="animate">
+        <!-- 상단 -->
+        <div data-tab="top" class="content_wrap content_top">            
+            <div class="top_video">
+                <div class="video_wrap">
+                    <video src="video/bg.mp4" autoplay muted loop class="video"></video>
+                </div>
+            </div>
+            <div class="text_box">
+                <div class="title_box animate">
+                    <img src="img/main/top_title.png" alt="라그나돌" class="title pc">
+                    <img src="img/main/top_title_m.png" alt="라그나돌" class="title mobile">
+                </div>
+                <div class="btn_box animate">
+                    <!-- data-youtube="유튜브영상아이디" -->
+                    <a href="#" data-youtube="KhEeWiN__kM" class="btn_video">
+                        <img src="img/main/top_btn_video.png" alt="영상" class="title">
+                    </a>
+                </div>
+                <div class="btn_bottom animate">
+                    <a href="#" title="사전예약하기" class="btn_reserve"><img src="img/main/btn_reserve.png" alt="" class="icon"></a>
+                    <a href="#" title="CBT참여하기" class="btn_cbt"><img src="img/main/btn_cbt.png" alt="" class="icon"></a>
+                </div>
+            </div>
+
+            <!-- 트위터 -->
+            <div id="twitter_menu">
+                <div class="twitter_box">
+                    <div class="scroll_box">
+                    </div>
+                    <div class="mobile_box">
+                        <a href="#" class="btn_close"></a>
+                        <img src="img/main/twitter_text.png" alt="@라그나돌님의 트윗" class="text">
+                    </div>
+                    <div class="btn_box">
+                        <a href="#트위터링크" class="btn_twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 사전 예약 -->
+        <div data-tab="reserve" class="content_wrap">
+            <div class="content_reserve">
+                <div class="reserve_wrap">
+                    <div class="title_box">
+                        <img src="img/reserve/title.png" alt="라그나돌 사전예약 진행 중!" class="title pc">
+                        <img src="img/reserve/title_m.png" alt="라그나돌 사전예약 진행 중!" class="title mobile">
+                        <div class="sub_title"><p>사전예약 기간 : 2023.07.12(수) ~ 게임 런칭 전​</p></div>
+                    </div>
+                    <div class="reserve_box_wrap">
+                        <div class="reserve_box">
+                            <img src="img/reserve/bg_scroll_item_m.png" alt="" class="item">
+                            <!-- 예약 -->
+                            <!-- <div class="reserve_form"> -->
+                            <div class="reserve_form active">
+                                <div class="form_box">
+                                    <div class="radio_top">
+                                        <label class="radio_box">
+                                            <input type="radio" name="mobile_type" checked class="radio">
+                                            <span class="text">Andriod</span>
+                                        </label>
+                                        <label class="radio_box">
+                                            <input type="radio" name="mobile_type" class="radio">
+                                            <span class="text">iOS</span>
+                                        </label>
+                                    </div>
+                                    <div class="input_box auth">
+                                        <input type="text" placeholder="휴대폰 번호 입력" class="input_text">
+                                        <a href="#" class="btn_auth">인증번호 발송</a>
+                                    </div>
+                                    <div class="input_box confirm">
+                                        <input type="text" placeholder="인증번호 6자리 입력" class="input_text">
+                                        <p class="time">05:00</p>
+                                        <a href="#" class="btn_confirm">인증번호 확인</a>
+                                    </div>
+                                    <div class="agree_box">
+                                        <div class="agree_top">
+                                            <label class="check_box">
+                                                <input type="checkbox" class="check">
+                                                <span class="text">모두 동의합니다.</span>
+                                            </label>
+                                        </div>
+                                        <ul class="agree_list">
+                                            <li>
+                                                <label class="check_box">
+                                                    <input type="checkbox" checked class="check">
+                                                    <span class="text">[필수] 만 15세 이상입니다.</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="check_box">
+                                                    <input type="checkbox" class="check">
+                                                    <span class="text">[필수] 개인정보 수집 및 이용 동의</span>
+                                                </label>
+                                                <a href="#" class="btn_detail">자세히 보기</a>
+                                            </li>
+                                            <li>
+                                                <label class="check_box">
+                                                    <input type="checkbox" class="check">
+                                                    <span class="text">[필수] 이벤트 등 프로모션 알림수신 동의</span>
+                                                </label>
+                                                <a href="#" class="btn_detail">자세히 보기</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" title="사전예약하기" class="btn_reserve"><img src="img/reserve/btn_reserve.png" alt="" class="icon"></a>
+                                </div>
+                            </div>
+                            <!-- 예약 완료 -->
+                            <!-- <div class="reserve_form complete active"> -->
+                            <div class="reserve_form complete">
+                                <p class="complete_text">010-****-1234님, <br />라그나돌 사전예약이 완료 되었습니다.​</p>
+                                <p class="agree_text">[동의 안내] 0000년 00월 00일에 ​<br />이벤트 등 프로모션 알림 수신에 동의하셨습니다.​</p>
+                                <a href="#" title="사전예약 이벤트" class="btn_event"><img src="img/reserve/btn_event.png" alt="" class="icon"></a>
+                                <div class="community_box">
+                                    <p class="community_text">공식 커뮤니티에 가입하면, <br />다양한 사전예약 이벤트를 참여할 수 있습니다.​</p>
+                                    <p>※ 이벤트에 대한 상세 내용은 공식 커뮤니티 내 공지를 확인해 주세요.​</p>
+                                    <a href="#" title="공식 커뮤니티 바로 가기" class="btn_community"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reserve_desc">
+                        <p>※ 사전예약 신청은 <b>휴대폰 번호 당 1회만 신청 가능</b>합니다.</p>
+                        <p>※ 사전예약 보상 지급 방식은 추후 공지를 통해 확인 가능합니다.</p>
+                        <p>※ 사정에 따라 사전예약 진행 일정 및 보상이 변경 될 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="benefit_wrap">
+                    <div class="benefit_box">
+                        <div class="icon_box">
+                            <img src="img/reserve/icon.png" alt="" class="icon">
+                        </div>
+                        <div class="text_box">
+                            <img src="img/reserve/text.png" alt="스토어 사전등록 하고 추가 + 혜택 받으세요!!!" class="text pc">
+                            <img src="img/reserve/text_m.png" alt="스토어 사전등록 하고 추가 + 혜택 받으세요!!!" class="text mobile">
+                        </div>
+                        <div class="btn_box">
+                            <a href="#" title="사전등록하기 Google Play" class="btn_app google"></a>
+                            <a href="#" title="App Stroe에서 사전 주문하기" class="btn_app apple"></a>
+                            <a href="#" title="사전예약하기 ONE store" class="btn_app onestore"></a>
+                        </div>
+                        <a href="#" title="스토어 사전등록 혜택 확인하기" class="btn_benefit"><span class="icon"></span></a>
+                    </div>
+
+                    <div class="emot_box">
+                        <div class="text_box">
+                            <img src="img/reserve/emot.png" alt="카카오 사전예약 안내" class="text pc">
+                            <img src="img/reserve/emot_m.png" alt="카카오 사전예약 안내" class="text mobile">
+                        </div>
+                        <a href="#" title="카카오 사전예약 신청하기" class="btn_benefit"><span class="icon"></span></a>
+                    </div>
+                </div>
+            </div><!-- //예약 끝 -->
+    
+            <!-- 이벤트 -->
+            <div class="content_event">
+                <div class="title_box">
+                    <img src="img/event/title.png" alt="라그나돌 사전예약 이벤트" class="title pc">
+                    <img src="img/event/title_m.png" alt="라그나돌 사전예약 이벤트" class="title mobile">
+                </div>
+                <div class="event_box">
+                    <div class="btn_event">
+                        <a href="#" title="이벤트 1 바로가기" class="btn_link"><img src="img/event/event1.png" alt="커뮤니티 가입인사 남기면 구글 기프트 카드 당첨 기회가!" class="img"></a>
+                        <p class="desc">※ 이벤트 상세 내용은 공식 커뮤니티를 통해 확인할 수 있습니다.</p>
+                    </div>
+                    <div class="btn_event">
+                        <a href="#" title="이벤트 2 바로가기" class="btn_link"><img src="img/event/event2.png" alt="공식 커뮤니티를 친구들에게 공유해 주세요!" class="img"></a>
+                        <p class="desc">※ 이벤트 상세 내용은 공식 커뮤니티를 통해 확인할 수 있습니다.</p>
+                    </div> 
+                    <div class="btn_event">
+                        <a href="#" title="이벤트 3 바로가기" class="btn_link"><img src="img/event/event3.png" alt="커뮤니티 가입인사 남기면 구글 기프트 카드 당첨 기회가!" class="img"></a>
+                        <p class="desc">※ 이벤트 상세 내용은 공식 커뮤니티를 통해 확인할 수 있습니다.</p>
+                    </div>
+                    <div class="btn_event">
+                        <a href="#" title="이벤트 4 바로가기" class="btn_link"><img src="img/event/event4.png" alt="공식 커뮤니티를 친구들에게 공유해 주세요!" class="img"></a>
+                        <p class="desc">※ 이벤트 상세 내용은 공식 커뮤니티를 통해 확인할 수 있습니다.</p>
+                    </div>                   
+                </div>
+                
+            </div><!-- //이벤트 끝 -->
+        </div>
+
+        <!-- 세계관 -->
+        <div data-tab="story" class="content_wrap content_story">
+            <div class="bg animate"></div>
+            <div class="text_wrap">
+                <div class="title_box animate">
+                    <img src="img/story/title.png" alt="세계관" class="text">
+                </div>
+                <div class="text_box text_1 animate">
+                    <img src="img/story/text1.png" alt="" class="text pc">
+                    <img src="img/story/text1_m.png" alt="" class="text mobile">
+                </div>
+                <div class="text_box text_2 animate">
+                    <img src="img/story/text2.png" alt="" class="text pc">
+                    <img src="img/story/text2_m.png" alt="" class="text mobile">
+                </div>
+                <div class="text_box text_3 animate">
+                    <img src="img/story/text3.png" alt="" class="text pc">
+                    <img src="img/story/text3_m.png" alt="" class="text mobile">
+                </div>
+            </div>
+        </div>
+
+        <!-- 캐릭터 -->
+        <div data-tab="char" class="content_wrap content_char">
+            <div class="title_box animate">
+                <img src="img/char/title.png" alt="캐릭터" class="text">
+            </div>
+            <div class="char_wrap"></div>
+        </div>
+
+        <!-- 게임 특징 -->
+        <div data-tab="feature" class="content_wrap content_feature">
+            <div class="title_box animate">
+                <img src="img/feature/title.png" alt="게임 특징" class="text">
+            </div>
+            <div id="feature_slide" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" data-img="img/feature/slide_1.jpg" class="btn_feature">
+                            <img src="img/feature/slide_1.jpg" alt="" class="feature animate">
+                            <span class="name animate">성우1</span>
+                            <span class="desc animate">호화 성우진으로 구성된 캐릭터 보이스!</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" data-img="img/feature/slide_1.jpg" class="btn_feature">
+                            <img src="img/feature/slide_1.jpg" alt="" class="feature animate">
+                            <span class="name animate">애니메이션2</span>
+                            <span class="desc animate">박력있는 영화로 웅장한 이야기</span>
+                        </a>
+                    </div>                  
+                </div>
+            </div>
+            <a href="#" id="btn_feature_prev" class="btn_feature_slide prev"></a>
+            <a href="#" id="btn_feature_next" class="btn_feature_slide next"></a>
+        </div>
+
+        <!-- 미디어 -->
+        <div data-tab="media" class="content_wrap content_media">
+            <div class="title_box animate">
+                <img src="img/media/title.png" alt="미디어" class="text">
+            </div>
+            <div class="media_wrap">
+                <div class="media_tab animate">
+                    <a href="#" data-tab="video" class="btn_tab active"><span>영상</span></a>
+                    <a href="#" data-tab="image" class="btn_tab"><span>이미지</span></a>
+                </div>
+
+                <div class="media_tab_wrap">
+                    <!-- 영상 -->
+                    <div class="tab_panel video active">
+                        <div class="sub_title animate">
+                            <img src="img/media/sub_video.png" alt="영상" class="title">
+                        </div>
+                        <div class="slide_wrap animate">
+                            <div class="media_slide swiper-container">
+                                <div class="swiper-wrapper">
+                                    <!-- data-youtube="유튜브영상아이디" -->
+                                    <div class="swiper-slide">
+                                        <div class="video_player"></div>
+                                        <img src="img/media/video_1.png" alt="" class="video">
+                                        <a href="#" data-youtube="KhEeWiN__kM" class="btn_video"></a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="video_player"></div>
+                                        <img src="img/media/video_1.png" alt="" class="video">
+                                        <a href="#" data-youtube="KhEeWiN__kM" class="btn_video"></a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="video_player"></div>
+                                        <img src="img/media/video_1.png" alt="" class="video">
+                                        <a href="#" data-youtube="KhEeWiN__kM" class="btn_video"></a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="video_player"></div>
+                                        <img src="img/media/video_1.png" alt="" class="video">
+                                        <a href="#" data-youtube="KhEeWiN__kM" class="btn_video"></a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="video_player"></div>
+                                        <img src="img/media/video_1.png" alt="" class="video">
+                                        <a href="#" data-youtube="KhEeWiN__kM" class="btn_video"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumb_wrap animate">
+                            <div class="media_slide_thumb swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="btn_thumb">
+                                            <img src="img/media/video_1.png" alt="" class="thumb">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="btn_thumb">
+                                            <img src="img/media/video_1.png" alt="" class="thumb">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="btn_thumb">
+                                            <img src="img/media/video_1.png" alt="" class="thumb">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="btn_thumb">
+                                            <img src="img/media/video_1.png" alt="" class="thumb">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="btn_thumb">
+                                            <img src="img/media/video_1.png" alt="" class="thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                            <a href="#" class="btn_slide prev"></a>
+                            <a href="#" class="btn_slide next"></a>
+                        </div>
+                    </div>
+
+                    <!-- 이미지 -->
+                    <div class="tab_panel image">
+                        <div class="sub_title">
+                            <img src="img/media/sub_image.png" alt="이미지" class="title">
+                        </div>
+                        <div class="media_slide swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="btn_image">
+                                        <img src="img/media/download_01/2560x1440_PC.png" alt="" class="image">
+                                    </a>
+                                    <!-- 다운로드 이미지 -->
+                                    <div class="download_image">
+                                        <div class="text_box">
+                                            <p class="category">SCREENSHOT</p>
+                                            <p class="name">라그나돌 스크린샷 이미지</p>
+                                        </div>
+                                        <img src="img/media/download_01/2560x1440_PC.png" alt="" class="image">
+                                        <div class="btn_box">
+                                            <a href="img/media/2560x1440_PC.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_pc.png" alt="PC" class="icon"></a>
+                                            <a href="img/media/800x800_SNS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_sns.png" alt="SNS 프로필" class="icon"></a>
+                                            <a href="img/media/1440x2560_Mobile-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_aos.png" alt="Mobile(AOS)" class="icon"></a>
+                                            <a href="img/media/1125x2436_Mobile-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_ios.png" alt="Mobile(IOS)" class="icon"></a>
+                                            <a href="img/media/781x781_Watch-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_aos.png" alt="Watch(AOS)" class="icon"></a>
+                                            <a href="img/media/312x390_Watch-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_ios.png" alt="Watch(IOS)" class="icon"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="btn_image">
+                                        <img src="img/media/download_01/2560x1440_PC.png" alt="" class="image">
+                                    </a>
+                                    <div class="download_image">
+                                        <div class="text_box">
+                                            <p class="category">SCREENSHOT</p>
+                                            <p class="name">라그나돌 스크린샷 이미지</p>
+                                        </div>
+                                        <img src="img/media/download_01/2560x1440_PC.png" alt="" class="image">
+                                        <div class="btn_box">
+                                            <a href="img/media/2560x1440_PC.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_pc.png" alt="PC" class="icon"></a>
+                                            <a href="img/media/800x800_SNS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_sns.png" alt="SNS 프로필" class="icon"></a>
+                                            <a href="img/media/1440x2560_Mobile-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_aos.png" alt="Mobile(AOS)" class="icon"></a>
+                                            <a href="img/media/1125x2436_Mobile-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_ios.png" alt="Mobile(IOS)" class="icon"></a>
+                                            <a href="img/media/781x781_Watch-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_aos.png" alt="Watch(AOS)" class="icon"></a>
+                                            <a href="img/media/312x390_Watch-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_ios.png" alt="Watch(IOS)" class="icon"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="btn_image">
+                                        <img src="img/media/download_01/2560x1440_PC.png" alt="" class="image">
+                                    </a>
+                                    <div class="download_image">
+                                        <div class="text_box">
+                                            <p class="category">SCREENSHOT</p>
+                                            <p class="name">라그나돌 스크린샷 이미지</p>
+                                        </div>
+                                        <img src="img/media/download_01/2560x1440_PC.png" alt="" class="image">
+                                        <div class="btn_box">
+                                            <a href="img/media/2560x1440_PC.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_pc.png" alt="PC" class="icon"></a>
+                                            <a href="img/media/800x800_SNS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_sns.png" alt="SNS 프로필" class="icon"></a>
+                                            <a href="img/media/1440x2560_Mobile-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_aos.png" alt="Mobile(AOS)" class="icon"></a>
+                                            <a href="img/media/1125x2436_Mobile-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_ios.png" alt="Mobile(IOS)" class="icon"></a>
+                                            <a href="img/media/781x781_Watch-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_aos.png" alt="Watch(AOS)" class="icon"></a>
+                                            <a href="img/media/312x390_Watch-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_ios.png" alt="Watch(IOS)" class="icon"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="btn_image">
+                                        <img src="img/media/download_01/2560x1440_PC.png" alt="" class="image">
+                                    </a>
+                                    <div class="download_image">
+                                        <div class="text_box">
+                                            <p class="category">SCREENSHOT</p>
+                                            <p class="name">라그나돌 스크린샷 이미지</p>
+                                        </div>
+                                        <img src="img/media/download_01/2560x1440_PC.png" alt="" class="image">
+                                        <div class="btn_box">
+                                            <a href="img/media/2560x1440_PC.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_pc.png" alt="PC" class="icon"></a>
+                                            <a href="img/media/800x800_SNS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_sns.png" alt="SNS 프로필" class="icon"></a>
+                                            <a href="img/media/1440x2560_Mobile-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_aos.png" alt="Mobile(AOS)" class="icon"></a>
+                                            <a href="img/media/1125x2436_Mobile-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_ios.png" alt="Mobile(IOS)" class="icon"></a>
+                                            <a href="img/media/781x781_Watch-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_aos.png" alt="Watch(AOS)" class="icon"></a>
+                                            <a href="img/media/312x390_Watch-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_ios.png" alt="Watch(IOS)" class="icon"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="btn_image">
+                                        <img src="img/media/download_01/2560x1440_PC.png" alt="" class="image">
+                                    </a>
+                                    <div class="download_image">
+                                        <div class="text_box">
+                                            <p class="category">SCREENSHOT</p>
+                                            <p class="name">라그나돌 스크린샷 이미지</p>
+                                        </div>
+                                        <img src="img/media/download_01/2560x1440_PC.png" alt="" class="image">
+                                        <div class="btn_box">
+                                            <a href="img/media/2560x1440_PC.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_pc.png" alt="PC" class="icon"></a>
+                                            <a href="img/media/800x800_SNS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_sns.png" alt="SNS 프로필" class="icon"></a>
+                                            <a href="img/media/1440x2560_Mobile-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_aos.png" alt="Mobile(AOS)" class="icon"></a>
+                                            <a href="img/media/1125x2436_Mobile-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_ios.png" alt="Mobile(IOS)" class="icon"></a>
+                                            <a href="img/media/781x781_Watch-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_aos.png" alt="Watch(AOS)" class="icon"></a>
+                                            <a href="img/media/312x390_Watch-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_ios.png" alt="Watch(IOS)" class="icon"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumb_wrap">
+                            <div class="media_slide_thumb swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="btn_thumb">
+                                            <img src="img/media/download_01/2560x1440_PC.png" alt="" class="thumb">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="btn_thumb">
+                                            <img src="img/media/download_01/2560x1440_PC.png" alt="" class="thumb">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="btn_thumb">
+                                            <img src="img/media/download_01/2560x1440_PC.png" alt="" class="thumb">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="btn_thumb">
+                                            <img src="img/media/download_01/2560x1440_PC.png" alt="" class="thumb">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="btn_thumb">
+                                            <img src="img/media/download_01/2560x1440_PC.png" alt="" class="thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn_slide prev"></a>
+                            <a href="#" class="btn_slide next"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 푸터 -->
+    <footer id="footer" class="animate bg">
+        <div class="footer_menu">
+            <a href="#" class="btn_menu">이용약관</a>
+            <a href="#" class="btn_menu">개인정보처리방침</a>
+            <a href="#" class="btn_menu">운영정책</a>
+            <a href="#" class="btn_menu">회사소개</a>
+        </div>
+        <p class="copyright">©Grams. All rights Reserved. Published by WEBZEN</p>
+    </footer>
+
+    <!-- 비디오 팝업 -->
+    <div id="popup_video">
+        <div class="video_wrap">
+            <div class="video_box">
+                <a href="#" class="btn_close"></a>
+                <div class="video_frame">
+                    <!-- <iframe src="https://www.youtube.com/embed/KhEeWiN__kM" frameborder="0" allowfullscreen="" class="video"></iframe> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 관계도 팝업 -->
+    <div id="popup_relation">
+        <div class="relation_box">
+            <a href="#" class="btn_close"></a>
+            <img src="img/char/char/1_1_relation.png" alt="" class="relation">
+        </div>
+    </div>
+
+    <!-- 게임특징 팝업 -->
+    <div id="popup_feature">
+        <div class="feature_box">
+            <a href="#" class="btn_close"></a>
+            <img src="img/feature/slide_1.jpg" alt="" class="feature">
+        </div>
+    </div>
+
+    <!-- 미디어 팝업 -->
+    <div id="popup_media">
+        <div class="media_box">
+            <a href="#" class="btn_close"></a>
+            <div class="image_box"></div>
+        </div>
+    </div>
+
+</body>
+</html>
