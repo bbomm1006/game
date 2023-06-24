@@ -333,6 +333,7 @@ body.popup{position:absolute;;overflow:hidden}
 
 .content_reserve .benefit_wrap .emot_box{height:960px}
 .content_reserve .benefit_wrap .emot_box .text_box{padding-top:100px}
+.content_reserve .benefit_wrap .emot_box .text_box img{max-width:90%}
 .content_reserve .benefit_wrap .emot_box .btn_benefit {margin-top:-100px}
 .content_reserve .benefit_wrap .emot_box .btn_benefit .icon{background-image:url("../img/reserve/btn_emot.png")}
 
@@ -575,12 +576,14 @@ body.popup{position:absolute;;overflow:hidden}
 
     .content_reserve{padding:60px 0 80px 0;height:auto;background:url("../img/reserve/bg_m.jpg") no-repeat center center;background-size:cover}
     .content_reserve .reserve_wrap .title_box .title{max-width:80%}
+    .content_reserve .reserve_wrap .title_box .sub_title{margin-top:10px}
     .content_reserve .reserve_wrap .reserve_box_wrap{margin-top:20px;height:auto}
     .content_reserve .reserve_wrap .reserve_box{position:relative;left:auto;top:auto;transform:none;padding:10% 6% 8% 6%;margin:0 auto;max-width:720px;width:100%;height:auto;background:url("../img/reserve/bg_scroll_m.png") no-repeat center center;background-size:100% 100%}
-    .content_reserve .reserve_wrap .reserve_box .item{display:block!important;margin:0 auto;width:70%}
+    .content_reserve .reserve_wrap .reserve_box .item{display:block!important;margin:0 auto;width:70%;position:relative;top:auto;left:auto;}
     .content_reserve .reserve_form{position:relative;left:auto;top:auto;margin-top:10px;padding:30px 20px 20px 20px;width:100%;background:url("../img/reserve/bg_scroll_line_m.png") no-repeat center top;background-size:100% auto}
     .content_reserve .reserve_desc{position:relative;left:auto;top:auto;transform:none}
     .content_reserve .benefit_wrap{position:relative;left:auto;bottom:auto;transform:none}
+    .content_reserve .benefit_wrap .emot_box{height:auto;padding-bottom:100px}
     .content_reserve .reserve_form .btn_reserve{width:100%}
     .content_reserve .reserve_form .btn_event{width:100%}
 
@@ -615,10 +618,11 @@ body.popup{position:absolute;;overflow:hidden}
     #twitter_menu{right:-1px;bottom:150px;transform:scale(0.7);transform-origin:right center}
 
     .content_reserve .reserve_wrap .reserve_box{padding:14% 7% 13% 7%}
-    .content_reserve .reserve_wrap .reserve_box .item{width:80%}
+    .content_reserve .reserve_wrap .reserve_box .item{width:100%}
     .content_reserve .reserve_form .complete_text{font-size:2.3em}
-    .content_reserve .reserve_desc{margin-top:20px}
+    .content_reserve .reserve_desc{margin-top:0px}
     .content_reserve .reserve_desc p{font-size:1.45em;line-height:1.8em}
+    .content_reserve .benefit_wrap .benefit_box{margin-top:40px;padding:40px 0}
     .content_reserve .benefit_wrap .btn_box{padding:0 30px;margin-bottom:30px}
     .content_reserve .benefit_wrap .btn_box .btn_app{flex:0 0 33%;height:44px;background-size:contain!important}
 
