@@ -21,6 +21,11 @@ $(function() {
         $("#popup_share").fadeToggle(200);
         return false;
     });
+    $("body").on("mousedown", function(e) {
+        if($(e.target).closest("#popup_share").length == 0 && !$(e.target).hasClass("url")) {
+            $("#popup_share").fadeOut(200);
+        }
+    });
 
     //영상 팝업
     $(".content_top .btn_video").on("click", function() {
@@ -54,18 +59,22 @@ $(function() {
     //fixed 메뉴
     $("#header .btn_logo").on("click", function() {
         $("html,body").stop(true,true).animate({ scrollTop:0 }, 300);
+        location.hash = "";
         return false;
     });
     var btnFixedMenu = $("#fixed_menu .btn_menu");
+    var fixedMenuScroll = true;
     $("#fixed_menu .btn_menu, #header_menu .menu_list .btn_menu").on("click", function() {
         var getIdx = $(this).data("tab");
         var getPosTop = $(".content_wrap[data-tab='" + getIdx + "']").position().top;
-        var posMargin = $("#header_menu").is(":visible") ? 74 : 90;
+        var posMargin = $("#header .header_menu .btn_mobile").is(":visible") ? 74 : 89;
         getPosTop -= posMargin;
-        $("html,body").stop(true,true).animate({ scrollTop:getPosTop }, 300, function() {
+        $("html,body").stop(true,true).animate({ scrollTop:getPosTop }, fixedMenuScroll ? 300 : 10, function() {
             $("body").removeClass("popup");
             $("#header_menu").removeClass("active");
         });
+        fixedMenuScroll = true;
+        location.hash = getIdx;
         return false;
     });
 
@@ -80,7 +89,7 @@ $(function() {
         var getScrollTop = $(window).scrollTop();
         var getHeight = $(window).height() / 3;
         var posMargin = 95;
-        if($("#header_menu").is(":visible")) {
+        if($("#header .header_menu .btn_mobile").is(":visible")) {
             getHeight = $(window).height() / 2;
             posMargin = 80;
         }
@@ -107,6 +116,18 @@ $(function() {
         animate(false, tabIdx);
     }).trigger("scroll");
 
+    //hash menu
+    var getHash = location.hash;
+    if(getHash != "") {
+        getHash = getHash.replace("#","");
+        if($("#fixed_menu .btn_menu[data-tab='" + getHash + "']").length > 0) {
+            doTimeout("scroll", function() {
+                fixedMenuScroll = false;
+                $("#fixed_menu .btn_menu[data-tab='" + getHash + "']").trigger("click");
+            }, 100);
+        }
+    }
+
     //main
     $("#twitter_menu .btn_close").on("click", function() {
         $("#twitter_menu").toggleClass("close");
@@ -130,11 +151,20 @@ $(function() {
                     slidesPerView: 1,
                     on: {
                         transitionStart: function() {
+                            $(".char_img.video").removeClass("video").find(".char_video").empty();
+                            $(".audio_wrap").empty();
                             $(this.el).find(".animate.on").removeClass("on");
                         },
-                        transitionEnd: function(a,b,c) {
+                        transitionEnd: function() {
                             // $(this.visibleSlides[0]).find(".animate").addClass("on");
                             $(this.el).find(".swiper-slide-active").find(".animate").addClass("on");
+                        },
+                        slideChange: function() {
+                            var getPrev = this.previousIndex;
+                            var getNext = this.activeIndex;
+                            if(btnThumbSlide.eq(getNext).length > 0) {
+                                btnThumbSlide.removeClass("active").eq(getNext).addClass("active");
+                            }
                         }
                     }
                 });
@@ -159,7 +189,7 @@ $(function() {
                     },
                     breakpoints: {
                         780: {
-                            spaceBetween: 12,
+                            spaceBetween: 8,
                             scrollbar: false,
                             slidesOffsetBefore: 0,
                             slidesOffsetAfter: 0
@@ -176,6 +206,9 @@ $(function() {
                     return false;
                 });
                 btnThumbSlide.eq(0).addClass("active");
+                if(btnThumbSlide.length > 7) {
+                    $(this).find(".thumb_slide").addClass("light");
+                }
             }
 
             //좌우 화살표
@@ -205,6 +238,7 @@ $(function() {
                     }
                     if(nextIdx > -1) {
                         btnThumbSlide.eq(nextIdx).trigger("click");
+                        $(charSlide.el).find(".swiper-slide-active .btn_char_video").trigger("click");
                     }
                 }
                 return false;
@@ -224,6 +258,8 @@ $(function() {
 
         var btnNationSlide = $("#char_nation_slide .btn_nation").on("click",function() {
             $(".char_slide_wrap .animate").removeClass("on");
+            $(".audio_wrap").empty();
+            $(".char_img.video").removeClass("video").find(".char_video").empty();
             btnNationSlide.removeClass("active");
             var idx = $(this).addClass("active").parent().index();
             var getSlideWrap = charSlideWrap.removeClass("active").eq(idx).addClass("active");
@@ -280,8 +316,16 @@ $(function() {
 
     //영상
     $(".btn_char_video").on("click", function() {
-
-
+        var getPc = $(this).data("pc");
+        var getMobile = $(this).data("mobile");
+        var getVideo = "";
+        if(iOS()) {
+            getVideo = '<video muted autoplay loop playsinline class="pc"><source src="'+getPc+'.mov" type="video/mp4;codecs=\"hvc1\"" /></video><video muted autoplay loop playsinline class="mobile"><source src="'+getMobile+'.mov" type="video/mp4;codecs=\"hvc1\"" /></video>';
+        }
+        else {
+            getVideo = '<video muted autoplay loop playsinline class="pc"><source src="'+getPc+'.webm" type="video/webm" /></video><video muted autoplay loop playsinline class="mobile"><source src="'+getMobile+'.webm" type="video/webm" /></video>';
+        }
+        $(this).parent().find(".char_img").addClass("video").find(".char_video").html(getVideo);
         return false;
     });
 
@@ -445,7 +489,6 @@ $(function() {
 });
 
 function animate(type, tab) {
-    console.log(tab);
     $(".content_wrap .animate").removeClass("on");
     $("#header.animate, #content.animate, #footer.animate").addClass("on");
     $(".content_top").find(".animate").addClass("on");

@@ -23,7 +23,7 @@
 
     <link rel="stylesheet" type="text/css" href="https://image.webzen.kr/template/css/common.css" />
     <link rel="stylesheet" type="text/css" media="all" href="css/common.css">
-    
+
     <script src="js/jquery-3.6.0.min.js"></script>
 
     <script src="js/detectmobilebrowser.js"></script>
@@ -56,7 +56,7 @@
             </div>
             <div class="header_mid">
                 <ul class="menu_list scrollY">
-                    <li><a href="#" data-tab="reserve" class="btn_menu">사전예약</a></li>                    
+                    <li><a href="#" data-tab="reserve" class="btn_menu">사전예약</a></li>
                     <li><a href="#" data-tab="story" class="btn_menu">세계관</a></li>
                     <li><a href="#" data-tab="char" class="btn_menu">캐릭터</a></li>
                     <li><a href="#" data-tab="feature" class="btn_menu">게임 특징</a></li>
@@ -77,7 +77,7 @@
     <!-- fixed 메뉴 -->
     <div id="fixed_menu">
         <ul class="menu_list">
-            <li><a href="#" data-tab="reserve" class="btn_menu"><span class="eng">Reservation</span><span class="kor">사전예약</span></a></li>            
+            <li><a href="#" data-tab="reserve" class="btn_menu"><span class="eng">Reservation</span><span class="kor">사전예약</span></a></li>
             <li><a href="#" data-tab="story" class="btn_menu"><span class="eng">Story</span><span class="kor">세계관</span></a></li>
             <li><a href="#" data-tab="char" class="btn_menu"><span class="eng">Character</span><span class="kor">캐릭터</span></a></li>
             <li><a href="#" data-tab="feature" class="btn_menu"><span class="eng">Feature</span><span class="kor">게임 특징</span></a></li>
@@ -89,7 +89,7 @@
 
     <div id="content" class="animate">
         <!-- 상단 -->
-        <div data-tab="top" class="content_wrap content_top">            
+        <div data-tab="top" class="content_wrap content_top">
             <div class="top_video">
                 <div class="video_wrap">
                     <video src="video/bg.mp4" autoplay muted loop class="video"></video>
@@ -99,6 +99,10 @@
                 <div class="title_box animate">
                     <img src="img/main/top_title.png" alt="라그나돌" class="title pc">
                     <img src="img/main/top_title_m.png" alt="라그나돌" class="title mobile">
+                </div>
+                <div class="sub_title_box animate">
+                    <img src="img/main/top_sub_title.png" alt="라그나돌" class="title pc">
+                    <img src="img/main/top_sub_title_m.png" alt="라그나돌" class="title mobile">
                 </div>
                 <div class="btn_box animate">
                     <!-- data-youtube="유튜브영상아이디" -->
@@ -133,11 +137,13 @@
             <div class="content_reserve">
                 <div class="reserve_wrap">
                     <div class="title_box">
-                        <img src="img/reserve/title.png" alt="라그나돌 사전예약 진행 중!" class="title pc">
-                        <img src="img/reserve/title_m.png" alt="라그나돌 사전예약 진행 중!" class="title mobile">
-                        <div class="sub_title"><p>사전예약 기간 : 2023.07.12(수) ~ 게임 런칭 전​</p></div>
+                        <div class="title_wrap animate">
+                            <img src="img/reserve/title.png" alt="라그나돌 사전예약 진행 중!" class="title pc">
+                            <img src="img/reserve/title_m.png" alt="라그나돌 사전예약 진행 중!" class="title mobile">
+                        </div>
+                        <div class="sub_title animate"><p>사전예약 기간 : 2023.07.12(수) ~ 게임 런칭 전​</p></div>
                     </div>
-                    <div class="reserve_box_wrap">
+                    <div class="reserve_box_wrap animate">
                         <div class="reserve_box">
                             <img src="img/reserve/bg_scroll_item_m.png" alt="" class="item">
                             <!-- 예약 -->
@@ -242,7 +248,7 @@
                     </div>
                 </div>
             </div><!-- //예약 끝 -->
-    
+
             <!-- 이벤트 -->
             <div class="content_event">
                 <div class="title_box">
@@ -257,7 +263,7 @@
                     <div class="btn_event">
                         <a href="#" title="이벤트 2 바로가기" class="btn_link"><img src="img/event/event2.png" alt="공식 커뮤니티를 친구들에게 공유해 주세요!" class="img"></a>
                         <p class="desc">※ 이벤트 상세 내용은 공식 커뮤니티를 통해 확인할 수 있습니다.</p>
-                    </div> 
+                    </div>
                     <div class="btn_event">
                         <a href="#" title="이벤트 3 바로가기" class="btn_link"><img src="img/event/event3.png" alt="커뮤니티 가입인사 남기면 구글 기프트 카드 당첨 기회가!" class="img"></a>
                         <p class="desc">※ 이벤트 상세 내용은 공식 커뮤니티를 통해 확인할 수 있습니다.</p>
@@ -265,9 +271,9 @@
                     <div class="btn_event">
                         <a href="#" title="이벤트 4 바로가기" class="btn_link"><img src="img/event/event4.png" alt="공식 커뮤니티를 친구들에게 공유해 주세요!" class="img"></a>
                         <p class="desc">※ 이벤트 상세 내용은 공식 커뮤니티를 통해 확인할 수 있습니다.</p>
-                    </div>                   
+                    </div>
                 </div>
-                
+
             </div><!-- //이벤트 끝 -->
         </div>
 
@@ -298,7 +304,300 @@
             <div class="title_box animate">
                 <img src="img/char/title.png" alt="캐릭터" class="text">
             </div>
-            <div class="char_wrap"></div>
+            <div class="char_wrap">
+                <div id="char_slide_wrap">
+                    <!-- 야샤국 -->
+                    <div class="char_slide_wrap">
+                        <a href="#" class="btn_char_slide prev"></a>
+                        <a href="#" class="btn_char_slide next"></a>
+
+                        <!-- 캐릭터 슬라이드 -->
+                        <div class="swiper-container char_slide">
+                            <div class="swiper-wrapper">
+                                <!-- 누리카베 -->
+                                <div class="swiper-slide">
+                                    <div class="char_text">
+                                        <div class="char_title animate">
+                                            <img src="char/data/yasha/nurikabe_title.png" alt="누리카베" class="title pc">
+                                            <img src="char/data/yasha/nurikabe_title_m.png" alt="누리카베" class="title mobile">
+                                        </div>
+                                        <div class="text_box animate scrollY pc">
+                                            <p>「당신을 반드시 지키기로 했어!」타키야샤히메의 시중 담당</p>
+                                            <p>누리카베 일족에서 태어나 자랐다. 부모를 일찍 여의고 조부모님의 손에 오냐오냐 자랐다</p>
+                                            <p>타키야샤히메를 필두로 자유분방한 수많은 요괴 속에서 얌전하고 남을 잘 챙긴다는 이유로 다른 이들에게 잘 휘둘린다</p>
+                                            <br />
+                                            <p>요리도 잘하고 씩씩하고 배려심 넘치고 안 보이는 곳에서 늘 노력하는 그녀는 없어서는 안 될 존재</p>
+                                            <br />
+                                            <p>좌우의 「돌벽」은 자유롭게 꺼내고 넣을 수 있다</p>
+                                            <p>익숙하지 않은 탓인지 돌벽이 너무 무거워 균형을 잃고 넘어지기도 한다</p>
+                                        </div>
+                                        <div class="text_box animate scrollY mobile">
+                                            <p>「당신을 반드시 지키기로 했어!」타키야샤히메의 시중 담당</p>
+                                            <p>누리카베 일족에서 태어나 자랐다. 부모를 일찍 여의고</p>
+                                            <p>조부모님의 손에 오냐오냐 자랐다</p>
+                                            <p>타키야샤히메를 필두로 자유분방한 수많은 요괴 속에서 얌전하고</p>
+                                            <p>남을 잘 챙긴다는 이유로 다른 이들에게 잘 휘둘린다</p>
+                                        </div>
+                                        <a href="#" data-img="char/data/yasha/relation.png" title="관계도" class="btn_relation animate"></a>
+                                    </div>
+
+                                    <div class="char_img animate">
+                                        <img src="char/data/yasha/nurikabe_pc.png" alt="" class="char pc">
+                                        <img src="char/data/yasha/nurikabe_m.png" alt="" class="char mobile">
+                                        <div class="char_video"></div>
+                                    </div>
+
+                                    <!-- pc mobile 동영상 -->
+                                    <a data-pc="char/video/yasha/nurikabe_pc" data-mobile="char/video/yasha/nurikabe_m" href="#" class="btn_char_video"></a>
+
+                                    <!-- 음성 -->
+                                    <a href="#" data-audio="char/voice/yasha/nurikabe.mp3" class="btn_voice animate"><img src="char/data/yasha/nurikabe_voice.png" alt="CV_미나세이노리" class="voice"></a>
+                                </div>
+
+                                <!-- 이즈나 -->
+                                <div class="swiper-slide">
+                                    <div class="char_text">
+                                        <div class="char_title animate">
+                                            <img src="char/data/yasha/izuna_title.png" alt="이즈나" class="title pc">
+                                            <img src="char/data/yasha/izuna_title_m.png" alt="이즈나" class="title mobile">
+                                        </div>
+                                        <div class="text_box animate scrollY pc">
+                                            <p>「당신을 반드시 지키기로 했어!」타키야샤히메의 시중 담당</p>
+                                            <p>누리카베 일족에서 태어나 자랐다. 부모를 일찍 여의고 조부모님의 손에 오냐오냐 자랐다</p>
+                                            <p>타키야샤히메를 필두로 자유분방한 수많은 요괴 속에서 얌전하고 남을 잘 챙긴다는 이유로 다른 이들에게 잘 휘둘린다</p>
+                                            <br />
+                                            <p>요리도 잘하고 씩씩하고 배려심 넘치고 안 보이는 곳에서 늘 노력하는 그녀는 없어서는 안 될 존재</p>
+                                            <br />
+                                            <p>좌우의 「돌벽」은 자유롭게 꺼내고 넣을 수 있다</p>
+                                            <p>익숙하지 않은 탓인지 돌벽이 너무 무거워 균형을 잃고 넘어지기도 한다</p>
+                                        </div>
+                                        <div class="text_box animate scrollY mobile">
+                                            <p>「당신을 반드시 지키기로 했어!」타키야샤히메의 시중 담당</p>
+                                            <p>누리카베 일족에서 태어나 자랐다. 부모를 일찍 여의고</p>
+                                            <p>조부모님의 손에 오냐오냐 자랐다</p>
+                                            <p>타키야샤히메를 필두로 자유분방한 수많은 요괴 속에서 얌전하고</p>
+                                            <p>남을 잘 챙긴다는 이유로 다른 이들에게 잘 휘둘린다</p>
+                                        </div>
+                                        <!-- <a href="#" title="관계도" class="btn_relation"></a> -->
+                                    </div>
+
+                                    <div class="char_img animate">
+                                        <img src="char/data/yasha/izuna_pc.png" alt="" class="char pc">
+                                        <img src="char/data/yasha/izuna_m.png" alt="" class="char mobile">
+                                        <div class="char_video"></div>
+                                    </div>
+
+                                    <!-- pc mobile 동영상 -->
+                                    <a data-pc="char/video/yasha/nurikabe_pc" data-mobile="char/video/yasha/nurikabe_m" href="#" class="btn_char_video"></a>
+
+                                    <!-- 음성 -->
+                                    <a href="#" data-audio="char/voice/yasha/izuna.mp3" class="btn_voice animate"><img src="char/data/yasha/izuna_voice.png" alt="CV_미나세이노리" class="voice"></a>
+                                </div>
+
+                                <!-- 코나키지지 -->
+                                <div class="swiper-slide"></div>
+
+                                <div class="swiper-slide"></div>
+
+                                <div class="swiper-slide"></div>
+
+                                <div class="swiper-slide"></div>
+
+                                <div class="swiper-slide"></div>
+
+                                <div class="swiper-slide"></div>
+
+                                <div class="swiper-slide"></div>
+
+                                <div class="swiper-slide"></div>
+
+                                <div class="swiper-slide"></div>
+
+                                <div class="swiper-slide"></div>
+
+                                <div class="swiper-slide"></div>
+
+                                <div class="swiper-slide"></div>
+
+                            </div>
+                        </div>
+
+                        <!-- 캐릭터 썸네일 -->
+                        <div class="thumb_slide animate">
+                            <div class="swiper-container char_thumb_slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/nurikabe_thumb.png" alt="누리카베" class="char"><span>누리카베</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/izuna_thumb.png" alt="이즈나" class="char"><span>이즈나</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/nurikabe_thumb.png" alt="누리카베" class="char"><span>누리카베</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/izuna_thumb.png" alt="이즈나" class="char"><span>이즈나</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/nurikabe_thumb.png" alt="누리카베" class="char"><span>누리카베</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/izuna_thumb.png" alt="이즈나" class="char"><span>이즈나</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/nurikabe_thumb.png" alt="누리카베" class="char"><span>누리카베</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/izuna_thumb.png" alt="이즈나" class="char"><span>이즈나</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/nurikabe_thumb.png" alt="누리카베" class="char"><span>누리카베</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/izuna_thumb.png" alt="이즈나" class="char"><span>이즈나</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/nurikabe_thumb.png" alt="누리카베" class="char"><span>누리카베</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/izuna_thumb.png" alt="이즈나" class="char"><span>이즈나</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/nurikabe_thumb.png" alt="누리카베" class="char"><span>누리카베</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/izuna_thumb.png" alt="이즈나" class="char"><span>이즈나</span></a></div>
+                                </div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                            <a href="#" class="btn_thumb_slide prev"></a>
+                            <a href="#" class="btn_thumb_slide next"></a>
+                        </div>
+
+                    </div>
+
+                    <!-- 산가쿠국 -->
+                    <div class="char_slide_wrap">
+                        <a href="#" class="btn_char_slide prev"></a>
+                        <a href="#" class="btn_char_slide next"></a>
+
+                        <!-- 캐릭터 슬라이드 -->
+                        <div class="swiper-container char_slide">
+                            <div class="swiper-wrapper">
+                                <!-- 누리카베 -->
+                                <div class="swiper-slide">
+                                    <div class="char_text">
+                                        <div class="char_title animate">
+                                            <img src="char/data/yasha/nurikabe_title.png" alt="누리카베" class="title pc">
+                                            <img src="char/data/yasha/nurikabe_title_m.png" alt="누리카베" class="title mobile">
+                                        </div>
+                                        <div class="text_box animate scrollY pc">
+                                            <p>「당신을 반드시 지키기로 했어!」타키야샤히메의 시중 담당</p>
+                                            <p>누리카베 일족에서 태어나 자랐다. 부모를 일찍 여의고 조부모님의 손에 오냐오냐 자랐다</p>
+                                            <p>타키야샤히메를 필두로 자유분방한 수많은 요괴 속에서 얌전하고 남을 잘 챙긴다는 이유로 다른 이들에게 잘 휘둘린다</p>
+                                            <br />
+                                            <p>요리도 잘하고 씩씩하고 배려심 넘치고 안 보이는 곳에서 늘 노력하는 그녀는 없어서는 안 될 존재</p>
+                                            <br />
+                                            <p>좌우의 「돌벽」은 자유롭게 꺼내고 넣을 수 있다</p>
+                                            <p>익숙하지 않은 탓인지 돌벽이 너무 무거워 균형을 잃고 넘어지기도 한다</p>
+                                        </div>
+                                        <div class="text_box animate scrollY mobile">
+                                            <p>「당신을 반드시 지키기로 했어!」타키야샤히메의 시중 담당</p>
+                                            <p>누리카베 일족에서 태어나 자랐다. 부모를 일찍 여의고</p>
+                                            <p>조부모님의 손에 오냐오냐 자랐다</p>
+                                            <p>타키야샤히메를 필두로 자유분방한 수많은 요괴 속에서 얌전하고</p>
+                                            <p>남을 잘 챙긴다는 이유로 다른 이들에게 잘 휘둘린다</p>
+                                        </div>
+                                        <a href="#" data-img="char/data/yasha/relation.png" title="관계도" class="btn_relation animate"></a>
+                                    </div>
+
+                                    <div class="char_img animate">
+                                        <img src="char/data/yasha/nurikabe_pc.png" alt="" class="char pc">
+                                        <img src="char/data/yasha/nurikabe_m.png" alt="" class="char mobile">
+                                        <div class="char_video"></div>
+                                    </div>
+
+                                    <!-- pc mobile 동영상 -->
+                                    <a data-pc="char/video/yasha/nurikabe_pc" data-mobile="char/video/yasha/nurikabe_m" href="#" class="btn_char_video"></a>
+
+                                    <!-- 음성 -->
+                                    <a href="#" data-audio="char/voice/yasha/nurikabe.mp3" class="btn_voice animate"><img src="char/data/yasha/nurikabe_voice.png" alt="CV_미나세이노리" class="voice"></a>
+                                </div>
+
+                                <!-- 이즈나 -->
+                                <div class="swiper-slide">
+                                    <div class="char_text">
+                                        <div class="char_title animate">
+                                            <img src="char/data/yasha/izuna_title.png" alt="이즈나" class="title pc">
+                                            <img src="char/data/yasha/izuna_title_m.png" alt="이즈나" class="title mobile">
+                                        </div>
+                                        <div class="text_box animate scrollY pc">
+                                            <p>「당신을 반드시 지키기로 했어!」타키야샤히메의 시중 담당</p>
+                                            <p>누리카베 일족에서 태어나 자랐다. 부모를 일찍 여의고 조부모님의 손에 오냐오냐 자랐다</p>
+                                            <p>타키야샤히메를 필두로 자유분방한 수많은 요괴 속에서 얌전하고 남을 잘 챙긴다는 이유로 다른 이들에게 잘 휘둘린다</p>
+                                            <br />
+                                            <p>요리도 잘하고 씩씩하고 배려심 넘치고 안 보이는 곳에서 늘 노력하는 그녀는 없어서는 안 될 존재</p>
+                                            <br />
+                                            <p>좌우의 「돌벽」은 자유롭게 꺼내고 넣을 수 있다</p>
+                                            <p>익숙하지 않은 탓인지 돌벽이 너무 무거워 균형을 잃고 넘어지기도 한다</p>
+                                        </div>
+                                        <div class="text_box animate scrollY mobile">
+                                            <p>「당신을 반드시 지키기로 했어!」타키야샤히메의 시중 담당</p>
+                                            <p>누리카베 일족에서 태어나 자랐다. 부모를 일찍 여의고</p>
+                                            <p>조부모님의 손에 오냐오냐 자랐다</p>
+                                            <p>타키야샤히메를 필두로 자유분방한 수많은 요괴 속에서 얌전하고</p>
+                                            <p>남을 잘 챙긴다는 이유로 다른 이들에게 잘 휘둘린다</p>
+                                        </div>
+                                        <!-- <a href="#" data-img="char/data/yasha/relation.png" title="관계도" class="btn_relation animate"></a> -->
+                                    </div>
+
+                                    <div class="char_img animate">
+                                        <img src="char/data/yasha/izuna_pc.png" alt="" class="char pc">
+                                        <img src="char/data/yasha/izuna_m.png" alt="" class="char mobile">
+                                        <div class="char_video"></div>
+                                    </div>
+
+                                    <!-- pc mobile 동영상 -->
+                                    <a data-pc="char/video/yasha/izuna_pc" data-mobile="char/video/yasha/izuna_m" href="#" class="btn_char_video"></a>
+
+                                    <!-- 음성 -->
+                                    <a href="#" data-audio="char/voice/yasha/izuna.mp3" class="btn_voice animate"><img src="char/data/yasha/izuna_voice.png" alt="CV_미나세이노리" class="voice"></a>
+                                </div>
+
+                                <!-- 코나키지지 -->
+                                <div class="swiper-slide"></div>
+
+                                <div class="swiper-slide"></div>
+
+                                <div class="swiper-slide"></div>
+
+                            </div>
+                        </div>
+
+                        <!-- 캐릭터 썸네일 -->
+                        <div class="thumb_slide animate">
+                            <div class="swiper-container char_thumb_slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/izuna_thumb.png" alt="이즈나" class="char"><span>이즈나</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/nurikabe_thumb.png" alt="누리카베" class="char"><span>누리카베</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/izuna_thumb.png" alt="이즈나" class="char"><span>이즈나</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/nurikabe_thumb.png" alt="누리카베" class="char"><span>누리카베</span></a></div>
+                                    <div class="swiper-slide"><a href="#" class="btn_char"><img src="char/data/yasha/izuna_thumb.png" alt="이즈나" class="char"><span>이즈나</span></a></div>
+                                </div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                            <a href="#" class="btn_thumb_slide prev"></a>
+                            <a href="#" class="btn_thumb_slide next"></a>
+                        </div>
+                    </div>
+
+                    <!-- 오이란국 -->
+                    <div class="char_slide_wrap">
+                        오이란국
+                    </div>
+
+                    <!-- 사카이국 -->
+                    <div class="char_slide_wrap">
+                        사카이국
+                    </div>
+
+                </div>
+
+                <!-- 슬라이드 국가 -->
+                <div class="char_nation animate">
+                    <div id="char_nation_slide" class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="#" class="btn_nation"><span>야샤국</span></a></div>
+                            <div class="swiper-slide"><a href="#" class="btn_nation"><span>산가쿠국</span></a></div>
+                            <div class="swiper-slide"><a href="#" class="btn_nation"><span>오이란국</span></a></div>
+                            <div class="swiper-slide"><a href="#" class="btn_nation"><span>사카이국</span></a></div>
+                            <div class="swiper-slide"><a href="#" class="btn_nation"><span>오니국</span></a></div>
+                            <div class="swiper-slide"><a href="#" class="btn_nation"><span>지옥</span></a></div>
+                            <div class="swiper-slide"><a href="#" class="btn_nation"><span>텐구국</span></a></div>
+                            <div class="swiper-slide"><a href="#" class="btn_nation"><span>오로치국</span></a></div>
+                            <div class="swiper-slide"><a href="#" class="btn_nation"><span>야샤국</span></a></div>
+                            <div class="swiper-slide"><a href="#" class="btn_nation"><span>산가쿠국</span></a></div>
+                            <div class="swiper-slide"><a href="#" class="btn_nation"><span>오이란국</span></a></div>
+                            <div class="swiper-slide"><a href="#" class="btn_nation"><span>사카이국</span></a></div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn_slide prev"></a>
+                    <a href="#" class="btn_slide next"></a>
+                </div>
+            </div>
         </div>
 
         <!-- 게임 특징 -->
@@ -321,7 +620,7 @@
                             <span class="name animate">애니메이션2</span>
                             <span class="desc animate">박력있는 영화로 웅장한 이야기</span>
                         </a>
-                    </div>                  
+                    </div>
                 </div>
             </div>
             <a href="#" id="btn_feature_prev" class="btn_feature_slide prev"></a>
@@ -587,28 +886,30 @@
     </div>
 
     <!-- 관계도 팝업 -->
-    <div id="popup_relation">
+    <div id="popup_relation" class="popup_window">
         <div class="relation_box">
             <a href="#" class="btn_close"></a>
-            <img src="img/char/char/1_1_relation.png" alt="" class="relation">
+            <img src="#" alt="" class="relation">
         </div>
     </div>
 
     <!-- 게임특징 팝업 -->
-    <div id="popup_feature">
+    <div id="popup_feature" class="popup_window">
         <div class="feature_box">
             <a href="#" class="btn_close"></a>
-            <img src="img/feature/slide_1.jpg" alt="" class="feature">
+            <img src="#" alt="" class="feature">
         </div>
     </div>
 
     <!-- 미디어 팝업 -->
-    <div id="popup_media">
+    <div id="popup_media" class="popup_window">
         <div class="media_box">
             <a href="#" class="btn_close"></a>
             <div class="image_box"></div>
         </div>
     </div>
+
+    <div class="audio_wrap"></div>
 
 </body>
 </html>
