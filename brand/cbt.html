@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7, minimum-scale=0.7, maximum-scale=1.4, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta property="og:url" content="https://ragnador.webzen.co.kr">
+    <meta property="og:title" content="라그나돌">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mimage.webzen.kr/ragnador/brand/teaser/img_meta.jpg" />
+    <meta property="og:description" content="">
+
+    <link rel="icon" href="https://mimage.webzen.kr/ragnador/brand/teaser/favicon.png">
+    <link rel="shortcut icon" type="favicon.ico" href="https://mimage.webzen.kr/ragnador/brand/teaser/favicon.png">
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/swiper-bundle.min.css">
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://image.webzen.kr/template/css/common.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/brand.css">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <script src="js/detectmobilebrowser.js"></script>
+    <script src="js/brand.js"></script>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header id="header" class="animate bg">
+        <h1 class="logo"><a href="#" class="btn_logo"><img src="img/common/header_logo.png" alt="라그나돌"></a></h1>
+        <div class="header_menu">
+            <a href="https://www.youtube.com/@WEBZENTV" target="_blank" title="유튜브 바로가기" class="btn_menu youtube"></a>
+            <a href="https://twitter.com/Ragnador_kr" target="_blank" title="트위터 바로가기" class="btn_menu twitter"></a>
+            <a href="#" class="btn_menu url" title="공유하기"></a>
+            <a href="#" class="btn_community" title="커뮤니티 바로가기"></a>
+            <a href="#" class="btn_mobile" title="모바일 메뉴 열기"></a>
+
+            <div id="popup_share">
+                <a href="#" onclick="SNS.facebook();return false;" title="페이스북 공유하기" class="btn_share facebook"></a>
+                <a href="#" onclick="SNS.twitter();return false;" title="트위터 공유하기" class="btn_share twitter"></a>
+                <input type="text" id="text" value="https://ragnador.webzen.co.kr" style="display: none;"/>
+                <input type="button" onclick="urlCopy()" value="URL 복사하기" class="btn_share url"/>
+            </div>
+        </div>
+    </header>
+    <div id="header_menu">
+        <div class="menu_wrap">
+            <a href="#" class="btn_close"></a>
+            <div class="header_top">
+                <h1 class="logo"><a href="#" class="btn_logo"><img src="img/common/header_menu_logo.png" alt="라그나돌"></a></h1>
+            </div>
+            <div class="header_mid">
+                <ul class="menu_list scrollY">
+                    <li><a href="./index.html#01" data-tab="01" class="btn_menu">사전예약</a></li>
+                    <li><a href="#" data-tab="story" class="btn_menu">세계관</a></li>
+                    <li><a href="#" data-tab="char" class="btn_menu">캐릭터</a></li>
+                    <li><a href="#" data-tab="feature" class="btn_menu">게임 특징</a></li>
+                    <li><a href="#" data-tab="media" class="btn_menu">미디어</a></li>
+                    <li><a href="#" data-tab="event" class="btn_menu">CBT</a></li>
+                </ul>
+                <div class="header_menu">
+                    <a href="#" title="커뮤니티 바로가기" class="btn_menu user"></a>
+                    <a href="https://www.youtube.com/@WEBZENTV" target="_blank" title="유튜브 바로가기" class="btn_menu youtube"></a>
+                    <a href="https://twitter.com/Ragnador_kr" target="_blank" title="트위터 바로가기" class="btn_menu twitter"></a>
+                    <!-- <a href="#" class="btn_menu url"></a> -->
+                </div>
+            </div>
+            <a href="#" class="btn_download"><img src="img/common/header_menu_icon.png" alt="" class="icon"><img src="img/common/header_download_text.png" alt="Download" class="text"></a>
+        </div>
+    </div>
+
+    <!-- fixed 메뉴 -->
+    <div id="fixed_menu">
+        <ul class="menu_list">
+            <li><a href="./index.html#01" data-tab="01" class="btn_menu"><span class="eng">Reservation</span><span class="kor">사전예약</span></a></li>
+            <li><a href="#" data-tab="story" class="btn_menu"><span class="eng">Story</span><span class="kor">세계관</span></a></li>
+            <li><a href="#" data-tab="char" class="btn_menu"><span class="eng">Character</span><span class="kor">캐릭터</span></a></li>
+            <li><a href="#" data-tab="feature" class="btn_menu"><span class="eng">Feature</span><span class="kor">게임 특징</span></a></li>
+            <li><a href="#" data-tab="media" class="btn_menu"><span class="eng">Media</span><span class="kor">미디어</span></a></li>
+            <li><a href="#" data-tab="event" class="btn_menu"><span class="eng">CBT</span><span class="kor">CBT</span></a></li>
+        </ul>
+        <a href="#" target="_blank" title="Download" class="btn_download"><span class="icon"></span></a>
+    </div>
+
+    <div id="content" class="animate">
+        <!-- 상단
+        <div data-tab="top" class="content_wrap content_top">
+            <div class="top_video">
+                <div class="video_wrap"></div>
+            </div>
+            <div class="text_box">
+                <div class="title_box animate">
+                    <img src="img/main/top_title.png" alt="라그나돌" class="title pc">
+                    <img src="img/main/top_title_m.png" alt="라그나돌" class="title mobile">
+                </div>
+                <div class="sub_title_box animate">
+                    <img src="img/main/top_sub_title.png" alt="라그나돌" class="title pc">
+                    <img src="img/main/top_sub_title_m.png" alt="라그나돌" class="title mobile">
+                </div>
+                <div class="btn_box animate">
+                    <//-- data-youtube="유튜브영상아이디" --//>
+                    <a href="#" data-youtube="KhEeWiN__kM" class="btn_video">
+                        <img src="img/main/top_btn_video.png" alt="영상" class="title">
+                    </a>
+                </div>
+                <div class="btn_bottom animate">
+                    <a href="#" title="사전예약하기" class="btn_reserve"><img src="img/main/btn_reserve.png" alt="" class="icon"></a>
+                    <a href="#" title="CBT참여하기" class="btn_cbt"><img src="img/main/btn_cbt.png" alt="" class="icon"></a>
+                </div>
+            </div>
+
+            <//-- 트위터 --//>
+            <div id="twitter_menu">
+                <div class="twitter_box">
+                    <div class="scroll_box">
+                        <//-- 트위터 연동 --//>
+                        <a class="twitter-timeline" href="https://twitter.com/Ragnador_GRAMS?ref_src=twsrc%5Etfw">Tweets by Ragnador_GRAMS</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="mobile_box">
+                        <a href="#" class="btn_close"></a>
+                        <img src="img/main/twitter_text.png" alt="@라그나돌님의 트윗" class="text">
+                    </div>
+                    <div class="btn_box">
+                        <a href="https://twitter.com/Ragnador_kr" target="_blank" title="트위터 바로가기" class="btn_twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- 사전 예약 -->
+        <div data-tab="event" class="content_wrap cbt_wrap">
+            <div class="content_cbtinfo">
+                <div class="title_box animate">
+                    <img src="img/event/title.png" alt="라그나돌 사전예약 이벤트" class="title pc">
+                    <img src="img/event/title_m.png" alt="라그나돌 사전예약 이벤트" class="title mobile">
+                </div>
+                <div class="process_box">
+                    
+                </div>
+            </div>
+            <!-- 이벤트 -->
+            <div class="content_event">
+                <div class="title_box animate">
+                    <img src="img/event/title.png" alt="라그나돌 사전예약 이벤트" class="title pc">
+                    <img src="img/event/title_m.png" alt="라그나돌 사전예약 이벤트" class="title mobile">
+                </div>
+                <div class="event_box animate">
+                    <div class="btn_event event_1">
+                        <a href="#" title="이벤트 1 바로가기" class="btn_link"><img src="img/event/event1.png" alt="커뮤니티 가입인사 남기면 구글 기프트 카드 당첨 기회가!" class="img"></a>
+                        <p class="desc">※ 이벤트 상세 내용은 공식 커뮤니티를 통해 확인할 수 있습니다.</p>
+                    </div>
+                    <div class="btn_event event_2">
+                        <a href="#" title="이벤트 2 바로가기" class="btn_link"><img src="img/event/event2.png" alt="공식 커뮤니티를 친구들에게 공유해 주세요!" class="img"></a>
+                        <p class="desc">※ 이벤트 상세 내용은 공식 커뮤니티를 통해 확인할 수 있습니다.</p>
+                    </div>
+                    <div class="btn_event event_3">
+                        <a href="#" title="이벤트 3 바로가기" class="btn_link"><img src="img/event/event3.png" alt="커뮤니티 가입인사 남기면 구글 기프트 카드 당첨 기회가!" class="img"></a>
+                        <p class="desc">※ 이벤트 상세 내용은 공식 커뮤니티를 통해 확인할 수 있습니다.</p>
+                    </div>
+                    <div class="btn_event event_4">
+                        <a href="#" title="이벤트 4 바로가기" class="btn_link"><img src="img/event/event4.png" alt="공식 커뮤니티를 친구들에게 공유해 주세요!" class="img"></a>
+                        <p class="desc">※ 이벤트 상세 내용은 공식 커뮤니티를 통해 확인할 수 있습니다.</p>
+                    </div>
+                </div>
+
+            </div><!-- //이벤트 끝 -->
+        </div><!-- //사전예약 -->
+
+    </div>
+
+    <!-- 푸터 -->
+    <footer id="footer" class="animate bg">
+        <div class="footer_menu">
+            <a href="https://privacy.webzen.co.kr/policy/servicepolicy.aspx" target="_blank" class="btn_menu">이용약관</a>
+            <a href="https://privacy.webzen.co.kr/policy/privacypolicy.aspx" target="_blank" class="btn_menu">개인정보처리방침</a>
+            <a href="#" target="_blank" class="btn_menu">운영정책</a>
+            <a href="https://www.webzen.co.kr" target="_blank" class="btn_menu">회사소개</a>
+        </div>
+        <p class="copyright">©Grams. All rights Reserved. Published by WEBZEN</p>
+    </footer>
+
+    <!-- 비디오 팝업 -->
+    <div id="popup_video">
+        <div class="video_wrap">
+            <div class="video_box">
+                <a href="#" class="btn_close"></a>
+                <div class="video_frame">
+                    <!-- <iframe src="https://www.youtube.com/embed/KhEeWiN__kM" frameborder="0" allowfullscreen="" class="video"></iframe> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 관계도 팝업 -->
+    <div id="popup_relation" class="popup_window">
+        <div class="relation_box">
+            <a href="#" class="btn_close"></a>
+            <img src="#" alt="" class="relation">
+        </div>
+    </div>
+
+    <!-- 게임특징 팝업 -->
+    <div id="popup_feature" class="popup_window">
+        <div class="feature_box">
+            <a href="#" class="btn_close"></a>
+            <img src="#" alt="" class="feature">
+        </div>
+    </div>
+
+    <!-- 미디어 팝업 -->
+    <div id="popup_media" class="popup_window">
+        <div class="media_box">
+            <a href="#" class="btn_close"></a>
+            <div class="image_box"></div>
+        </div>
+    </div>
+
+    <div class="audio_wrap"></div>
+
+</body>
+</html>
