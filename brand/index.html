@@ -92,7 +92,9 @@
         <div data-tab="top" class="content_wrap content_top">
             <div class="top_video">
                 <div class="video_wrap">
-                    <video src="video/bg.mp4" autoplay muted loop class="video"></video>
+                    <video src="video/bg.mp4" autoplay="autoplay" loop="loop" muted="muted" playsinline="" class="video">
+                        <source src="video/bg.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
             <div class="text_box">
@@ -120,6 +122,9 @@
             <div id="twitter_menu">
                 <div class="twitter_box">
                     <div class="scroll_box">
+                        <!-- 트위터 연동 -->
+                        <a class="twitter-timeline" href="https://twitter.com/Ragnador_GRAMS?ref_src=twsrc%5Etfw">Tweets by Ragnador_GRAMS</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                     <div class="mobile_box">
                         <a href="#" class="btn_close"></a>

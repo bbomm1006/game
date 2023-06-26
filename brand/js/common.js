@@ -2,11 +2,8 @@ $(function() {
 
     //모바일 체크
     if($.browser.mobile) {
-        $(".top_video .video_wrap").empty();
-        //<video src="video/bg.mp4" autoplay muted loop class="video"></video>
     }
     else {
-
     }
 
     //임시 사전예약하기

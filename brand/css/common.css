@@ -631,7 +631,7 @@ body.popup{position:absolute;;overflow:hidden}
     .mobile{display:block!important}
     .title.mobile{display:inline-block!important}
     .content_top .top_video{background:url("../img/main/top_bg_m.png") no-repeat center center;background-size:cover}
-    .content_top .top_video .video_wrap{display:none}
+    /* .content_top .top_video .video_wrap{display:none} */
     .content_top .text_box{padding:0 30px;margin-top:0;width:100%}
     .content_top .text_box .title_box{margin:0 auto;width:80%}
 
