@@ -6,11 +6,14 @@ $(function() {
     else {
     }
 
-    $("#main_video").on("play", function() {
-        setTimeout(function() {
-            $("#main_video").addClass("on");
-        }, !iOS() ? 10 : 200);
-    });
+    setTimeout(function() {
+        $(".content_top .video_wrap").html('<video src="video/bg.mp4" autoplay="autoplay" loop="loop" muted="muted" playsinline id="main_video" class="video"><source src="video/bg.mp4" type="video/mp4"></video>');
+        $("#main_video").on("play", function() {
+            setTimeout(function() {
+                $("#main_video").addClass("on");
+            }, !iOS() ? 10 : 200);
+        });
+    }, 10);
 
     //임시 사전예약하기
     $(".content_reserve .btn_reserve").on("click", function() {
