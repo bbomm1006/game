@@ -114,6 +114,10 @@ $(function() {
             $("#fixed_menu .btn_menu[data-tab='" + scrollIdx + "']").addClass("active");
         }
         animate(false, tabIdx);
+
+        if($("#popup_share").is(":visible")) {
+            $("#popup_share").hide();
+        }
     }).trigger("scroll");
 
     //hash menu
@@ -157,7 +161,7 @@ $(function() {
                         },
                         transitionEnd: function() {
                             // $(this.visibleSlides[0]).find(".animate").addClass("on");
-                            $(this.el).find(".swiper-slide-active").find(".animate").addClass("on");
+                            $(this.el).find(".swiper-slide-active").find(".animate").addClass("on").end().find(".btn_char_video").trigger("click");
                         },
                         slideChange: function() {
                             var getPrev = this.previousIndex;
@@ -238,7 +242,6 @@ $(function() {
                     }
                     if(nextIdx > -1) {
                         btnThumbSlide.eq(nextIdx).trigger("click");
-                        $(charSlide.el).find(".swiper-slide-active .btn_char_video").trigger("click");
                     }
                 }
                 return false;
@@ -266,6 +269,7 @@ $(function() {
             setTimeout(function() {
                 getSlideWrap.find(".thumb_slide.animate").addClass("on");
                 getSlideWrap.find(".swiper-slide-active .animate").addClass("on");
+                getSlideWrap.find(".swiper-slide-active .btn_char_video").trigger("click");
             }, 200);
             return false;
         });
@@ -318,14 +322,11 @@ $(function() {
     $(".btn_char_video").on("click", function() {
         var getPc = $(this).data("pc");
         var getMobile = $(this).data("mobile");
-        var getVideo = "";
-        if(iOS()) {
-            getVideo = '<video muted autoplay loop playsinline class="pc"><source src="'+getPc+'.mov" type="video/mp4;codecs=\"hvc1\"" /></video><video muted autoplay loop playsinline class="mobile"><source src="'+getMobile+'.mov" type="video/mp4;codecs=\"hvc1\"" /></video>';
+        console.log(getPc, getMobile)
+        if(!iOS()) {
+            var getVideo = '<video muted autoplay loop playsinline class="pc"><source src="'+getPc+'.webm" type="video/webm" /></video><video muted autoplay playsinline class="mobile"><source src="'+getMobile+'.webm" type="video/webm" /></video>';
+            $(this).parent().find(".char_img").addClass("video").find(".char_video").html(getVideo);
         }
-        else {
-            getVideo = '<video muted autoplay loop playsinline class="pc"><source src="'+getPc+'.webm" type="video/webm" /></video><video muted autoplay loop playsinline class="mobile"><source src="'+getMobile+'.webm" type="video/webm" /></video>';
-        }
-        $(this).parent().find(".char_img").addClass("video").find(".char_video").html(getVideo);
         return false;
     });
 
