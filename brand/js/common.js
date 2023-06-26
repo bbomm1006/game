@@ -6,6 +6,12 @@ $(function() {
     else {
     }
 
+    $("#main_video").on("play", function() {
+        setTimeout(function() {
+            $("#main_video").addClass("on");
+        }, !iOS() ? 10 : 200);
+    });
+
     //임시 사전예약하기
     $(".content_reserve .btn_reserve").on("click", function() {
         $(".content_reserve .reserve_form").removeClass("active").eq(1).addClass("active");
@@ -319,8 +325,8 @@ $(function() {
     $(".btn_char_video").on("click", function() {
         var getPc = $(this).data("pc");
         var getMobile = $(this).data("mobile");
-        console.log(getPc, getMobile)
         if(!iOS()) {
+            //loop 사용시 무한 재생
             var getVideo = '<video muted autoplay loop playsinline class="pc"><source src="'+getPc+'.webm" type="video/webm" /></video><video muted autoplay playsinline class="mobile"><source src="'+getMobile+'.webm" type="video/webm" /></video>';
             $(this).parent().find(".char_img").addClass("video").find(".char_video").html(getVideo);
         }
