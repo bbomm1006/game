@@ -330,7 +330,7 @@ $(function() {
         var getMobile = $(this).data("mobile");
         if(!iOS()) {
             //loop 사용시 무한 재생
-            var getVideo = '<video muted autoplay loop playsinline class="pc"><source src="'+getPc+'.webm" type="video/webm" /></video><video muted autoplay playsinline class="mobile"><source src="'+getMobile+'.webm" type="video/webm" /></video>';
+            var getVideo = '<video muted autoplay playsinline class="pc"><source src="'+getPc+'.webm" type="video/webm" /></video><video muted autoplay playsinline class="mobile"><source src="'+getMobile+'.webm" type="video/webm" /></video>';
             $(this).parent().find(".char_img").addClass("video").find(".char_video").html(getVideo);
         }
         return false;
