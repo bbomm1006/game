@@ -71,10 +71,10 @@
 .content_char .title_box.animate{opacity:0;transition-delay:0.1s}
 .content_char .char_title.animate{opacity:0;transform:translateX(-100px);transition-delay:0.2s}
 .content_char .text_box.animate{opacity:0;transform:translateX(-100px);transition-delay:0.3s}
-.content_char .btn_relation.animate{opacity:0;transform:translateX(-100px);transition-delay:0.5s}
+.content_char .btn_relation.animate{opacity:0;transform:translateX(0px);transition-delay:0.3s}
 /* .content_char .char_img.animate{opacity:0;transform:translate(-200px, 100px)} */
 .content_char .char_img.animate{opacity:0}
-.content_char .btn_voice.animate{opacity:0;transition-delay:0.3s}
+.content_char .btn_voice.animate{opacity:0;transition-delay:0.1s}
 .content_char .thumb_slide.animate{opacity:0;transition-delay:0.7s}
 .content_char .char_nation.animate{opacity:0;transform:translateY(100px);transition-delay:0.8s}
 .content_char .animate.on{opacity:1;transform:translateX(0)}

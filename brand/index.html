@@ -189,14 +189,14 @@
                                                     <input type="checkbox" class="check">
                                                     <span class="text">[필수] 개인정보 수집 및 이용 동의</span>
                                                 </label>
-                                                <a href="#" class="btn_detail">자세히 보기</a>
+                                                <a href="#" id="btn_detail_01" class="btn_detail">자세히 보기</a>
                                             </li>
                                             <li>
                                                 <label class="check_box">
                                                     <input type="checkbox" class="check">
                                                     <span class="text">[필수] 이벤트 등 프로모션 알림수신 동의</span>
                                                 </label>
-                                                <a href="#" class="btn_detail">자세히 보기</a>
+                                                <a href="#" id="btn_detail_02" class="btn_detail">자세히 보기</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -2168,6 +2168,117 @@
             <a href="#" class="btn_close"></a>
             <div class="image_box"></div>
         </div>
+    </div>
+
+    <!-- 약관 팝업 01 개인정보 -->
+    <div id="popup_reserve_01" class="popup_window popup_reserve">
+        <div class="notice_box">
+            <a href="#" class="btn_close"></a>
+            <p class="notice_title">라그나돌 사전예약을 위한<br/>개인 정보 수집 및 이용 동의​</p>
+            <div class="content_area scrollY">
+                <div class="notice_cont">
+                    <p><b>[사전예약을 위한 개인 정보 수집 및 이용 동의]</b></p>
+                    <p>사전예약 이벤트에 참여 신청할 때, ㈜웹젠(이하 “회사”)은 신청 접수 및 경품 제공 등에 필요한 정보를 수집합니다. 수집한 정보는 이벤트의 신청(혹은 응모)사실이나 당첨 조건의 달성 여부 확인을 위한 개인 식별, 이벤트 진행 및 업데이트의 안내에 이용합니다. 또, 당첨자를 대상으로 모바일 쿠폰 등의 경품을 즉시 발송하기 위해 이용합니다.</p>
+                    <ul class="type2">
+                        <li>이벤트 참여여부 확인 및 중복참여 제한 : (필수)핸드폰번호​</li>
+                        <li>이벤트의 진행을 위한 관련 일정 및 소식, 당첨 여부  수령 방법 등의 문자 안내 : (필수)핸드폰번호​</li>
+                        <li>모바일 쿠폰 등 상품의 제공 연락처 : (필수)핸드폰번호</li>
+                    </ul>
+                    <p><b>[개인정보 자동 수집 안내]</b></p>
+                    <ul>
+                        <li>
+                            <p>
+                                회사는 이벤트 참여여부, 신청 시간, 유입 경로, 방문 횟수 등을 분석하기 위하여, 웹 사이트에 접속하는 단말기 및 브라우저에 대한 정보를 자동수집 합니다. 
+                                수집하는 정보에 대한 내용 및 수집 거부 방법은 회사의 홈페이지
+                                (www.webzen.co.kr)내 개인정보 처리방침을 참조하여 주시기 바랍니다.
+                            </p>
+                        </li>
+                    </ul>
+                    <p><b>[개인정보 수집 거부 권리]</b></p>
+                    <ul>
+                        <li>
+                            <p>
+                                이용자는 개인정보의 수집 및 이용 동의를 거부할 권리가 있습니다. 사전예약 시 수집하는 최소한의 개인정보, 즉, 필수 항목에 대한 수집 및 이용 동의를 거부하실 경우, 이벤트참여 및 쿠폰 지급이 어려울 수 있습니다.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 약관 팝업 02 유의사항 -->
+    <div id="popup_reserve_02" class="popup_window popup_reserve">
+        <div class="notice_box">            
+            <a href="#" class="btn_close"></a>
+            <p class="notice_title">라그나돌 이벤트 안내를 위한<br/>광고성 정보 수신 동의​</p>
+            <div class="content_area scrollY">
+                <div class="notice_cont">
+                    <p><b>[유의사항]</b></p>
+                    <p>
+                        본 사항에 동의 하신 분은 라그나돌 사전예약 및 서비스를 위해 회사가 발송하는 광고성 정보를 수신할 수 있으며, 
+                        동봉되는 수신거부 안내방법에 따라 수신을 거부하실 수 있습니다.<br/>
+                        (단, 수신거부 시에는 SMS로 제공되는 쿠폰을 수령하실 수 없습니다.)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 약관 팝업 03 광고성정보 -->
+    <div id="popup_reserve_03" class="popup_window popup_reserve">
+        <div class="notice_box">
+            <a href="#" class="btn_close"></a>
+            <p class="notice_title">라그나돌 <br/>사전예약 유의사항</p>
+            <div class="content_area scrollY">                
+                <div class="notice_cont">
+                    <p>
+                        본 이벤트는 ㈜웹젠(이하 “회사”)이 출시 예정인 모바일게임 라그나돌(이하 “서비스”)의 정식 신청자 모집 및 정식 서비스 일정 안내를 목적으로 합니다.
+                        회사는 안내사항에 동의하신 분(이하 “참여자”)을 대상으로 서비스 및 이벤트에 관한 소식을 전달하고, 이벤트 당첨 조건
+                         달성에 따라 서비스 내에서 사용할 수 있는 쿠폰(이하 “쿠폰”)이나 현물 혹은 상품권, 모바일 기프티콘 등의 경품(이하 
+                        “경품”)을 제공합니다.
+                    </p>                    
+                    <p class="mt20"><b>[유의사항]</b></p>
+                    <ul class="type1">
+                        <li>서비스의 출시 여부 및 일정에 따라 쿠폰 및 경품의 지급일자가 변경되거나, 발급이 취소될 수 있습니다. (서비스의 출시가 취소되는 경우 본 이벤트는 자동 취소됩니다.)</li>
+                        <li>당사가 서비스를 제3자에게 양도하게 되는 경우, 양수인에게 본 이벤트의 참여자 정보가 제공될 수 있습니다. 영업양도 등으로 개인정보를 이전하게 되는 경우에는 30일 전에 안내 드리겠습니다.</li>
+                        <li>참여자는 본 이벤트의 게시일로부터 1년간 이벤트의 안내 및 취소, 경품의 수령 사실 및 오류 확인 등을 위한 문의를 할 수 있습니다. 이 때, 참여자의 본인확인 과정에서 개인정보가 수집될 수 있습니다.</li>
+                        <li>지급되는 쿠폰은 계정당 1회만 사용 가능하며, 이미 사용된 쿠폰은 재사용할 수 없습니다.</li>
+                        <li>사전예약 신청 완료 시 진행된 약관 동의에 따라 사전 테스트 안내를 위한 LMS 발송을 진행합니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 스토어 사전예약 혜택 팝업 -->
+    <div id="popup_benefit" class="popup_window">
+        <div class="benefit_box">
+            <a href="#" class="btn_close"></a>
+            <div class="image_box">
+                <img src="img/popup/benefit.png" alt="스토어 사전예약 혜택" />
+            </div>
+        </div>
+    </div>
+
+    <!-- 사전 다운로드 팝업 -->
+    <div id="popup_download" class="popup_window">
+        <div class="download_box">
+            <a href="#" class="btn_close"></a>
+            <div class="inner">
+                <img src="img/popup/download_title.png" alt="라그나돌 8월 23일 사전 다운로드 시작!" />
+                <div class="btn_box">
+                    <a href="#" title="사전등록하기 Google Play" class="btn_app google"><img src="img/reserve/btn_google.png" alt="사전등록하기 Google Play" /></a>
+                    <a href="#" title="App Stroe에서 사전 주문하기" class="btn_app apple"><img src="img/reserve/btn_apple.png" alt="App Stroe에서 사전 주문하기" /></a>
+                    <a href="#" title="사전예약하기 ONE store" class="btn_app onestore"><img src="img/reserve/btn_onestore.png" alt="사전예약하기 ONE store" /></a>
+                </div>
+                <img src="img/popup/download_text.png" alt="8월 24일 GRAND OPEN!!!" />
+            </div>
+            <p class="popup_checkbox">
+                <input type="checkbox" id="check1">
+                <label for="check1">오늘 하루 그만 보기</label>
+            </p>
+        </div>        
     </div>
 
     <div class="audio_wrap"></div>

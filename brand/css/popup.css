@@ -71,7 +71,7 @@
 .popup_reserve .notice_cont ul.type2 li{padding-left:15px}
 .popup_reserve .notice_cont ul.type2 li::before{position:absolute;top:0;left:5px;content: "-"}
 
-#popup_reserve_03 .notice_box{width:500px;height:338px;background-image:url("../img/popup/bg2.png")}
+#popup_reserve_02 .notice_box{width:500px;height:338px;background-image:url("../img/popup/bg2.png")}
 
 /* 스토어 사전예약 혜택 팝업 */
 #popup_benefit{display:none;position:fixed;left:0;top:0;bottom:0;right:0;overflow:hidden;overflow-y:auto;background:rgba(0,0,0,0.7);z-index:1000}
