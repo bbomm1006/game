@@ -2,11 +2,12 @@
 .cbt_wrap{}
 .cbt_wrap .content_cbtinfo{padding:100px 0;background:url('../img/cbt/bg_sect1.jpg') center no-repeat;background-size:cover}
 .cbt_wrap .title_box{display:block;text-align:center}
-.cbt_wrap .period{margin:20px 0;background:url('../img/cbt/bg_period_shadow.png') center no-repeat;color:#fff;line-height:64px;font-size:17px}
-.cbt_wrap .process_box{padding:49px 0 61px;background:url('../img/cbt/bg_sect1_list.png') center no-repeat;background-size:cover;max-width:1200px;margin:auto;text-align:center;box-shadow:2px 8px 25px #000}
-.cbt_wrap .process_box .list{margin:35px 0}
+.cbt_wrap .period{margin:20px 0;background:url('../img/cbt/bg_period_shadow.png') center no-repeat;background-size:contain;color:#fff;line-height:57px;font-size:17px}
+.cbt_wrap .process_box{background:url('../img/cbt/bg_sect1_list.png') center no-repeat;background-size:cover;max-width:1230px;margin:auto;text-align:center}
+.cbt_wrap .process_box > img{padding:45px 0 305px;}
+.cbt_wrap .process_box .btn_download{padding: 34px 0 81px}
 .cbt_wrap .process_box a{display:block;text-align:center}
-.cbt_wrap .notice p{padding-top:21px;color:#a6a8b3;text-align:center;font-size:16px;}
+.cbt_wrap .notice p{color:#a6a8b3;text-align:center;font-size:16px;}
 .cbt_wrap .content_cbtevent{background: url('../img/cbt/bg_sect2.jpg') center no-repeat;background-size:cover}
 .cbt_wrap .content_cbtevent .desc {padding-top:30px}
 .cbt_wrap .content_cbtevent .event_box .btn_event{margin:20px 8px}
@@ -18,5 +19,14 @@
 }
 
 @media screen and (max-width: 780px){
-    .cbt_wrap .process_box{background-image: url('../img/cbt/bg_sect1_list_m.png'); max-width: 647px; padding: 30px}
+    .cbt_wrap .process_box{background-image: url('../img/cbt/bg_sect1_list_m.png')}
+    .cbt_wrap .process_box > img{padding: 50px 0 324px}
+    .cbt_wrap .process_box .btn_download{padding: 40px 0 101px}
+}
+
+@media screen and (max-width: 500px){
+    .cbt_wrap .period {line-height: 43px;font-size: 13px}
+    .cbt_wrap .process_box > img{padding:26px 0 155px;width:50%}
+    .cbt_wrap .process_box .btn_download{padding:48px 0 50px}
+    .cbt_wrap .process_box .btn_download img {width: 55%;}
 }
