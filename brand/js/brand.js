@@ -73,7 +73,8 @@ $(function() {
     $("#fixed_menu .btn_menu, #header_menu .menu_list .btn_menu").on("click", function() {
         var getIdx = $(this).data("tab");
         var getPosTop = $(".content_wrap[data-tab='" + getIdx + "']").position().top;
-        var posMargin = $("#header .header_menu .btn_mobile").is(":visible") ? 74 : 89;
+        // var posMargin = $("#header .header_menu .btn_mobile").is(":visible") ? 74 : 89;
+        var posMargin = $("#header .header_menu .btn_mobile").is(":visible") ? 74 : 0;
         getPosTop -= posMargin;
         $("html,body").stop(true,true).animate({ scrollTop:getPosTop }, fixedMenuScroll ? 300 : 10, function() {
             $("body").removeClass("popup");
@@ -407,7 +408,7 @@ $(function() {
                 autoplay: false,
                 loop: false,
                 delay: 4000,
-                spaceBetween: 15,
+                spaceBetween: 12,
                 slidesPerView: 3.35,
                 slidesOffsetBefore: 30,
                 slidesOffsetAfter: 30,

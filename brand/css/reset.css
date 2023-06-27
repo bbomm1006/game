@@ -48,6 +48,8 @@ body,div,dl,dt,dd,ul,ol,menu,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textar
 .mobilescrolling{-webkit-overflow-scrolling:touch}
 .selectdisable{-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:-moz-none;-o-user-select:none;user-select:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-moz-tap-highlight-color:rgba(0, 0, 0, 0);-o-tap-highlight-color:rgba(0, 0, 0, 0);tap-highlight-color:rgba(0, 0, 0, 0);}
 
+a,button {-webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent}
+
 .bold{font-weight:700!important}
 .medium{font-weight:500!important}
 .reqular{font-weight:400!important}
