@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <title></title>
+    <title>라그나돌</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.7, minimum-scale=0.7, maximum-scale=1.4, user-scalable=yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -109,8 +109,8 @@
                     </a>
                 </div>
                 <div class="btn_bottom animate">
-                    <a href="#" title="사전예약하기" class="btn_reserve"><img src="img/main/btn_reserve.png" alt="" class="icon"></a>
-                    <a href="./cbt.html" title="CBT참여하기" class="btn_cbt"><img src="img/main/btn_cbt.png" alt="" class="icon"></a>
+                    <a href="#" title="사전예약하기" class="btn_reserve"><img src="img/main/btn_reserve.png" alt="사전예약하기" class="icon"></a>
+                    <a href="./cbt.html" title="CBT참여하기" class="btn_cbt"><img src="img/main/btn_cbt.png" alt="CBT참여하기" class="icon"></a>
                 </div>
             </div>
 
@@ -127,7 +127,9 @@
                         <img src="img/main/twitter_text.png" alt="@라그나돌님의 트윗" class="text">
                     </div>
                     <div class="btn_box">
-                        <a href="https://twitter.com/Ragnador_kr" target="_blank" title="트위터 바로가기" class="btn_twitter"></a>
+                        <a href="https://twitter.com/Ragnador_kr" target="_blank" title="트위터 바로가기" class="btn_twitter">
+                            <img src="img/main/btn_twitter_close.png" alt="라그나돌님의 최신 트윗" class="mobile">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -209,7 +211,7 @@
                             <div class="reserve_form complete">
                                 <p class="complete_text">010-****-1234님, <br />라그나돌 사전예약이 완료 되었습니다.​</p>
                                 <p class="agree_text">[동의 안내] 0000년 00월 00일에 ​<br />이벤트 등 프로모션 알림 수신에 동의하셨습니다.​</p>
-                                <a href="#" title="사전예약 이벤트" class="btn_event"><img src="img/reserve/btn_event.png" alt="" class="icon"></a>
+                                <a href="#" title="사전예약 이벤트" id="btn_reserve_benefit" class="btn_event"><img src="img/reserve/btn_complete.png" alt="" class="icon"></a>
                                 <div class="community_box">
                                     <p class="community_text">공식 커뮤니티에 가입하면, <br />다양한 사전예약 이벤트를 참여할 수 있습니다.​</p>
                                     <p>※ 이벤트에 대한 상세 내용은 공식 커뮤니티 내 공지를 확인해 주세요.​</p>
@@ -233,7 +235,9 @@
                             <a href="#" title="App Stroe에서 사전 주문하기" class="btn_app apple"></a>
                             <a href="#" title="사전예약하기 ONE store" class="btn_app onestore"></a>
                         </div>
-                        <a href="#" title="스토어 사전등록 혜택 확인하기" class="btn_benefit"><span class="icon"></span></a>
+                        <a href="#" title="스토어 사전등록 혜택 확인하기" class="btn_benefit">
+                            <img src="img/reserve/btn_benefit.png" alt="">
+                        </a>
                     </div>
 
                     <div class="emot_box">
@@ -241,7 +245,9 @@
                             <img src="img/reserve/emot.png" alt="카카오 사전예약 안내" class="text pc">
                             <img src="img/reserve/emot_m.png" alt="카카오 사전예약 안내" class="text mobile">
                         </div>
-                        <a href="#" title="카카오 사전예약 신청하기" class="btn_benefit"><span class="icon"></span></a>
+                        <a href="#" title="카카오 사전예약 신청하기" class="btn_benefit">
+                            <img src="img/reserve/btn_emot.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div><!-- //예약 끝 -->
@@ -319,7 +325,7 @@
                                             <img src="char/data/yasha/nurikabe_title.png" alt="누리카베" class="title pc">
                                             <img src="char/data/yasha/nurikabe_title_m.png" alt="누리카베" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>「당신을 반드시 지키기로 했어!」<br />
                                                 타키야샤히메의 시중 담당 누리카베 일족에서 태어나 자랐다.<br />
                                                 부모를 일찍 여의고 조부모님의 손에 오냐오냐 자랐다.<br />
@@ -329,16 +335,10 @@
                                                 요리도 잘하고 씩씩하고 배려심 넘치고<br />
                                                 안 보이는 곳에서 늘 노력하는 그녀는 없어서는 안 될 존재
                                             </p>
-                                            <br />
                                             <p>좌우의 「돌벽」은 자유롭게 꺼내고 넣을 수 있다</p>
                                             <p>익숙하지 않은 탓인지 돌벽이 너무 무거워 균형을 잃고 넘어지기도 한다</p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>「당신을 반드시 지키기로 했어!」<br />
-                                                타키야샤히메의 시중 담당 누리카베 일족에서 태어나 자랐다.<br />
-                                                부모를 일찍 여의고 조부모님의 손에 오냐오냐 자랐다.<br />
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/yasha/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -362,7 +362,7 @@
                                             <img src="char/data/yasha/izuna_title.png" alt="이즈나" class="title pc">
                                             <img src="char/data/yasha/izuna_title_m.png" alt="이즈나" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 「목숨 바쳐 지켜 드리겠어요!」<br />
                                                 타키야샤히메 저택의 수호자이자 동시에 공격의 중심이기도 하다.<br />
@@ -375,14 +375,7 @@
                                                 함께하는 쿠다가 주의하는 것으로 보완하고 있다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                「목숨 바쳐 지켜 드리겠어요!」<br />
-                                                타키야샤히메 저택의 수호자이자 동시에 공격의 중심이기도 하다.<br />
-                                                본인의 키만한 태도를 뜻대로 휘두르는 힘<br />
-                                                그리고 재빠른 몸놀림으로 적에게 접근하는 전투력은 아주 빼어나다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" title="관계도" class="btn_relation"></a>
                                     </div>
 
@@ -406,7 +399,7 @@
                                             <img src="char/data/yasha/konakijii_title.png" alt="코나키지지" class="title pc">
                                             <img src="char/data/yasha/konakijii_title_m.png" alt="코나키지지" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 「자─알 들어라! 내 이름은 우는 아이도 입을 다무는 코나키지지」<br />
                                                 사카이국에서 자랐지만 사정이 있어 <br />
@@ -421,13 +414,7 @@
                                                 결과적으로(주로 놋페라보에게) 놀림당하기를 반복
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                「자─알 들어라! 내 이름은 우는 아이도 입을 다무는 코나키지지」<br />
-                                                사카이국에서 자랐지만 사정이 있어 <br />
-                                                타키야샤히메의 힘을 꼭 빌려야 해 야샤국에 왔다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" title="관계도" class="btn_relation"></a>
                                     </div>
 
@@ -451,7 +438,7 @@
                                             <img src="char/data/yasha/nopperabou_title.png" alt="놋페라보" class="title pc">
                                             <img src="char/data/yasha/nopperabou_title_m.png" alt="놋페라보" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 「흐흥. 당신, 내 장난의 제자가 되지 않을래?」<br/>
                                                 타키야샤히메의 제일가는 신하(자칭)<br/>
@@ -464,13 +451,7 @@
                                                 코나키지지는 금방 울기 때문에 가장 장난을 많이 치는 대상이다
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                「흐흥. 당신, 내 장난의 제자가 되지 않을래?」<br/>
-                                                타키야샤히메의 제일가는 신하(자칭)<br/>
-                                                주로 정보 수집과 수색 등 닌자로서 암약하고 있다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" title="관계도" class="btn_relation"></a>
                                     </div>
 
@@ -494,22 +475,15 @@
                                             <img src="char/data/yasha/kurda_title.png" alt="쿠다" class="title pc">
                                             <img src="char/data/yasha/kurda_title_m.png" alt="쿠다" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
-                                                ‘어이 이즈나 조금은 진정하라고, 보고있는 내가 다 어지럽네‘<br/><br/>
-                                                쿠다는 이즈나의 보조자이면서 감시자역할이기도 하다.<br/><br/>
-                                                이즈나가 사카이국에 갈 때 텐코로부터 명을 받고<br/><br/>
+                                                ‘어이 이즈나 조금은 진정하라고, 보고있는 내가 다 어지럽네‘<br/>
+                                                쿠다는 이즈나의 보조자이면서 감시자역할이기도 하다.<br/>
+                                                이즈나가 사카이국에 갈 때 텐코로부터 명을 받고<br/>
                                                 그 이후로 행동을 함께하고 있다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                ‘어이 이즈나 조금은 진정하라고, 보고있는 내가 다 어지럽네‘<br/><br/>
-                                                쿠다는 이즈나의 보조자이면서 감시자역할이기도 하다.<br/><br/>
-                                                이즈나가 사카이국에 갈 때 텐코로부터 명을 받고 <br/><br/>
-                                                그 이후로 행동을 함께하고 있다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" title="관계도" class="btn_relation"></a>
                                     </div>
 
@@ -533,7 +507,7 @@
                                             <img src="char/data/yasha/takiyashahime_title.png" alt="타키야샤히메" class="title pc">
                                             <img src="char/data/yasha/takiyashahime_title_m.png" alt="타키야샤히메" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 「마침 잘 왔어! 흐흥, 좀 재밌는 생각이 떠올랐거든」<br/>
                                                 즐거운 것을 아주 좋아하고 호기심이 왕성하다.<br/>
@@ -549,16 +523,7 @@
                                                 무력한 자신에 대한 후회가 지금도 가시지 않는다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                「마침 잘 왔어! 흐흥, 좀 재밌는 생각이 떠올랐거든」<br/>
-                                                즐거운 것을 아주 좋아하고 호기심이 왕성하다.<br/>
-                                                정무는 시시하다고 하면서 신하의 눈을 피해 변장하고 거리에 나간다.<br/>
-                                                「이 몸이 어떻게든 해 주마!♪」그러면서 온갖 문제를 해결하고 다닌다.<br/>
-                                                두려워하고 경배하기보다는 사모하고 의지하게 되는 사람이다.<br/>
-                                                그리고 남들의 애를 먹인다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" title="관계도" class="btn_relation"></a>
                                     </div>
 
@@ -582,7 +547,7 @@
                                             <img src="char/data/yasha/zashikiwarashi_title.png" alt="자시키와라시" class="title pc">
                                             <img src="char/data/yasha/zashikiwarashi_title_m.png" alt="자시키와라시" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 ‘살이 있다는 것 만으로도 훌륭해’<br />
                                                 자시키와라시가 살았던 집에는 행운이 찾아온다는 그런 정설이 있다.<br />
@@ -601,16 +566,7 @@
                                                 명목상 운가이쿄의 돌보미 역할이지만 곁에서 보기엔 아무것도 안하고 있다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                ‘살이 있다는 것 만으로도 훌륭해’<br />
-                                                자시키와라시가 살았던 집에는 행운이 찾아온다는 그런 정설이 있다.<br />
-                                                실제로 그 정설은 사실과는 조금 다른데,<br />
-                                                자시키와라시의 능력에 의해 자동적으로 행운이 찾아오는 게 아니라<br />
-                                                자시키와라시를 살게 해준 사람들에게<br/> 
-                                                뒤에서 몰래 자력으로 은혜를 갚고 있는 것 뿐이다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" title="관계도" class="btn_relation"></a>
                                     </div>
 
@@ -634,10 +590,10 @@
                                             <img src="char/data/yasha/ungaikyo_title.png" alt="운가이쿄" class="title pc">
                                             <img src="char/data/yasha/ungaikyo_title_m.png" alt="운가이쿄" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 ‘너무 칭찬하는걸~♡ 누나가 다 해주고 싶어지잖아 ♡’<br />
-                                                야샤국의 요괴들 중 실은 제법 고참이며 타키야사히메와도 오래 알고 지낸 사이<br />
+                                                야샤국의 요괴들 중 실은 제법 고참이며<br />타키야사히메와도 오래 알고 지낸 사이<br />
                                                 때문에 타키야샤히메의 과거도 어느정도 파악하고 있으며<br />
                                                 그녀의 저택에 사는 대신 자신의 능력을 빌려주고 있다.
                                             </p>
@@ -652,15 +608,7 @@
                                                 평소에는 밝은 누나지만 그러한 점들이 약간 모자라게 느껴진다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                ‘너무 칭찬하는걸~♡ 누나가 다 해주고 싶어지잖아 ♡’<br />
-                                                야샤국의 요괴들 중 실은 제법 고참이며<br/>
-                                                타키야사히메와도 오래 알고 지낸 사이<br />
-                                                때문에 타키야샤히메의 과거도 어느정도 파악하고 있으며<br />
-                                                그녀의 저택에 사는 대신 자신의 능력을 빌려주고 있다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" title="관계도" class="btn_relation"></a>
                                     </div>
 
@@ -684,7 +632,7 @@
                                             <img src="char/data/yasha/azukiarai_title.png" alt="아즈키아라이" class="title pc">
                                             <img src="char/data/yasha/azukiarai_title_m.png" alt="아즈키아라이" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 "맛있어~! 내 팥 한번 먹어 봐!"<br />
                                                 맛있는 팥을 많은 사람에게 먹여 주고 기쁘게 해 주는 것이 삶의 보람이며<br />
@@ -696,13 +644,7 @@
                                                 팥 카레를 개발하여 자시키와라시와 쿠라봇코에게 억지로 시식을 시킨다고 한다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                "맛있어~! 내 팥 한번 먹어 봐!"<br />
-                                                맛있는 팥을 많은 사람에게 먹여 주고 기쁘게 해 주는 것이 삶의 보람이며<br />
-                                                팥을 맛있게 먹는 법을 매일 추구하고 있다.<br />
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" title="관계도" class="btn_relation"></a>
                                     </div>
 
@@ -726,7 +668,7 @@
                                             <img src="char/data/yasha/kurabokko_title.png" alt="쿠라봇코" class="title pc">
                                             <img src="char/data/yasha/kurabokko_title_m.png" alt="쿠라봇코" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 "있잖아, 있잖아. 내 컬렉션에 대해서 얘기해도 돼~?"<br />
                                                 소극적이고 부끄러움이 많다.<br />
@@ -740,14 +682,7 @@
                                                 자시키와라시, 아즈키아라이와 친하다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                "있잖아, 있잖아. 내 컬렉션에 대해서 얘기해도 돼~?"<br />
-                                                소극적이고 부끄러움이 많다.<br />
-                                                잡동사니로만 보이는 특이한 '보물'을 모으는 게 취미이며<br />
-                                                보물 얘기만 나오면 달변이 된다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" title="관계도" class="btn_relation"></a>
                                     </div>
 
@@ -804,7 +739,7 @@
                                             <img src="char/data/sangoku/jami_title.png" alt="쟈미" class="title pc">
                                             <img src="char/data/sangoku/jami_title_m.png" alt="쟈미" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 「자, 가자, 마미. 나한테서 떨어지지 말렴」<br/>
                                                 동생 마미와 함께 산가쿠국의 실질적 지배자로서 군림한다<br/><br/>
@@ -821,14 +756,7 @@
                                                 그게 산가쿠국일 필요는 없다고도 생각한다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                「자, 가자, 마미. 나한테서 떨어지지 말렴」<br/>
-                                                동생 마미와 함께 산가쿠국의 실질적 지배자로서 군림한다<br/><br/>
-                                                비할 데 없이 강력한 주술을 사용하며<br/>
-                                                사용만 했다 하면 적 대부분은 쉽게 전멸시킬 수 있다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/sangoku/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -852,7 +780,7 @@
                                             <img src="char/data/sangoku/mami_title.png" alt="마미" class="title pc">
                                             <img src="char/data/sangoku/mami_title_m.png" alt="마미" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 「방해하는 녀석은 없앨 거야, 한 마리도 남김 없이」<br />
                                                 언니인 쟈미와 함께 산가쿠국의 실질적 지배자로서 군림한다<br />
@@ -867,16 +795,7 @@
                                                 압도적인 광기와 잔인함으로 대항한다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                「방해하는 녀석은 없앨 거야, 한 마리도 남김 없이」<br />
-                                                언니인 쟈미와 함께 산가쿠국의 실질적 지배자로서 군림한다<br />
-                                                <br />
-                                                단, 마미는 보좌 역의 인상이 강하다<br />
-                                                <br />
-                                                언니와 함께 영겁을 살아가는 것이 그녀의 바람이다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/sangoku/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -900,7 +819,7 @@
                                             <img src="char/data/sangoku/satori_title.png" alt="사토리" class="title pc">
                                             <img src="char/data/sangoku/satori_title_m.png" alt="사토리" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 "마음을 읽어 봤자 좋은 일은 없어…"<br />
                                                 산속에 숨어 살며 죽은 듯이 지내고 있다.
@@ -915,16 +834,7 @@
                                                 강한 자가 힘으로 능력을 사용하게 할까 두려워한다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                "마음을 읽어 봤자 좋은 일은 없어…"<br />
-                                                산속에 숨어 살며 죽은 듯이 지내고 있다.
-                                                <br />
-                                                요주인 쟈미와 마미를 비롯해<br />
-                                                사토리의 능력과 거처를 아는 사람은 몇 명 존재하지만<br />
-                                                사토리가 적극적인 관계를 거절하기 때문에 교류는 최소한에 그치고 있다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/sangoku/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -948,7 +858,7 @@
                                             <img src="char/data/sangoku/amanojaku_title.png" alt="아마노쟈쿠" class="title pc">
                                             <img src="char/data/sangoku/amanojaku_title_m.png" alt="아마노쟈쿠" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 "나를 믿을지 말지는 네게 달렸어!"<br />
                                                 생각한 것과 반대로 말하는 비뚤어진 사람, 산가쿠국에서 제멋대로 살고 있다.<br />
@@ -962,15 +872,7 @@
                                                 악행을 저지른 끝에 추격자에게 쫓기며 도망 다닐 때도 많다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                "나를 믿을지 말지는 네게 달렸어!"<br />
-                                                생각한 것과 반대로 말하는 비뚤어진 사람, 산가쿠국에서 제멋대로 살고 있다.<br />
-                                                <br />
-                                                일단 산속에 스러져 가는 집이 있기는 한데<br />
-                                                휘적휘적 온 나라를 떠돌기 때문에 부재중일 때가 많다.
-                                            </p>                                          
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/sangoku/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -994,7 +896,7 @@
                                             <img src="char/data/sangoku/hihi_title.png" alt="히히" class="title pc">
                                             <img src="char/data/sangoku/hihi_title_m.png" alt="히히" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 "잘 왔다, 형제여! 오늘도 이 몸과 일대일로 승부를 겨뤄 보자!"<br />
                                                 실질적으로는 쟈미와 마미의 부하<br />
@@ -1010,14 +912,7 @@
                                                 히히 본인은 자신이 두 사람의 부하 외의 무엇도 아니라는 걸 아직도 눈치채지 못했다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                "잘 왔다, 형제여! 오늘도 이 몸과 일대일로 승부를 겨뤄 보자!"<br />
-                                                실질적으로는 쟈미와 마미의 부하<br />
-                                                쟈미와 마미에게 2대1로 흠씬 두들겨 맞은 뒤<br />
-                                                결과적으로 두 사람의 부하로 일하기로 됐다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/sangoku/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1067,7 +962,7 @@
                                             <img src="char/data/oiran/kureha_title.png" alt="쿠레하" class="title pc">
                                             <img src="char/data/oiran/kureha_title_m.png" alt="쿠레하" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 "꽃이 나올지 오니가 나올지, 이 쿠레하와 놀아 보시지요"<br />
                                                 제6 천마왕의 피를 이은 여자 오니 어머니를 일찍 여의고<br />
@@ -1081,13 +976,7 @@
                                                 남자도 여자도 가리지 않고 반한 상대에겐 충실히 하고 싶다는 마음이 있다
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                "꽃이 나올지 오니가 나올지, 이 쿠레하와 놀아 보시지요"<br />
-                                                제6 천마왕의 피를 이은 여자 오니 어머니를 일찍 여의고<br />
-                                                철이 들었을 때는 고아나 다름없었기 때문에 쿠레하 본인은 자신의 출생을 모른다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/oiran/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1111,7 +1000,7 @@
                                             <img src="char/data/oiran/kejourou_title.png" alt="케조로" class="title pc">
                                             <img src="char/data/oiran/kejourou_title_m.png" alt="케조로" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 "우후후♪ 여자의 머리카락엔 요기가 깃든답니다… 만져 보실래요?"<br />
                                                 쿠레하를 보필하는 자로서 늘 곁에 함께 있다.
@@ -1124,12 +1013,7 @@
                                                 두 언니를 잘 따르는 세 자매의 막내
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                "우후후♪ 여자의 머리카락엔 요기가 깃든답니다… 만져 보실래요?"<br />
-                                                쿠레하를 보필하는 자로서 늘 곁에 함께 있다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/oiran/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1153,7 +1037,7 @@
                                             <img src="char/data/oiran/jorougumo_title.png" alt="조로구모" class="title pc">
                                             <img src="char/data/oiran/jorougumo_title_m.png" alt="조로구모" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 "즐거워 보이네♪ 나도 좀 신경 써 줘♪"<br />
                                                 쿠레하의 언니, 오이란 겸 쿠노이치 자유분방하게 행동하지만 임무에는 충실하다.
@@ -1169,12 +1053,7 @@
                                                 이게 발동하면 다른 것이 눈에 들어오지 않게 된다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                "즐거워 보이네♪ 나도 좀 신경 써 줘♪"<br />
-                                                쿠레하의 언니, 오이란 겸 쿠노이치 자유분방하게 행동하지만 임무에는 충실하다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/oiran/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1198,7 +1077,7 @@
                                             <img src="char/data/oiran/akaname_title.png" alt="아카나메" class="title pc">
                                             <img src="char/data/oiran/akaname_title_m.png" alt="아카나메" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>"하아, 하아… 왠지 근사한 분위기가~"<br />
                                                 오이란국에 있는 종업원, 주로 청소를 하는 말단 직원<br />
                                                 밝고 태연한 성격에 히노키탕의 청소를 더없이 사랑한다.<br />
@@ -1213,12 +1092,7 @@
                                                 그런 세신을 상상하면 흥분을 감출 수 없게 된다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>"하아, 하아… 왠지 근사한 분위기가~"<br />
-                                                오이란국에 있는 종업원, 주로 청소를 하는 말단 직원<br />
-                                                밝고 태연한 성격에 히노키탕의 청소를 더없이 사랑한다.<br />
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/oiran/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1242,7 +1116,7 @@
                                             <img src="char/data/oiran/makuragaeshi_title.png" alt="마쿠라가에시" class="title pc">
                                             <img src="char/data/oiran/makuragaeshi_title_m.png" alt="마쿠라가에시" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>"아직은 NO! 입니다"<br />
                                                 오이란국에 있는 종업원, 주로 침소의 청소와 정리정돈을 하는 말단 직원<br />
                                                 <br />
@@ -1257,12 +1131,7 @@
                                                 손에 든 'Yes No 베개'로 대답한다. 의무라고 생각한다
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                "아직은 NO! 입니다"<br />
-                                                오이란국에 있는 종업원, 주로 침소의 청소와 정리정돈을 하는 말단 직원
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/oiran/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1286,7 +1155,7 @@
                                             <img src="char/data/oiran/sazaeoni_title.png" alt="사자에오니" class="title pc">
                                             <img src="char/data/oiran/sazaeoni_title_m.png" alt="사자에오니" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>"오늘 밤의 제안은 받아들여 줄 거지?"<br />
                                                 오이란국에 온 손님을 안내하는 사람<br />
                                                 안목이 뛰어난 덕에 안내하는 중에 손님이 어떤 성격인지 파악해<br />
@@ -1299,14 +1168,7 @@
                                             <br />
                                             <p>마쿠라가에시도, 아카나메도 동생 같은 존재로 여긴다</p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                "오늘 밤의 제안은 받아들여 줄 거지?"<br />
-                                                오이란국에 온 손님을 안내하는 사람<br />
-                                                안목이 뛰어난 덕에 안내하는 중에 손님이 어떤 성격인지 파악해<br />
-                                                오이란에게 정보를 넘기는 역할을 맡고 있다.<br />
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/oiran/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1358,7 +1220,7 @@
                                             <img src="char/data/sakai/inugamigyoubu_title.png" alt="이누가미교부" class="title pc">
                                             <img src="char/data/sakai/inugamigyoubu_title_m.png" alt="이누가미교부" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 "후우, 나랑 한잔하고 갈래? 대환영이야♪"<br />
                                                 사카이국의 바깥세상을 통솔하는 정식 요주<br />
@@ -1373,13 +1235,7 @@
                                                 나라에 새로 들어온 요괴를 찾아가기도 하는 등 바쁜 나날을 보내고 있다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                "후우, 나랑 한잔하고 갈래? 대환영이야♪"<br />
-                                                사카이국의 바깥세상을 통솔하는 정식 요주<br />
-                                                가벼워 보이는 망나니로 보이지만 깊이를 알 수 없는 실력을 갖추었다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/sakai/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1403,7 +1259,7 @@
                                             <img src="char/data/sakai/tesso_title.png" alt="텟소" class="title pc">
                                             <img src="char/data/sakai/tesso_title_m.png" alt="텟소" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 "이런 이런, 놀래지 마세요. 실수로 죽여 버릴 뻔했거든요"<br />
                                                 이누가미교부의부하. 네코마타에 비견되는 간부
@@ -1416,14 +1272,7 @@
                                                 슈노본과는 항상 의견이 맞지 않아 서로 반발한다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                "이런 이런, 놀래지 마세요. 실수로 죽여 버릴 뻔했거든요"<br />
-                                                이누가미교부의부하. 네코마타에 비견되는 간부<br />
-                                                힘으로 해결하려는 슈노본과는 다르게 지혜를 사용하는 타입<br />
-                                                뒤에서는 도리에 어긋나는 짓도 한다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/sakai/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1447,7 +1296,7 @@
                                             <img src="char/data/sakai/nekomata_title.png" alt="네코마타" class="title pc">
                                             <img src="char/data/sakai/nekomata_title_m.png" alt="네코마타" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>「냥냥냥! 왠지 돈벌이 냄새가 난다냥~♪」<br />
                                                 이누가미교부의 부하. 텟소에게 필적하는 간부
                                             </p>
@@ -1465,15 +1314,7 @@
                                                 그녀가 늘 웃는 것은 실은 신기한 일이 아니었다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>「냥냥냥! 왠지 돈벌이 냄새가 난다냥~♪」<br />
-                                                이누가미교부의 부하. 텟소에게 필적하는 간부<br />
-                                                네코마타의 목적은<br />
-                                                사카이국을 더 발전시키는 것과<br />
-                                                미소와 돈이 마구 넘치는 나라를 만드는 것이다.<br />
-                                                늘 웃는 얼굴이며 제 약점을 내비치지 않는다.<br />
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/sakai/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1497,7 +1338,7 @@
                                             <img src="char/data/sakai/ittanmomen_title.png" alt="잇탄모멘" class="title pc">
                                             <img src="char/data/sakai/ittanmomen_title_m.png" alt="잇탄모멘" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 「와─! 잘 왔어!」<br />
                                                 사카이국에서 포목점을 운영하고 있다.<br />
@@ -1517,17 +1358,7 @@
                                                 쉬는 날엔 네코마타와 함께 달콤한 디저트를 파는 곳에 자주 간다
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                「와─! 잘 왔어!」<br />
-                                                사카이국에서 포목점을 운영하고 있다.<br />
-                                                환요계 유일의 패션 디자이너<br />
-                                                네코마타 밑에서 일하는 거나 다름없는 위치지만<br />
-                                                두 사람은 절친이지 주종 관계가 아니다<br />
-                                                굳이 따지자면 협력 관계이며 성격이 다른 부분도 있지만<br />
-                                                서로를 잘 돕고 있는 듯하다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/sakai/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1551,7 +1382,7 @@
                                             <img src="char/data/sakai/nurarihyon_title.png" alt="누라리횬" class="title pc">
                                             <img src="char/data/sakai/nurarihyon_title_m.png" alt="누라리횬" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 「자, 백귀야행에 나서 볼까」<br />
                                                 사카이국의 무력을 통솔하는 숨겨진 우두머리이며<br />
@@ -1570,13 +1401,7 @@
                                                 가족은 꼭 지키기로 했다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                「자, 백귀야행에 나서 볼까」<br />
-                                                사카이국의 무력을 통솔하는 숨겨진 우두머리이며<br />
-                                                천 년 전에 백귀야행을 이끈 8대 요제 중 한 명
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/sakai/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1600,7 +1425,7 @@
                                             <img src="char/data/sakai/shunobon_title.png" alt="슈노본" class="title pc">
                                             <img src="char/data/sakai/shunobon_title_m.png" alt="슈노본" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 「네놈도 붉은 색으로 물들여 줄까?」<br />
                                                 뒷세계의 우두머리인 대요제 누라리횬의 측근<br />
@@ -1614,13 +1439,7 @@
                                                 하지만 텟소를 흠씬 두들겨 패 주고 싶단 생각도 한다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                「네놈도 붉은 색으로 물들여 줄까?」<br />
-                                                뒷세계의 우두머리인 대요제 누라리횬의 측근<br />
-                                                차기 두목이자 오른팔
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/sakai/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1644,7 +1463,7 @@
                                             <img src="char/data/sakai/enenra_title.png" alt="엔라엔라" class="title pc">
                                             <img src="char/data/sakai/enenra_title_m.png" alt="엔라엔라" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 「후후, 빨아들이면 안 돼」<br />
                                                 뒷세계의 우두머리인 누라리횬의 부하<br />
@@ -1658,13 +1477,7 @@
                                                 술과 연초를 좋아하는 그녀는 주점 등지에서 취한 듯 보여도 청각을 곤두세우고 있다
                                             </p>                                            
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                「후후, 빨아들이면 안 돼」<br />
-                                                뒷세계의 우두머리인 누라리횬의 부하<br />
-                                                누라리횬의 연초에서 뿜어져 나온 연기 속에서 태어났다고 한다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/sakai/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1688,7 +1501,7 @@
                                             <img src="char/data/sakai/ippondatara_title.png" alt="잇폰다타라" class="title pc">
                                             <img src="char/data/sakai/ippondatara_title_m.png" alt="잇폰다타라" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 "이야~호☆ 나 오늘 완전 멋있지 않아?"<br />
                                                 실력은 확실하다. <br />
@@ -1704,16 +1517,7 @@
                                                 자신의 어깨를 터치하거나 하면 놀라서 펄쩍 뛴다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                "이야~호☆ 나 오늘 완전 멋있지 않아?"<br />
-                                                실력은 확실하다. <br />
-                                                누라리횬과 이누가미교부가 보증했다.<br />
-                                                사카이국 전역에서 대장간을 하고 있으며<br />
-                                                바깥세상과 뒷세계 양쪽에 연줄이 있는 특이한 요괴<br />
-                                                사소한 것엔 신경 쓰지 않고 "큰일 났네~☆" 하고 웃으며 넘겨 버린다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/sakai/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1768,7 +1572,7 @@
                                             <img src="char/data/oni/shutendouji_title.png" alt="슈텐도지" class="title pc">
                                             <img src="char/data/oni/shutendouji_title_m.png" alt="슈텐도지" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 「봐주지 않겠다, 그것이 격식이다!」<br />
                                                 오니국의 요주이자 제일 강한 존재<br />
@@ -1785,15 +1589,7 @@
                                             <br />
                                             <p>천 년 전의 전투에서는 오니 군을 이끌었다.</p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>「봐주지 않겠다, 그것이 격식이다!」<br />
-                                                오니국의 요주이자 제일 강한 존재<br />
-                                                혈기왕성하고 지능이 부족한 오니들을 통솔한다.<br /><br />
-                                                「의견은 자유롭게 말해라. 다만 정하는 건 나다<br />
-                                                내 결정에 불만이 있다면 덤벼라<br />
-                                                이기면 네놈이 법(룰)이 된다」 이런 말버릇이 있다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/oni/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1817,7 +1613,7 @@
                                             <img src="char/data/oni/kidoumaru_title.png" alt="키도마루" class="title pc">
                                             <img src="char/data/oni/kidoumaru_title_m.png" alt="키도마루" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>「오니의 피를 이어받아 태어난 이상. 내 모자란 힘을 한탄하게 되는군. 무심코 말이야」<br />
                                                 오니와 인간 사이에서 태어난 반요<br />
                                                 능력은 있지만 자신감이 생기지 않는 소년<br /><br />
@@ -1833,14 +1629,7 @@
                                                 자기 자신을 「오니로서 약하다」고 생각하고 있다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>「오니의 피를 이어받아 태어난 이상.<br />내 모자란 힘을 한탄하게 되는군.무심코 말이야」<br />
-                                                오니와 인간 사이에서 태어난 반요<br />
-                                                능력은 있지만 자신감이 생기지 않는 소년<br /><br />
-                                                제일 강한 존재인 아버지 슈텐도지의 실력을 따라잡고자<br />
-                                                밤낮을 가리지 않고 노력 중이다
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/oni/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1864,7 +1653,7 @@
                                             <img src="char/data/oni/ibarakidouji_title.png" alt="이바라키도지" class="title pc">
                                             <img src="char/data/oni/ibarakidouji_title_m.png" alt="이바라키도지" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 「슈텐도지 님께 접근하는 자는 내가 용서하지 않는다!」<br />
                                                 오니국의 No.2이자 슈텐도지의 오른팔<br /><br />
@@ -1880,17 +1669,7 @@
                                                 슈텐도지 님도 나를 칭찬해 주실 거라고 늘 생각한다
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                「슈텐도지 님께 접근하는 자는 내가 용서하지 않는다!」<br />
-                                                오니국의 No.2이자 슈텐도지의 오른팔<br />
-                                                옛날 옛날, 자신을 이길 수 있는 자가 아무도 없어<br />
-                                                이바라키도지는 모르는 사이에 거만해지고 말았다<br />
-                                                그러던 중, 저보다도 강한 오니가 있다는 소문을 듣고<br />
-                                                슈텐도지에게 도전했는데 너무나 손쉽게 꺾여 버렸다<br /><br />
-                                                그때, 슈텐도지의 압도적인 힘에 절망보다는 경애를 느꼈다
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/oni/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -1914,7 +1693,7 @@
                                             <img src="char/data/oni/suzukagozen_title.png" alt="스즈카고젠" class="title pc">
                                             <img src="char/data/oni/suzukagozen_title_m.png" alt="스즈카고젠" class="title mobile">
                                         </div>
-                                        <div class="text_box animate scrollY pc">
+                                        <div class="text_box animate scrollY">
                                             <p>
                                                 "키도마루, 아직 더 강해질 수 있습니다. 저도, 당신도요" <br />
                                                 오니로서는 드물게 몸짓이나 행동에 기품이 있다<br />
@@ -1932,15 +1711,7 @@
                                                 그래서 더욱 자신과 닮은 키도마루에게 공감하며 훈련을 도와주고 있다.
                                             </p>
                                         </div>
-                                        <div class="text_box animate scrollY mobile">
-                                            <p>
-                                                "키도마루, 아직 더 강해질 수 있습니다. 저도, 당신도요" <br />
-                                                오니로서는 드물게 몸짓이나 행동에 기품이 있다<br />
-                                                태연한 성격으로 제대로 된 상식을 갖추었다<br /><br />
-                                                그 때문에 엉뚱한 행동을 하는 이바라키도지나<br />
-                                                귀찮은 일을 떠맡기는 슈텐도지에게 늘 휘둘린다.
-                                            </p>
-                                        </div>
+                                        <!-- <div class="text_box animate scrollY mobile"></div> -->
                                         <a href="#" data-img="char/data/oni/relation.png" title="관계도" class="btn_relation animate"></a>
                                     </div>
 
@@ -2133,12 +1904,12 @@
                                         </div>
                                         <img src="img/media/download_01/2560x1440_PC.png" alt="" class="image">
                                         <div class="btn_box">
-                                            <a href="img/media/2560x1440_PC.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_pc.png" alt="PC" class="icon"></a>
-                                            <a href="img/media/800x800_SNS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_sns.png" alt="SNS 프로필" class="icon"></a>
-                                            <a href="img/media/1440x2560_Mobile-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_aos.png" alt="Mobile(AOS)" class="icon"></a>
-                                            <a href="img/media/1125x2436_Mobile-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_ios.png" alt="Mobile(IOS)" class="icon"></a>
-                                            <a href="img/media/781x781_Watch-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_aos.png" alt="Watch(AOS)" class="icon"></a>
-                                            <a href="img/media/312x390_Watch-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_ios.png" alt="Watch(IOS)" class="icon"></a>
+                                            <a href="img/media/download_01/2560x1440_PC.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_pc.png" alt="PC" class="icon"></a>
+                                            <a href="img/media/download_01/800x800_SNS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_sns.png" alt="SNS 프로필" class="icon"></a>
+                                            <a href="img/media/download_01/1440x2560_Mobile-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_aos.png" alt="Mobile(AOS)" class="icon"></a>
+                                            <a href="img/media/download_01/1125x2436_Mobile-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_ios.png" alt="Mobile(IOS)" class="icon"></a>
+                                            <a href="img/media/download_01/781x781_Watch-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_aos.png" alt="Watch(AOS)" class="icon"></a>
+                                            <a href="img/media/download_01/312x390_Watch-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_ios.png" alt="Watch(IOS)" class="icon"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -2153,12 +1924,12 @@
                                         </div>
                                         <img src="img/media/download_01/2560x1440_PC.png" alt="" class="image">
                                         <div class="btn_box">
-                                            <a href="img/media/2560x1440_PC.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_pc.png" alt="PC" class="icon"></a>
-                                            <a href="img/media/800x800_SNS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_sns.png" alt="SNS 프로필" class="icon"></a>
-                                            <a href="img/media/1440x2560_Mobile-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_aos.png" alt="Mobile(AOS)" class="icon"></a>
-                                            <a href="img/media/1125x2436_Mobile-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_ios.png" alt="Mobile(IOS)" class="icon"></a>
-                                            <a href="img/media/781x781_Watch-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_aos.png" alt="Watch(AOS)" class="icon"></a>
-                                            <a href="img/media/312x390_Watch-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_ios.png" alt="Watch(IOS)" class="icon"></a>
+                                            <a href="img/media/download_01/2560x1440_PC.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_pc.png" alt="PC" class="icon"></a>
+                                            <a href="img/media/download_01/800x800_SNS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_sns.png" alt="SNS 프로필" class="icon"></a>
+                                            <a href="img/media/download_01/1440x2560_Mobile-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_aos.png" alt="Mobile(AOS)" class="icon"></a>
+                                            <a href="img/media/download_01/1125x2436_Mobile-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_ios.png" alt="Mobile(IOS)" class="icon"></a>
+                                            <a href="img/media/download_01/781x781_Watch-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_aos.png" alt="Watch(AOS)" class="icon"></a>
+                                            <a href="img/media/download_01/312x390_Watch-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_ios.png" alt="Watch(IOS)" class="icon"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -2173,12 +1944,12 @@
                                         </div>
                                         <img src="img/media/download_01/2560x1440_PC.png" alt="" class="image">
                                         <div class="btn_box">
-                                            <a href="img/media/2560x1440_PC.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_pc.png" alt="PC" class="icon"></a>
-                                            <a href="img/media/800x800_SNS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_sns.png" alt="SNS 프로필" class="icon"></a>
-                                            <a href="img/media/1440x2560_Mobile-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_aos.png" alt="Mobile(AOS)" class="icon"></a>
-                                            <a href="img/media/1125x2436_Mobile-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_ios.png" alt="Mobile(IOS)" class="icon"></a>
-                                            <a href="img/media/781x781_Watch-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_aos.png" alt="Watch(AOS)" class="icon"></a>
-                                            <a href="img/media/312x390_Watch-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_ios.png" alt="Watch(IOS)" class="icon"></a>
+                                            <a href="img/media/download_01/2560x1440_PC.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_pc.png" alt="PC" class="icon"></a>
+                                            <a href="img/media/download_01/800x800_SNS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_sns.png" alt="SNS 프로필" class="icon"></a>
+                                            <a href="img/media/download_01/1440x2560_Mobile-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_aos.png" alt="Mobile(AOS)" class="icon"></a>
+                                            <a href="img/media/download_01/1125x2436_Mobile-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_ios.png" alt="Mobile(IOS)" class="icon"></a>
+                                            <a href="img/media/download_01/781x781_Watch-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_aos.png" alt="Watch(AOS)" class="icon"></a>
+                                            <a href="img/media/download_01/312x390_Watch-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_ios.png" alt="Watch(IOS)" class="icon"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -2193,12 +1964,12 @@
                                         </div>
                                         <img src="img/media/download_01/2560x1440_PC.png" alt="" class="image">
                                         <div class="btn_box">
-                                            <a href="img/media/2560x1440_PC.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_pc.png" alt="PC" class="icon"></a>
-                                            <a href="img/media/800x800_SNS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_sns.png" alt="SNS 프로필" class="icon"></a>
-                                            <a href="img/media/1440x2560_Mobile-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_aos.png" alt="Mobile(AOS)" class="icon"></a>
-                                            <a href="img/media/1125x2436_Mobile-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_ios.png" alt="Mobile(IOS)" class="icon"></a>
-                                            <a href="img/media/781x781_Watch-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_aos.png" alt="Watch(AOS)" class="icon"></a>
-                                            <a href="img/media/312x390_Watch-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_ios.png" alt="Watch(IOS)" class="icon"></a>
+                                            <a href="img/media/download_01/2560x1440_PC.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_pc.png" alt="PC" class="icon"></a>
+                                            <a href="img/media/download_01/800x800_SNS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_sns.png" alt="SNS 프로필" class="icon"></a>
+                                            <a href="img/media/download_01/1440x2560_Mobile-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_aos.png" alt="Mobile(AOS)" class="icon"></a>
+                                            <a href="img/media/download_01/1125x2436_Mobile-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_ios.png" alt="Mobile(IOS)" class="icon"></a>
+                                            <a href="img/media/download_01/781x781_Watch-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_aos.png" alt="Watch(AOS)" class="icon"></a>
+                                            <a href="img/media/download_01/312x390_Watch-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_ios.png" alt="Watch(IOS)" class="icon"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -2213,12 +1984,12 @@
                                         </div>
                                         <img src="img/media/download_01/2560x1440_PC.png" alt="" class="image">
                                         <div class="btn_box">
-                                            <a href="img/media/2560x1440_PC.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_pc.png" alt="PC" class="icon"></a>
-                                            <a href="img/media/800x800_SNS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_sns.png" alt="SNS 프로필" class="icon"></a>
-                                            <a href="img/media/1440x2560_Mobile-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_aos.png" alt="Mobile(AOS)" class="icon"></a>
-                                            <a href="img/media/1125x2436_Mobile-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_ios.png" alt="Mobile(IOS)" class="icon"></a>
-                                            <a href="img/media/781x781_Watch-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_aos.png" alt="Watch(AOS)" class="icon"></a>
-                                            <a href="img/media/312x390_Watch-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_ios.png" alt="Watch(IOS)" class="icon"></a>
+                                            <a href="img/media/download_01/2560x1440_PC.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_pc.png" alt="PC" class="icon"></a>
+                                            <a href="img/media/download_01/800x800_SNS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_sns.png" alt="SNS 프로필" class="icon"></a>
+                                            <a href="img/media/download_01/1440x2560_Mobile-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_aos.png" alt="Mobile(AOS)" class="icon"></a>
+                                            <a href="img/media/download_01/1125x2436_Mobile-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_ios.png" alt="Mobile(IOS)" class="icon"></a>
+                                            <a href="img/media/download_01/781x781_Watch-AOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_aos.png" alt="Watch(AOS)" class="icon"></a>
+                                            <a href="img/media/download_01/312x390_Watch-iOS.png" target="_blank" download class="btn_download"><img src="img/media/btn_text_watch_ios.png" alt="Watch(IOS)" class="icon"></a>
                                         </div>
                                     </div>
                                 </div>

@@ -94,6 +94,18 @@ $(function() {
         return false;
     });
 
+    //사전예약완료 > 혜택 팝업
+    $("#btn_reserve_benefit").on("click", function() {
+        $("body").addClass("popup");
+        $("#popup_benefit").fadeToggle(200);
+        return false;
+    });
+    $("#popup_benefit .btn_close").on("click", function() {
+        $("#popup_benefit").fadeOut(200);
+        $("body").removeClass("popup");
+        return false;
+    });
+
     //헤더 메뉴
     $("#header .btn_mobile").on("click", function() {
         $("body").addClass("popup");

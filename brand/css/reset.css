@@ -1,3 +1,84 @@
+/* fonts */
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 100;
+    src: url(./fonts/NotoSansKR-Thin.eot);
+    src: url(./fonts/NotoSansKR-Thin.eot?#iefix) format('embedded-opentype'),
+    url(./fonts/NotoSansKR-Thin.woff2) format('woff2'),
+    url(./fonts/NotoSansKR-Thin.woff) format('woff'),
+    url(./fonts/NotoSansKR-Thin.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 200;
+    src: url(./fonts/NotoSansKR-Light.eot);
+    src: url(./fonts/NotoSansKR-Light.eot?#iefix) format('embedded-opentype'),
+    url(./fonts/NotoSansKR-Light.woff2) format('woff2'),
+    url(./fonts/NotoSansKR-Light.woff) format('woff'),
+    url(./fonts/NotoSansKR-Light.otf) format('opentype');
+}
+
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(./fonts/NotoSansKR-DemiLight.eot);
+    src: url(./fonts/NotoSansKR-DemiLight.eot?#iefix) format('embedded-opentype'),
+    url(./fonts/NotoSansKR-DemiLight.woff2) format('woff2'),
+    url(./fonts/NotoSansKR-DemiLight.woff) format('woff'),
+    url(./fonts/NotoSansKR-DemiLight.otf) format('opentype');
+}
+
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/NotoSansKR-Regular.eot);
+    src: url(./fonts/NotoSansKR-Regular.eot?#iefix) format('embedded-opentype'),
+    url(./fonts/NotoSansKR-Regular.woff2) format('woff2'),
+    url(./fonts/NotoSansKR-Regular.woff) format('woff'),
+    url(./fonts/NotoSansKR-Regular.otf) format('opentype');
+}
+
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(./fonts/NotoSansKR-Medium.eot);
+    src: url(./fonts/NotoSansKR-Medium.eot?#iefix) format('embedded-opentype'),
+    url(./fonts/NotoSansKR-Medium.woff2) format('woff2'),
+    url(./fonts/NotoSansKR-Medium.woff) format('woff'),
+    url(./fonts/NotoSansKR-Medium.otf) format('opentype');
+}
+
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(./fonts/NotoSansKR-Bold.eot);
+    src: url(./fonts/NotoSansKR-Bold.eot?#iefix) format('embedded-opentype'),
+    url(./fonts/NotoSansKR-Bold.woff2) format('woff2'),
+    url(./fonts/NotoSansKR-Bold.woff) format('woff'),
+    url(./fonts/NotoSansKR-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 800;
+    src: url(./fonts/NotoSansKR-Black.eot);
+    src: url(./fonts/NotoSansKR-Black.eot?#iefix) format('embedded-opentype'),
+    url(./fonts/NotoSansKR-Black.woff2) format('woff2'),
+    url(./fonts/NotoSansKR-Black.woff) format('woff'),
+    url(./fonts/NotoSansKR-Black.otf) format('opentype');
+}
 
 /* reset */
 html * {max-height: 999999px} /* font size bug fix */
@@ -35,7 +116,7 @@ body *,
 *::before,
 *::after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 
-body,div,dl,dt,dd,ul,ol,menu,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,th,td,p,button {font-family: 'NotoSans Regular', sans-serif;font-size:10px;line-height:normal}
+body,div,dl,dt,dd,ul,ol,menu,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,th,td,p,button {font-family: 'NotoSansKR', sans-serif;font-size:10px;line-height:normal;letter-spacing:-1px}
 
 /* 공통 */
 .clear_wrap:before,.clear_wrap:after{content:" ";display:table}
