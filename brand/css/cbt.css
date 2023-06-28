@@ -1,25 +1,30 @@
 /* 이벤트 */
+.content_cbt{position:relative;overflow:hidden}
+.content_cbt .bg.animate{transition:all 2s;transition-property:opacity,transform;transform-origin:right bottom;transform:scale(1.15);opacity:1}
+.content_cbt .inner{position:relative;z-index:2}
+
 .content_cbt .title_wrap.animate,
 .content_cbt .sub_title.animate{opacity:0;transform:translateY(100px);transition-delay:0.1s}
 .content_cbt .sub_title.animate{transition-delay:0.25s}
+.content_cbt .event_box.animate{opacity:0;transform:translateY(100px);transition-delay:0.1s}
+.content_cbt .event_box.animate{transition-delay:0.3s}
 .content_cbt .animate.on{opacity:1;transform:translateY(0)}
 
 .content_cbt{padding:70px 0 80px;position:relative}
-.content_cbt .content_event{background:transparent;padding:20px 0 0;text-align:center}
+.content_cbt .content_event{background:transparent;padding:0;text-align:center}
 .content_cbt .cbt_wrap .title_box{text-align:center}
 .content_cbt .cbt_wrap .title_box .title{display:block;margin:0 auto;max-width:100%}
 .content_cbt .cbt_wrap .title_box .sub_title{display:inline-flex;align-items:center;justify-content:center;min-width:404px;min-height:47px;background:url("../img/cbt/title_shadow.png") no-repeat center center;background-size:cover;margin-top:12px}
 .content_cbt .cbt_wrap .title_box .sub_title p{padding:0 20px 6px 0;font-size:16px;color:#fff;letter-spacing:-1px}
 
-.content_cbtinfo{background:url('../img/cbt/bg_sect1.jpg') center no-repeat;background-size:cover}
-.content_cbtinfo .process_box{display:block;position:relative;display:inline-block}
+.content_cbt.content_cbtinfo .bg{position:absolute;left:-10px;top:-10px;right:-10px;bottom:-10px;background:url("../img/cbt/bg_sect1.jpg") no-repeat center center;background-size:cover;z-index:1}
+.content_cbtinfo .process_box{display:block;position:relative;display:inline-block;padding-top:20px}
 .content_cbtinfo .process_box .box{width:1180px}
 .content_cbtinfo .process_box .btn_box{position:absolute;bottom:80px;left:0;text-align:center;width:100%}
 .content_cbtinfo .process_box .btn_box a{display:inline-block}
-.content_cbtinfo .notice{color:#a6a8b3;text-align:center;font-size:14px}
+.content_cbtinfo .notice{color:#a6a8b3;text-align:center;font-size:16px}
 
-.content_cbtevent{background: url('../img/cbt/bg_sect2.jpg') center no-repeat;background-size:cover}
-
+.content_cbt.content_cbtevent .bg{position:absolute;left:-10px;top:-10px;right:-10px;bottom:-10px;background:url("../img/cbt/bg_sect2.jpg") no-repeat center center;background-size:cover;z-index:1}
 
 /* 반응형 */
 @media screen and (max-width: 1400px){
@@ -37,4 +42,5 @@
     .content_cbtinfo .process_box .box{width:100%}
     .content_cbtinfo .process_box .btn_box{bottom:15%}
     .content_cbtinfo .process_box .btn_box a{width:45%}
+    .content_cbtinfo .notice{font-size:13px}
 }
