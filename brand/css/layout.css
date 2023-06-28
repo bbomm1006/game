@@ -500,7 +500,7 @@ body.popup{position:absolute;;overflow:hidden}
     #twitter_menu.close .btn_box{padding:0}
     #twitter_menu.close .btn_twitter{width:120px;height:137px;background:url("../img/main/btn_twitter_close.png") no-repeat center center}
 
-    .content_reserve{padding:60px 0 0 0;height:auto;background:url("../img/reserve/bg_m.jpg") no-repeat center center;background-size:cover}
+    .content_reserve{padding:60px 0 0 0;height:auto;background:#0b1844 url("../img/reserve/bg_m.jpg") no-repeat center bottom;background-size:100% auto}
     .content_reserve .reserve_wrap .title_box .title{max-width:80%}
     .content_reserve .reserve_wrap .title_box .sub_title{margin-top:10px}
     .content_reserve .reserve_wrap .reserve_box_wrap{margin-top:20px;height:auto}
@@ -510,12 +510,13 @@ body.popup{position:absolute;;overflow:hidden}
     .content_reserve .reserve_desc{position:relative;left:auto;top:auto;transform:none}
     .content_reserve .benefit_wrap{position:relative;left:auto;bottom:auto;transform:none}
     .content_reserve .benefit_wrap .emot_box{height:auto;padding-bottom:100px}
+    .content_reserve .benefit_wrap .emot_box .text_box{padding-top:50px}
     .content_reserve .reserve_form .btn_reserve{width:100%}
     .content_reserve .reserve_form .btn_event{width:100%}
 
     .content_event{padding:60px 0 80px 0}
     .content_event .event_box{padding:0 10px}
-    .content_event .desc{font-size:13px;text-align:center;padding:10px 30px 0;line-height: 1.3em}
+    .content_event .desc{font-size:14px;text-align:center;padding:10px 30px 0;line-height: 1.3em}
 
     .content_story{padding:80px 0}
 
@@ -542,7 +543,7 @@ body.popup{position:absolute;;overflow:hidden}
     .content_top .text_box{padding:0 30px;margin-top:0;width:100%}
     .content_top .text_box .title_box{margin:0 auto;width:80%}
 
-    #twitter_menu{right:-1px;bottom:150px;transform:scale(0.7);transform-origin:right center}
+    #twitter_menu{right:-1px;/*bottom:150px;*/top:calc(50vh + 60px);bottom:auto;transform:scale(0.7);transform-origin:right center}
 
     .content_top .top_video .video_wrap::before,
     .content_top .top_video .video_wrap::after{display:none}
@@ -564,11 +565,13 @@ body.popup{position:absolute;;overflow:hidden}
     /* .content_event .event_box .btn_event .img{max-width:107%;margin-left:0} */
     .content_event .event_box .btn_event .img{margin:0;max-width:none;width:99%;padding-left:5%}
 
+    .content_event .desc{margin-top:-30px;font-size:13px}
+
     .content_story{padding:100px 0 200px 0}
     .content_story .bg{background:url("../img/story/bg_m.jpg") no-repeat center center;background-size:cover}
     .content_story .text_wrap{padding:0 60px}
 
-    .content_char{padding-bottom:150px;background:url("../img/char/bg_m.jpg") no-repeat center center;background-size:cover}
+    .content_char{padding-bottom:200px;background:url("../img/char/bg_m.jpg") no-repeat center center;background-size:cover}
     .content_char .char_wrap{padding:0;margin:0}
     .content_char .char_img{left:-30px;right:-30px;width:auto}
     .content_char .char_wrap .char_text{padding-top:50%;width:100%}
@@ -577,7 +580,7 @@ body.popup{position:absolute;;overflow:hidden}
     .content_char .char_text .text_box{max-height:none;text-align:center}
     .content_char .char_wrap .btn_char_video{width:100%}
     .content_char .char_wrap .btn_voice{right:-30px;top:50px;transform:scale(0.8)}
-    .content_char .char_text .btn_relation{position:absolute;left:50%;bottom:-385px;margin:0 0 0 -92px}
+    .content_char .char_text .btn_relation{position:absolute;left:50%;bottom:-455px;margin:0 0 0 -92px}
     #char_slide_wrap .btn_char_slide{display:none}
     #char_slide_wrap .char_slide_wrap{padding-bottom:0}
     .content_char .char_wrap .thumb_slide{position:relative;bottom:auto;left:auto;right:auto;margin-top:35px}
@@ -601,6 +604,7 @@ body.popup{position:absolute;;overflow:hidden}
     /* .content_char .char_wrap .thumb_slide.light::after{display:none} */
 
     /* .content_feature{background:url("../img/feature/bg_m.jpg") no-repeat center center;background-size:cover} */
+    .content_feature{padding-bottom:100px}
     .content_feature .bg{background:url("../img/feature/bg_m.jpg") no-repeat center center;background-size:cover}
     .content_feature .btn_feature_slide.prev{margin-left:-222px}
     .content_feature .btn_feature_slide.next{margin-left:180px}

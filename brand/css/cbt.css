@@ -37,6 +37,10 @@
     .content_cbtinfo .process_box .btn_box a img{width:100%}
 }
 
+@media screen and (max-width: 1000px){
+    .content_cbtinfo .notice{font-size:14px}
+}
+
 @media screen and (max-width: 780px){
     .content_cbt .cbt_wrap .title_box .sub_title{margin:0}
     .content_cbtinfo .process_box .box{width:100%}
