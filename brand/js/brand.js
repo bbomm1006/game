@@ -48,41 +48,49 @@ $(function() {
 
     //스토어 사전등록 혜택 확인 팝업
     $(".content_reserve .benefit_wrap .btn_benefit").on("click", function() {
+        $("body").addClass("popup");
         $("#popup_download").fadeToggle(200);
         return false;
     });
     $("#popup_download .btn_close").on("click", function() {
         $("#popup_download").fadeOut(200);
+        $("body").removeClass("popup");
         return false;
     });
     
     //개인정보 팝업
     $("#btn_detail_01").on("click", function() {
+        $("body").addClass("popup");
         $("#popup_reserve_01").fadeToggle(200);
         return false;
     });
     $("#popup_reserve_01 .btn_close").on("click", function() {
         $("#popup_reserve_01").fadeOut(200);
+        $("body").removeClass("popup");
         return false;
     });
 
     //알림수신 팝업
     $("#btn_detail_02").on("click", function() {
+        $("body").addClass("popup");
         $("#popup_reserve_02").fadeToggle(200);
         return false;
     });
     $("#popup_reserve_02 .btn_close").on("click", function() {
         $("#popup_reserve_02").fadeOut(200);
+        $("body").removeClass("popup");
         return false;
     });
 
     //유의사항 팝업
     $(".content_reserve .reserve_form .btn_reserve_noti").on("click", function() {
+        $("body").addClass("popup");
         $("#popup_reserve_03").fadeToggle(200);
         return false;
     });
     $("#popup_reserve_03 .btn_close").on("click", function() {
         $("#popup_reserve_03").fadeOut(200);
+        $("body").removeClass("popup");
         return false;
     });
 
