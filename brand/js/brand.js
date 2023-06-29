@@ -57,7 +57,7 @@ $(function() {
         $("body").removeClass("popup");
         return false;
     });
-    
+
     //개인정보 팝업
     $("#btn_detail_01").on("click", function() {
         $("body").addClass("popup");
@@ -116,6 +116,13 @@ $(function() {
         $("body").removeClass("popup");
         $("#header_menu").removeClass("active");
         return false;
+    });
+    $("#header_menu").on("click", function(e) {
+        if($(e.target).attr("id") == "header_menu") {
+            $("body").removeClass("popup");
+            $("#header_menu").removeClass("active");
+            return false;
+        }
     });
 
     //에니메이션
@@ -241,6 +248,9 @@ $(function() {
                             var getNext = this.activeIndex;
                             if(btnThumbSlide.eq(getNext).length > 0) {
                                 btnThumbSlide.removeClass("active").eq(getNext).addClass("active");
+
+                                var getIdx = charThumb.find(".btn_char.active").parent().index();
+                                charThumbSlide.slideTo(getIdx);
                             }
                         }
                     }
@@ -283,7 +293,7 @@ $(function() {
                     return false;
                 });
                 btnThumbSlide.eq(0).addClass("active");
-                if(btnThumbSlide.length > 7) {
+                if(btnThumbSlide.length >= 7) {
                     $(this).find(".thumb_slide").addClass("light");
                 }
             }
@@ -343,6 +353,7 @@ $(function() {
                 getSlideWrap.find(".thumb_slide.animate").addClass("on");
                 getSlideWrap.find(".swiper-slide-active .animate").addClass("on");
                 getSlideWrap.find(".swiper-slide-active .btn_char_video").trigger("click");
+                charSlideInit();
             }, 200);
             return false;
         });
@@ -377,6 +388,25 @@ $(function() {
             return false;
         });
     }
+
+    function charSlideInit() {
+        var charLength = $("#header .header_menu .btn_mobile").is(":visible") ? 5 : 7;
+        $(".char_slide_wrap .thumb_slide").each(function() {
+            $(this).removeClass("light noscroll");
+            var charBtnLength = $(this).find(".char_thumb_slide .btn_char").length;
+            if(charBtnLength >= charLength) {
+                $(this).addClass("light");
+            }
+            if(charBtnLength < 5) {
+                $(this).addClass("noscroll");
+            }
+        });
+    }
+    $(window).on("resize", function() {
+        doTimeout("resize_char", function() {
+            charSlideInit();
+        }, 100);
+    });
 
     //관계도
     $(".btn_relation").on("click", function() {
@@ -417,6 +447,7 @@ $(function() {
         new Swiper($("#feature_slide").get(0), {
             autoplay: false,
             loop: true,
+            loopedSlides: 10,
             delay: 4000,
             spaceBetween: 60,
             slidesPerView: "auto",

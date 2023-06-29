@@ -457,7 +457,7 @@ body.popup{position:absolute;;overflow:hidden}
 
 @media screen and (max-width:1280px) {
     #twitter_menu{top:auto;bottom:30px}
-    
+
     .content_char .char_wrap{padding-right:60px}
     .content_char .char_nation{right:60px}
     #char_slide_wrap .btn_char_slide.prev{left:-60px}
@@ -622,6 +622,8 @@ body.popup{position:absolute;;overflow:hidden}
     .content_char .char_wrap .thumb_slide .swiper-scrollbar .swiper-scrollbar-drag{background:#2758a4}
     .content_char .char_wrap .thumb_slide::after{display:none}
     .content_char .char_thumb_slide{padding-bottom:45px;overflow:visible}
+    .content_char .thumb_slide.noscroll .char_thumb_slide{padding-bottom:0}
+    .content_char .thumb_slide.noscroll .char_thumb_slide .swiper-scrollbar{display:none}
     .content_char .char_thumb_slide .swiper-slide{width:110px}
     .content_char .char_thumb_slide .btn_char{padding-top:120%;width:110px;height:0}
     .content_char .char_thumb_slide .btn_char .char{bottom:25%;width:100%}
@@ -674,7 +676,7 @@ body.popup{position:absolute;;overflow:hidden}
 @media screen and (max-height:700px) and (orientation:landscape) {
     /* 가로 모드일 경우 */
     #twitter_menu.close{width:30vh!important}
-    
+
     .content_media{padding-bottom:60px}
 
     /* 버튼 */
