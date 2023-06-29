@@ -150,6 +150,12 @@ $(function() {
         return false;
     });
 
+    $("#btn_top").on("click", function() {
+        $("html,body").stop(true,true).animate({ scrollTop:0 }, 300);
+        location.hash = "";
+        return false;
+    });
+
     //스크롤
     var mobile
     $(window).on("scroll resize", function() {
