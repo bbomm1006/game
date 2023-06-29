@@ -44,6 +44,9 @@
 .content_top .btn_bottom.animate{transform:translateY(100px);transition-delay:1.5s}
 .content_top .btn_bottom.animate.on{opacity:1;transform:translateY(0)}
 
+.content_top #twitter_menu.animate{transform:translateX(200px);transition-delay:1.5s}
+.content_top #twitter_menu.animate.on{opacity:1;transform:translateX(0)}
+
 #header.animate,
 #footer.animate{transition-delay:1.5s}
 #header.animate.on,
@@ -56,10 +59,10 @@
 .content_reserve .reserve_box_wrap.animate{transition-delay:0.4s}
 .content_reserve .animate.on{opacity:1;transform:translateY(0)}
 
+.content_event .bg.animate{transition:all 2s;transition-property:opacity,transform;transform-origin:right bottom;transform:scale(1.15);opacity:1}
 .content_event .title_box.animate,
 .content_event .btn_event.animate{opacity:0;transform:translateY(200px);transition-delay:0.1s}
 .content_event .animate.on{opacity:1;transform:translateY(0)}
-.content_event .bg.animate{transition:all 2s;transition-property:opacity,transform;transform-origin:right bottom;transform:scale(1.15);opacity:1}
 
 .content_story .bg.animate{transition:all 2s;transition-property:opacity,transform;transform-origin:right bottom;transform:scale(1.15);opacity:1}
 .content_story .title_box.animate,
@@ -80,11 +83,11 @@
 .content_char .char_nation.animate{opacity:0;transform:translateY(100px);transition-delay:0.8s}
 .content_char .animate.on{opacity:1;transform:translateX(0)}
 
+.content_feature .bg.animate{transition:all 2s;transition-property:opacity,transform;transform-origin:right bottom;transform:scale(1.15);opacity:1}
 .content_feature .feature.animate{opacity:0;transform:scale(0.8);transition-delay:0.1s}
 .content_feature .name.animate{opacity:0;transform:translateY(100px);transition-delay:0.2s}
 .content_feature .desc.animate{opacity:0;transform:translateY(100px);transition-delay:0.4s}
 .content_feature .animate.on{opacity:1;transform:translateY(0) scale(1)}
-.content_feature .bg.animate{transition:all 2s;transition-property:opacity,transform;transform-origin:right bottom;transform:scale(1.15);opacity:1}
 
 .content_media .bg.animate{transition:all 2s;transition-property:opacity,transform;transform-origin:right bottom;transform:scale(1.15);opacity:1}
 .content_media .title_box.animate{opacity:0;transform:translateY(100px);transition-delay:0.1s}
@@ -136,7 +139,7 @@ body{overflow:hidden;overflow-y:auto;background:#000}
 #header_menu .menu_wrap .header_top .logo{padding-top:5%;text-align:center}
 #header_menu .menu_wrap .header_top .logo a{display:block;margin:0 auto;max-width:60%}
 #header_menu .menu_wrap .header_top .logo img{display:block;width:100%}
-#header_menu .menu_wrap .header_mid{position:absolute;left:0;top:180px;right:0;bottom:125px;background:url("../img/common/header_menu_bottom.png") no-repeat center center;background-size:cover}
+#header_menu .menu_wrap .header_mid{position:absolute;left:0;top:180px;right:0;bottom:0;background:url("../img/common/header_menu_bottom.png") no-repeat center center;background-size:cover}
 #header_menu .menu_wrap .header_mid .menu_list{position:absolute;left:0;top:0;right:0;bottom:100px}
 #header_menu .menu_wrap .header_mid .menu_list li{border-top:1px solid rgba(204,204,204,0.5)}
 #header_menu .menu_wrap .header_mid .menu_list li:first-child{border-top:0}
@@ -147,12 +150,15 @@ body{overflow:hidden;overflow-y:auto;background:#000}
 #header_menu .menu_wrap .header_mid .header_menu .btn_menu.youtube{background:url("../img/common/header_menu_youtube.png") no-repeat center center}
 #header_menu .menu_wrap .header_mid .header_menu .btn_menu.twitter{background:url("../img/common/header_menu_twitter.png") no-repeat center center}
 #header_menu .menu_wrap .header_mid .header_menu .btn_menu.url{background:url("../img/common/header_menu_share.png") no-repeat center center}
-#header_menu .menu_wrap .btn_download{display:flex;align-items:center;position:absolute;left:0;bottom:0;right:0;padding:0 0 0 25px;height:125px;background:url("../img/common/header_menu_download.png") no-repeat center center;background-size:cover}
+#header_menu .menu_wrap .btn_download{display:none;align-items:center;position:absolute;left:0;bottom:0;right:0;padding:0 0 0 25px;height:125px;background:url("../img/common/header_menu_download.png") no-repeat center center;background-size:cover}
 #header_menu .menu_wrap .btn_download .icon{display:block;border-radius:12px;height:90px;box-shadow:5px 5px 10px rgba(0,0,0,0.5)}
 #header_menu .menu_wrap .btn_download .text{display:block;margin-left:30px;max-width:35vw}
 #header_menu.active{opacity:1;visibility:visible}
 #header_menu.active .menu_wrap{right:0}
 body.popup{position:absolute;;overflow:hidden}
+
+#header_menu.launching .menu_wrap .btn_download{display:flex}
+#header_menu.launching .menu_wrap .header_mid{bottom:125px}
 
 /* 푸터 */
 /* #footer{position:fixed;left:0;bottom:0;right:0;padding-top:10px;height:70px;background:#000;z-index:99} */
@@ -182,7 +188,7 @@ body.popup{position:absolute;;overflow:hidden}
 #fixed_menu.launching .menu_list{padding:0 0 30px}
 #fixed_menu.launching .btn_download{display:block}
 
-#btn_top{display:none;opacity:0;position:fixed;bottom:40px;right:40px;width:87px;height:87px;background:url("../img/btn/fixed_top.png") no-repeat 0 0;cursor:pointer;z-index:1}
+#btn_top{display:none;opacity:0;position:fixed;bottom:40px;right:40px;width:87px;height:87px;background:url("../img/btn/fixed_top.png") no-repeat 0 0;cursor:pointer;z-index:100}
 #btn_top:hover{background-position-y:100%;}
 .scroll #btn_top{opacity:1;display:block}
 
@@ -464,17 +470,21 @@ body.popup{position:absolute;;overflow:hidden}
 @media (max-height:500px), (max-width:1000px) {
     #fixed_menu{display:none}
 
-    #header{background:rgba(21,25,34,0.8);height:74px}
+    #header{height:74px}
+    body.scroll #header{background:rgba(21,25,34,0.8);}
     #header .logo{left:5px;top:7px}
     #header .header_menu{gap:0;right:0;top:0}
-    #header .header_menu .btn_menu{display:none;width:74px;height:74px;border-left:1px solid rgba(255,255,255,0.17)}
+    #header .header_menu .btn_menu{display:none;width:74px;height:74px}
     /* #header .header_menu .btn_menu.youtube{background:url("../img/common/header_share_youtube_m.png") no-repeat center center}
     #header .header_menu .btn_menu.twitter{background:url("../img/common/header_share_twitter_m.png") no-repeat center center} */
     #header .header_menu .btn_menu.url{display:block;background:url("../img/common/header_share_url_m.png") no-repeat center center}
     #header .header_menu .btn_community{display:none}
-    #header .header_menu .btn_mobile{display:block;width:74px;height:74px;border-left:1px solid rgba(255,255,255,0.17);background:url("../img/common/header_mobile.png") no-repeat center center}
+    #header .header_menu .btn_mobile{display:block;width:74px;height:74px;background:url("../img/common/header_mobile.png") no-repeat center center}
     /* #header .header_menu .btn_menu:active,
     #header .header_menu .btn_mobile:active{background-color:#2758a4} */
+
+    body.scroll #header .header_menu .btn_mobile,
+    body.scroll #header .header_menu .btn_menu{border-left:1px solid rgba(255,255,255,0.17)}
 
     #popup_share{top:78px;right:83px;width:52px;height:171px;background-image:url("../img/common/share_bg_m.png");background-size:auto 100%}
     #popup_share .btn_share{width:52px;height:52px;background-image:url("../img/common/share_bg_m.png");background-size:200% auto}
@@ -565,6 +575,8 @@ body.popup{position:absolute;;overflow:hidden}
 
     #twitter_menu{right:-1px;/*bottom:150px;*/top:calc(50vh + 60px);bottom:auto;/*transform:scale(0.9);*/transform-origin:right center}
     #twitter_menu.close{top:calc(50vh + 30px)}
+
+    #btn_top{bottom:0;right:0}
 
     .content_top .top_video .video_wrap::before,
     .content_top .top_video .video_wrap::after{display:none}
