@@ -467,6 +467,9 @@ body.popup{position:absolute;;overflow:hidden}
     .content_event .event_box{padding:0 140px}
 }
 
+@media (max-height:500px) {
+    #twitter_menu{bottom:auto!important;top:calc(100vh - 200px)!important}
+}
 @media (max-height:500px), (max-width:1000px) {
     #fixed_menu{display:none}
 
@@ -493,6 +496,23 @@ body.popup{position:absolute;;overflow:hidden}
     #popup_share .btn_share.url{margin-top: 2px;background-position-y:-1115px;height: 54px}
 
     #header_menu{display:block!important}
+
+    /* 트위터 */
+    #twitter_menu{top:auto;bottom:30px;margin-top:0;width:214px;height:211px;background:url("../img/main/twitter_scroll_m.png") no-repeat center center;background-size:100% auto}
+    #twitter_menu img{width:95%}
+    #twitter_menu .twitter_box{position:absolute;top:22px;width:133px;height:auto}
+    #twitter_menu .scroll_box{display:none}
+    #twitter_menu .btn_box{padding:0}
+    #twitter_menu .btn_twitter{width:90%;height:36px;background:url("../img/main/btn_twitter_m.png") no-repeat center center;background-size:auto 100%;}
+    #twitter_menu .mobile_box{display:block;position:relative;padding:26px 10px 0 0;height:75px;text-align:center}
+    #twitter_menu .mobile_box .btn_close{display:block;position:absolute;right:0;top:6px;width:24px;height:24px;background:url("../img/icon/twitter_close.png") no-repeat center center}
+    #twitter_menu .btn_twitter img{display:none!important}
+    #twitter_menu.close{/*width:177px;height:214px;background:url("../img/main/twitter_scroll_m_close.png") no-repeat center center*/width:30%;height:214px;background:transparent}
+    #twitter_menu.close .mobile_box{display:none}
+    #twitter_menu.close .twitter_box{position:absolute;top:35px;width:100%;height:auto}
+    #twitter_menu.close .btn_box{padding:0}
+    #twitter_menu.close .btn_twitter{/*width:120px;height:137px;background:url("../img/main/btn_twitter_close.png") no-repeat center center*/height:auto;width:auto;background:transparent}
+    #twitter_menu.close .btn_twitter img{width:100%;display:block!important}
 }
 
 @media (max-height:500px) {
@@ -524,23 +544,6 @@ body.popup{position:absolute;;overflow:hidden}
 }
 
 @media screen and (max-width:1000px) {
-    /* 트위터 */
-    #twitter_menu{top:auto;bottom:30px;margin-top:0;width:214px;height:211px;background:url("../img/main/twitter_scroll_m.png") no-repeat center center;background-size:100% auto}
-    #twitter_menu img{width:95%}
-    #twitter_menu .twitter_box{position:absolute;top:22px;width:133px;height:auto}
-    #twitter_menu .scroll_box{display:none}
-    #twitter_menu .btn_box{padding:0}
-    #twitter_menu .btn_twitter{width:90%;height:36px;background:url("../img/main/btn_twitter_m.png") no-repeat center center;background-size:auto 100%;}
-    #twitter_menu .mobile_box{display:block;position:relative;padding:26px 10px 0 0;height:75px;text-align:center}
-    #twitter_menu .mobile_box .btn_close{display:block;position:absolute;right:0;top:6px;width:24px;height:24px;background:url("../img/icon/twitter_close.png") no-repeat center center}
-    #twitter_menu .btn_twitter img{display:none!important}
-    #twitter_menu.close{/*width:177px;height:214px;background:url("../img/main/twitter_scroll_m_close.png") no-repeat center center*/width:30%;height:214px;background:transparent}
-    #twitter_menu.close .mobile_box{display:none}
-    #twitter_menu.close .twitter_box{position:absolute;top:35px;width:100%;height:auto}
-    #twitter_menu.close .btn_box{padding:0}
-    #twitter_menu.close .btn_twitter{/*width:120px;height:137px;background:url("../img/main/btn_twitter_close.png") no-repeat center center*/height:auto;width:auto;background:transparent}
-    #twitter_menu.close .btn_twitter img{width:100%;display:block!important}
-
     .content_reserve{background:#0b1844 url("../img/reserve/bg_m.jpg") no-repeat center bottom;background-size:100% auto}
     .content_reserve .reserve_form .agree_list .btn_detail{font-size:12px}
 
