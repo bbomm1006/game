@@ -585,7 +585,7 @@ body.popup{position:absolute;;overflow:hidden}
     .content_top .text_box{padding:0 30px;margin-top:0;width:100%}
     .content_top .text_box .title_box{margin:0 auto;width:80%}
 
-    #twitter_menu{right:-1px;/*bottom:150px;*/top:calc(50vh + 60px);bottom:auto;/*transform:scale(0.9);*/transform-origin:right center}
+    #twitter_menu{right:-1px;/*bottom:150px;*/top:calc(50vh + 100px);bottom:auto;/*transform:scale(0.9);*/transform-origin:right center}
     #twitter_menu.close{top:calc(50vh + 30px)}
 
     #header_menu .menu_wrap .header_top .logo a{max-width:60%}
