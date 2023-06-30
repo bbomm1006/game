@@ -129,7 +129,7 @@
 
     /* 약관 팝업 */
     .popup_reserve .notice_box{width:calc(100% - 40px)!important;height:auto!important;background-image:url("../img/popup/bg_m.png");background-size:100% 100%;padding-bottom:40px}
-    .popup_reserve .notice_title{font-size:20px;padding-top:30px}
+    .popup_reserve .notice_title{font-size:22px;padding-top:32px}
 
     /* 스토어 사전예약 혜택 팝업 */
     #popup_benefit .benefit_box{width:calc(100% - 40px);}
