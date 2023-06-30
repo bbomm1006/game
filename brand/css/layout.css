@@ -57,16 +57,11 @@
 .content_reserve .reserve_box_wrap.animate{opacity:0;transform:translateY(100px);transition-delay:0.1s}
 .content_reserve .sub_title.animate{transition-delay:0.25s}
 .content_reserve .reserve_box_wrap.animate{transition-delay:0.4s}
-.content_reserve .benefit_box.animate{transition-delay:0.8s}
 .content_reserve .animate.on{opacity:1;transform:translateY(0)}
 
 .content_event .bg.animate{transition:all 2s;transition-property:opacity,transform;transform-origin:right bottom;transform:scale(1.15);opacity:1}
 .content_event .title_box.animate,
 .content_event .btn_event.animate{opacity:0;transform:translateY(200px);transition-delay:0.1s}
-.content_event .event_1.animate{transition-delay:0.25s}
-.content_event .event_2.animate{transition-delay:0.35s}
-.content_event .event_3.animate{transition-delay:0.9s}
-.content_event .event_4.animate{transition-delay:1s}
 .content_event .animate.on{opacity:1;transform:translateY(0)}
 
 .content_story .bg.animate{transition:all 2s;transition-property:opacity,transform;transform-origin:right bottom;transform:scale(1.15);opacity:1}
