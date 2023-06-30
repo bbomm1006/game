@@ -500,17 +500,20 @@ body.popup{position:absolute;;overflow:hidden}
 
     #header_menu{display:block!important}    
 
+    .content_top .text_box .btn_bottom{margin-top:30px}
+    .content_top .text_box .btn_box{margin-top:20px}
+
     /* 트위터 */
-    #twitter_menu{top:auto;bottom:30px;margin-top:0;width:214px;height:211px;background:url("../img/main/twitter_scroll_m.png") no-repeat center center;background-size:100% auto}
+    #twitter_menu{top:auto;bottom:30px;margin-top:0;width:33vw;height:29vw;background:url("../img/main/twitter_scroll_m.png") no-repeat center center;background-size:100% auto}
     #twitter_menu img{width:95%}
-    #twitter_menu .twitter_box{position:absolute;top:22px;width:133px;height:auto}
+    #twitter_menu .twitter_box{position:absolute;top:3vw;width:21.5vw;height:auto}
     #twitter_menu .scroll_box{display:none}
-    #twitter_menu .btn_box{padding:0}
-    #twitter_menu .btn_twitter{width:90%;height:36px;background:url("../img/main/btn_twitter_m.png") no-repeat center center;background-size:auto 100%;}
-    #twitter_menu .mobile_box{display:block;position:relative;padding:26px 10px 0 0;height:75px;text-align:center}
-    #twitter_menu .mobile_box .btn_close{display:block;position:absolute;right:0;top:6px;width:24px;height:24px;background:url("../img/icon/twitter_close.png") no-repeat center center}
+    #twitter_menu .btn_box{padding:1.5vw 0 0 1vw}
+    #twitter_menu .btn_twitter{width:90%;height:6vw;background:url("../img/main/btn_twitter_m.png") no-repeat center center;background-size:auto 100%;}
+    #twitter_menu .mobile_box{display:block;position:relative;padding:2vw 10px 0 0;height:auto;text-align:center}
+    #twitter_menu .mobile_box .btn_close{display:block;position:absolute;right:0;top:-5vw;width:5vw;height:5vw;background:url("../img/icon/twitter_close.png") no-repeat center center;background-size:50% auto}
     #twitter_menu .btn_twitter img{display:none!important}
-    #twitter_menu.close{/*width:177px;height:214px;background:url("../img/main/twitter_scroll_m_close.png") no-repeat center center*/width:30%;height:214px;background:transparent}
+    #twitter_menu.close{/*width:177px;height:214px;background:url("../img/main/twitter_scroll_m_close.png") no-repeat center center*/width:25vw;height:25vw;background:transparent}
     #twitter_menu.close .mobile_box{display:none}
     #twitter_menu.close .twitter_box{position:absolute;top:35px;width:100%;height:auto}
     #twitter_menu.close .btn_box{padding:0}
