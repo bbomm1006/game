@@ -20,7 +20,7 @@ $(function() {
         $(".content_reserve .reserve_form").removeClass("active").eq(1).addClass("active");
         return false;
     });
-
+    
     //common
     //공유 팝업
     $("#header .btn_menu.url").on("click", function() {
@@ -49,11 +49,16 @@ $(function() {
     //스토어 사전등록 혜택 확인 팝업
     $(".content_reserve .benefit_wrap .btn_benefit").on("click", function() {
         $("body").addClass("popup");
-        $("#popup_download").fadeToggle(200);
+        $("#popup_benefit").fadeToggle(200);
         return false;
     });
     $("#popup_download .btn_close").on("click", function() {
         $("#popup_download").fadeOut(200);
+        $("body").removeClass("popup");
+        return false;
+    });
+    $("#popup_benefit .btn_close").on("click", function() {
+        $("#popup_benefit").fadeOut(200);
         $("body").removeClass("popup");
         return false;
     });
@@ -90,18 +95,6 @@ $(function() {
     });
     $("#popup_reserve_03 .btn_close").on("click", function() {
         $("#popup_reserve_03").fadeOut(200);
-        $("body").removeClass("popup");
-        return false;
-    });
-
-    //사전예약완료 > 혜택 팝업
-    $("#btn_reserve_benefit").on("click", function() {
-        $("body").addClass("popup");
-        $("#popup_benefit").fadeToggle(200);
-        return false;
-    });
-    $("#popup_benefit .btn_close").on("click", function() {
-        $("#popup_benefit").fadeOut(200);
         $("body").removeClass("popup");
         return false;
     });
@@ -156,6 +149,11 @@ $(function() {
         btnFixedMenu.eq(0).trigger("click");
         return false;
     });
+    $("#btn_reserve_benefit").on("click", function() {
+        btnFixedMenu.eq(1).trigger("click");
+        return false;
+    });
+
 
     $("#btn_top").on("click", function() {
         $("html,body").stop(true,true).animate({ scrollTop:0 }, 300);

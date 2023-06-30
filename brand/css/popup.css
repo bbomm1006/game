@@ -95,6 +95,7 @@
 
 @media screen and (max-height:800px) {
     #popup_media .btn_close{right:50px;top:50px}
+
     #popup_media .media_box{max-width:800px;width:100%}
     #popup_media .media_box .text_box .name{font-size:18px}
     #popup_media .media_box .btn_box{background:url("../img/media/bg_btn_m.png") no-repeat center bottom;background-size:100% 100%}
@@ -109,7 +110,11 @@
 }
 
 @media screen and (max-width:1100px) {
-    #popup_video .btn_close{width:80px;height:80px;top:-85px;background-size:70% auto}
+    #popup_video .btn_close{width:80px;height:80px;top:-85px;background-size:65% auto}
+    .popup_reserve .btn_close{width:80px;height:80px;top:-80px;right:0;background-size:65% auto}
+    #popup_media .btn_close{width:80px;height:80px;top:-52px;background-size:65% auto}
+    #popup_benefit .btn_close{width:80px;height:80px;top:-80px;right:0;background-size:65% auto}
+    #popup_download .btn_close{width:80px;height:80px;top:-80px;right:0;background-size:65% auto}
 }
 
 @media screen and (max-width:780px) {
@@ -117,7 +122,7 @@
 
     #popup_relation .relation_box .relation{width:calc(100vw - 60px)}
 
-    #popup_media .btn_close{right:27px;top:-10px}
+    #popup_media .btn_close{right:20px}
     #popup_media .media_box{padding:30px;max-width:800px;width:100%}
     #popup_media .media_box .text_box{background:transparent;top:-56px;left:0;padding:0}
     #popup_media .media_box .text_box p{padding-left:0}

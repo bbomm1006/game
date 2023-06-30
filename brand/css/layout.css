@@ -137,14 +137,14 @@ body{overflow:hidden;overflow-y:auto;background:#000}
 #header_menu .menu_wrap .btn_close{display:block;position:absolute;right:10px;top:10px;width:50px;height:50px;background:url("../img/common/header_close.png") no-repeat center center;background-size:cover}
 #header_menu .menu_wrap .header_top{height:180px;background:url("../img/common/header_menu_top.png") no-repeat center center;background-size:cover}
 #header_menu .menu_wrap .header_top .logo{padding-top:5%;text-align:center}
-#header_menu .menu_wrap .header_top .logo a{display:block;margin:0 auto;max-width:60%}
+#header_menu .menu_wrap .header_top .logo a{display:block;margin:0 auto;max-width:50%}
 #header_menu .menu_wrap .header_top .logo img{display:block;width:100%}
 #header_menu .menu_wrap .header_mid{position:absolute;left:0;top:180px;right:0;bottom:0;background:url("../img/common/header_menu_bottom.png") no-repeat center center;background-size:cover}
-#header_menu .menu_wrap .header_mid .menu_list{position:absolute;left:0;top:0;right:0;bottom:100px}
+#header_menu .menu_wrap .header_mid .menu_list{position:absolute;left:0;top:0;right:0;bottom:0}
 #header_menu .menu_wrap .header_mid .menu_list li{border-top:1px solid rgba(204,204,204,0.5)}
 #header_menu .menu_wrap .header_mid .menu_list li:first-child{border-top:0}
 #header_menu .menu_wrap .header_mid .menu_list .btn_menu{display:block;height:80px;line-height:80px;text-align:center;font-size:26px;color:#353d56;font-weight:700;/*font-family:'NotoSans Medium'*/}
-#header_menu .menu_wrap .header_mid .header_menu{display:flex;align-items:center;justify-content:center;gap:0 30px;position:absolute;left:0;bottom:0;right:0;height:100px}
+#header_menu .menu_wrap .header_mid .header_menu{display:flex;align-items:center;justify-content:center;gap:0 30px;margin-top:20px/*position:absolute;left:0;bottom:0;right:0;height:100px*/}
 #header_menu .menu_wrap .header_mid .header_menu .btn_menu{display:block;width:50px;height:50px}
 #header_menu .menu_wrap .header_mid .header_menu .btn_menu.user{background:url("../img/common/header_menu_user.png") no-repeat center center}
 #header_menu .menu_wrap .header_mid .header_menu .btn_menu.youtube{background:url("../img/common/header_menu_youtube.png") no-repeat center center}
@@ -582,6 +582,7 @@ body.popup{position:absolute;;overflow:hidden}
     #twitter_menu{right:-1px;/*bottom:150px;*/top:calc(50vh + 60px);bottom:auto;/*transform:scale(0.9);*/transform-origin:right center}
     #twitter_menu.close{top:calc(50vh + 30px)}
 
+    #header_menu .menu_wrap .header_top .logo a{max-width:60%}
     #btn_top{bottom:20px;right:15px;width:18vw;height:18vw}
 
     .content_top .top_video .video_wrap::before,

@@ -57,17 +57,20 @@
             <div class="header_mid">
                 <ul class="menu_list scrollY">
                     <li><a href="#" data-tab="01" class="btn_menu">사전예약</a></li>
+                    <li><a href="#" data-tab="02" class="btn_menu">사전예약 이벤트</a></li>
                     <li><a href="#" data-tab="story" class="btn_menu">세계관</a></li>
                     <li><a href="#" data-tab="char" class="btn_menu">캐릭터</a></li>
                     <li><a href="#" data-tab="feature" class="btn_menu">게임 특징</a></li>
                     <li><a href="#" data-tab="media" class="btn_menu">미디어</a></li>
                     <li><a href="./cbt.html" data-tab="event" class="btn_menu">CBT</a></li>
-                </ul>
-                <div class="header_menu">
-                    <a href="#" title="커뮤니티 바로가기" class="btn_menu user"></a>
-                    <a href="https://www.youtube.com/@WEBZENTV" target="_blank" title="유튜브 바로가기" class="btn_menu youtube"></a>
-                    <a href="https://twitter.com/Ragnador_kr" target="_blank" title="트위터 바로가기" class="btn_menu twitter"></a>
-                </div>
+                    <li>
+                        <div class="header_menu">
+                            <a href="#" title="커뮤니티 바로가기" class="btn_menu user"></a>
+                            <a href="https://www.youtube.com/@WEBZENTV" target="_blank" title="유튜브 바로가기" class="btn_menu youtube"></a>
+                            <a href="https://twitter.com/Ragnador_kr" target="_blank" title="트위터 바로가기" class="btn_menu twitter"></a>
+                        </div>
+                    </li>
+                </ul>                
             </div>
             <!-- ##런칭 후 공개 -->
             <a href="#" class="btn_download"><img src="img/common/header_menu_icon.png" alt="" class="icon"><img src="img/common/header_download_text.png" alt="Download" class="text"></a>
@@ -79,6 +82,7 @@
     <div id="fixed_menu"><!-- ##런칭 후 추가 class="launching" -->
         <ul class="menu_list">
             <li><a href="#" data-tab="01" class="btn_menu"><span class="eng">Reservation</span><span class="kor">사전예약</span></a></li>
+            <li><a href="#" data-tab="02" class="btn_menu"><span class="eng">Event</span><span class="kor">사전예약 이벤트</span></a></li>
             <li><a href="#" data-tab="story" class="btn_menu"><span class="eng">Story</span><span class="kor">세계관</span></a></li>
             <li><a href="#" data-tab="char" class="btn_menu"><span class="eng">Character</span><span class="kor">캐릭터</span></a></li>
             <li><a href="#" data-tab="feature" class="btn_menu"><span class="eng">Feature</span><span class="kor">게임 특징</span></a></li>
@@ -212,12 +216,12 @@
                             <!-- 예약 완료 -->
                             <!-- <div class="reserve_form complete active"> -->
                             <div class="reserve_form complete">
-                                <p class="complete_text">010-****-1234님, <br />라그나돌 사전예약이 완료 되었습니다.​</p>
-                                <p class="agree_text">[동의 안내] 0000년 00월 00일에 ​<br />이벤트 등 프로모션 알림 수신에 동의하셨습니다.​</p>
-                                <a href="#" title="사전예약 이벤트" id="btn_reserve_benefit" class="btn_event"><img src="img/reserve/btn_complete.png" alt="" class="icon"></a>
+                                <p class="complete_text">010-****-1234님, <br />라그나돌 사전예약이 완료 되었습니다.</p>
+                                <p class="agree_text">[동의 안내] 0000년 00월 00일에 <br />이벤트 등 프로모션 알림 수신에 동의하셨습니다.</p>
+                                <a href="#" title="사전예약 이벤트" id="btn_reserve_benefit"  class="btn_event"><img src="img/reserve/btn_complete.png" alt="" class="icon"></a>
                                 <div class="community_box">
-                                    <p class="community_text">공식 커뮤니티에 가입하면, <br />다양한 사전예약 이벤트를 참여할 수 있습니다.​</p>
-                                    <p>※ 이벤트에 대한 상세 내용은 공식 커뮤니티 내 공지를 확인해 주세요.​</p>
+                                    <p class="community_text">공식 커뮤니티에 가입하면, <br />다양한 사전예약 이벤트를 참여할 수 있습니다.</p>
+                                    <p>※ 이벤트에 대한 상세 내용은 공식 커뮤니티 내 공지를 확인해 주세요.</p>
                                     <a href="#" title="공식 커뮤니티 바로 가기" class="btn_community"></a>
                                 </div>
                             </div>
@@ -254,8 +258,10 @@
                     </div>
                 </div>
             </div><!-- //예약 끝 -->
+        </div>
 
-            <!-- 이벤트 -->
+        <!-- 이벤트 -->
+        <div data-tab="02" class="content_wrap">
             <div class="content_event">
                 <div class="bg animate"></div>
                 <div class="title_box animate">
@@ -280,9 +286,10 @@
                         <p class="desc">※ 이벤트 상세 내용은 공식 커뮤니티를 통해 확인할 수 있습니다.</p>
                     </div>
                 </div>
-
-            </div><!-- //이벤트 끝 -->
+    
+            </div>
         </div>
+        <!-- //이벤트 끝 -->
 
         <!-- 세계관 -->
         <div data-tab="story" class="content_wrap content_story">
