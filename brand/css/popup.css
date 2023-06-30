@@ -110,12 +110,16 @@
 }
 
 @media screen and (max-width:1100px) {
-    .popup_window .btn_close{background-image:url("../img/icon/popup_close_m.png")}
-    #popup_video .btn_close{width:80px;height:80px;top:-85px;background-size:65% auto}
-    .popup_reserve .btn_close{width:80px;height:80px;top:-80px;right:0;background-size:65% auto}
-    #popup_media .btn_close{width:80px;height:80px;top:-52px;background-size:65% auto}
-    #popup_benefit .btn_close{width:80px;height:80px;top:-80px;right:0;background-size:65% auto}
-    #popup_download .btn_close{width:80px;height:80px;top:-80px;right:0;background-size:65% auto}
+    #popup_feature .btn_close,
+    #popup_media .btn_close,
+    #popup_video .btn_close,
+    .popup_window .btn_close{background-image:url("../img/icon/popup_close_m.png");background-size:75% auto;width:50px;height:50px;}
+    #popup_video .btn_close{top:-55px}
+    .popup_reserve .btn_close{top:-55px;right:0}
+    #popup_media .btn_close{top:-35px}
+    #popup_benefit .btn_close{top:-65px;right:0}
+    #popup_download .btn_close{top:-65px;right:0}
+    #popup_feature .btn_close{top:-55px}
 }
 
 @media screen and (max-width:780px) {
