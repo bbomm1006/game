@@ -131,9 +131,9 @@ $(function() {
     //scroll
     //fixed 메뉴
     $("#header .btn_logo").on("click", function() {
-        $("html,body").stop(true,true).animate({ scrollTop:0 }, 300);
-        location.hash = "";
-        return false;
+        // $("html,body").stop(true,true).animate({ scrollTop:0 }, 300);
+        // location.hash = "";
+        // return false;
     });
     var btnFixedMenu = $("#fixed_menu .btn_menu");
     var fixedMenuScroll = true;
@@ -197,6 +197,18 @@ $(function() {
 
         if($("#popup_share").is(":visible")) {
             $("#popup_share").hide();
+        }
+
+        //footer topbtn
+        var getFooterTop = $("#footer").offset().top;
+        var getPageHeight = getScrollTop + $(window).height();
+        if(getPageHeight > getFooterTop) {
+            var getFooterMargin = getPageHeight - getFooterTop;
+            $("#btn_top").css("margin-bottom", getFooterMargin);
+           
+        }
+        else {
+            $("#btn_top").css("margin-bottom",0);
         }
     }).trigger("scroll");
 
@@ -458,7 +470,7 @@ $(function() {
             },
             breakpoints: {
                 780: {
-                    spaceBetween: 80
+                    spaceBetween: 70
                 }
             }
         });

@@ -7,9 +7,9 @@
 
 /* 팝업 비디오 */
 #popup_video{display:none;position:fixed;left:0;top:0;bottom:0;right:0;overflow:hidden;overflow-y:auto;background:rgba(0,0,0,0.7);z-index:1000}
-#popup_video .btn_close{display:block;position:absolute;right:-5px;top:-35px;width:30px;height:30px;background:url("../img/icon/popup_close.png") no-repeat center center;z-index:10}
+#popup_video .btn_close{display:block;position:absolute;right:-5px;top:-55px;width:50px;height:50px;background:url("../img/icon/popup_close.png") no-repeat center center;z-index:10}
 #popup_video .video_wrap{position:absolute;left:0;top:0;right:0;bottom:0;min-height:600px}
-#popup_video .video_box{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);max-width:900px;width:100%;aspect-ratio:16/9.1}
+#popup_video .video_box{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);max-width:1000px;width:100%;aspect-ratio:16/9.1}
 #popup_video .video_box .video{display:block;position:absolute;left:0;top:0;width:100%;height:100%;border:5px solid #3266ac}
 
 #popup_relation{display:none;position:fixed;left:0;top:0;bottom:0;right:0;overflow:hidden;overflow-y:auto;background:rgba(0,0,0,0.7);z-index:1000}
@@ -46,9 +46,9 @@
 .popup_reserve{display:none;position:fixed;left:0;top:0;bottom:0;right:0;overflow:hidden;overflow-y:auto;background:rgba(0,0,0,0.7);z-index:1000}
 .popup_reserve .btn_close{display:block;position:absolute;right:10px;top:10px;width:50px;height:50px;background:url("../img/icon/popup_close.png") no-repeat center center;z-index:10}
 .popup_reserve .notice_box{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);background:url("../img/popup/bg.png") center no-repeat;background-size:100% 100%}
-.popup_reserve .notice_title{text-align:center;color:#fff;font-size:30px;font-weight:700;padding-top:45px;line-height:1.2em;letter-spacing:-0.5px}
+.popup_reserve .notice_title{text-align:center;color:#fff;font-size:30px;font-weight:700;padding-top:40px;line-height:1.2em;letter-spacing:-0.5px}
 
-.popup_reserve .content_area{max-height:calc(100% - 180px);overflow-y:auto;width:calc(100% - 80px);margin:20px auto 0}
+.popup_reserve .content_area{max-height:calc(100% - 180px);overflow-y:auto;width:calc(100% - 80px);margin:25px auto 0}
 .popup_reserve .notice_cont{padding-right:10px}
 .popup_reserve .notice_cont p{color:#fff;font-size:14px;line-height:1.5em;}
 .popup_reserve .notice_cont li{color:#fff;font-size:13px;line-height:1.3em;opacity:0.8;position:relative;}
@@ -106,6 +106,10 @@
 
 @media screen and (max-height:900px) and (max-width:1200px) {
     #popup_relation .relation_box .relation{max-height:none;width:100%}
+}
+
+@media screen and (max-width:1100px) {
+    #popup_video .btn_close{width:80px;height:80px;top:-85px;background-size:70% auto}
 }
 
 @media screen and (max-width:780px) {
