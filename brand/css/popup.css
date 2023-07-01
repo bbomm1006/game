@@ -9,8 +9,13 @@
 #popup_video{display:none;position:fixed;left:0;top:0;bottom:0;right:0;overflow:hidden;overflow-y:auto;background:rgba(0,0,0,0.7);z-index:1000}
 #popup_video .btn_close{display:block;position:absolute;right:-5px;top:-55px;width:50px;height:50px;background:url("../img/icon/popup_close.png") no-repeat center center;z-index:10}
 #popup_video .video_wrap{position:absolute;left:0;top:0;right:0;bottom:0;min-height:600px}
-#popup_video .video_box{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);max-width:1000px;width:100%;aspect-ratio:16/9.1}
-#popup_video .video_box .video{display:block;position:absolute;left:0;top:0;width:100%;height:100%;border:5px solid #3266ac}
+#popup_video .video_box{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:2px}
+#popup_video .video_box::before{display:block;content:"";position:absolute;left:0;top:0;right:0;bottom:0;border:5px solid #3266ac;pointer-events:none;z-index:2}
+#popup_video .video_box .video{display:block;position:absolute;left:0;top:0;width:100%;height:100%;z-index:1}
+
+@media screen and (max-width:1060px) {
+    #popup_video .video_box{left:30px;right:30px;transform:translate(0,-50%)}
+}
 
 #popup_relation{display:none;position:fixed;left:0;top:0;bottom:0;right:0;overflow:hidden;overflow-y:auto;background:rgba(0,0,0,0.7);z-index:1000}
 #popup_relation .btn_close{display:block;position:absolute;right:8%;top:11%;width:30px;height:30px;background:url("../img/icon/popup_close_black.png") no-repeat center center;z-index:10}
@@ -100,7 +105,7 @@
     #popup_media .media_box .text_box .name{font-size:18px}
     #popup_media .media_box .btn_box{background:url("../img/media/bg_btn_m.png") no-repeat center bottom;background-size:100% 100%}
     #popup_media .media_box .btn_box{flex-wrap:wrap;padding:20px 20px 30px 20px}
-    #popup_media .media_box .btn_box .btn_download{flex:0 0 calc(34% - 10px)} 
+    #popup_media .media_box .btn_box .btn_download{flex:0 0 calc(34% - 10px)}
 
     #popup_relation .relation_box .relation{max-height:100%}
 }
@@ -123,8 +128,6 @@
 }
 
 @media screen and (max-width:780px) {
-    #popup_video .video_box{left:30px;top:50%;right:30px;transform:translate(0,-50%);max-width:900px;width:auto;aspect-ratio:16/9.1}
-
     #popup_relation .relation_box .relation{width:calc(100vw - 60px)}
 
     #popup_media .btn_close{right:20px}

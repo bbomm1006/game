@@ -20,7 +20,7 @@ $(function() {
         $(".content_reserve .reserve_form").removeClass("active").eq(1).addClass("active");
         return false;
     });
-    
+
     //common
     //공유 팝업
     $("#header .btn_menu.url").on("click", function() {
@@ -162,7 +162,7 @@ $(function() {
     });
 
     //스크롤
-    var mobile
+    var videoBox = $("#popup_video .video_box");
     $(window).on("scroll resize", function() {
         var getScrollTop = $(window).scrollTop();
         var getHeight = $(window).height() / 3;
@@ -203,11 +203,15 @@ $(function() {
         if(getPageHeight > getFooterTop) {
             var getFooterMargin = getPageHeight - getFooterTop;
             $("#btn_top").css("margin-bottom", getFooterMargin);
-           
         }
         else {
             $("#btn_top").css("margin-bottom",0);
         }
+
+        var videoSize = { width:$(window).width() - 60, height:$(window).height() };
+        if(videoSize.width > 1060) videoSize.width = 1000;
+        videoSize.height = videoSize.width * 0.5624;
+        videoBox.css(videoSize);
     }).trigger("scroll");
 
     //hash menu
@@ -261,6 +265,10 @@ $(function() {
 
                                 var getIdx = charThumb.find(".btn_char.active").parent().index();
                                 charThumbSlide.slideTo(getIdx);
+                            }
+                            $(this.el).parent().find(".thumb_slide").removeClass("end");
+                            if(btnThumbSlide.length - 1 == getNext) {
+                                $(this.el).parent().find(".thumb_slide").addClass("end");
                             }
                         }
                     }
