@@ -97,6 +97,8 @@
 #popup_download .btn_box{margin:40px auto}
 #popup_download .btn_box .btn_app{display:inline-block;margin:4px}
 #popup_download .btn_box .btn_app img{width:100%;box-shadow:10px 10px 10px 0 rgba(0,0,0,0.3)}
+#popup_download .btn_box .btn_app.disabled{position:relative;pointer-events:none;cursor:default}
+#popup_download .btn_box .btn_app.disabled::after{position:absolute;left:0;top:0;background:#000;width:100%;height:100%;content:"COMING SOON";color:#fff;font-size:14px;opacity:0.9;line-height:53px;letter-spacing:0}
 
 @media screen and (max-height:800px) {
     #popup_media .btn_close{right:50px;top:50px}
