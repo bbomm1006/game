@@ -386,7 +386,7 @@ body.popup{position:absolute;;overflow:hidden}
 .swiper-slide.swiper-slide-active{z-index:2}
 
 /* 게임특징 */
-.content_feature{position:relative;padding:80px 0;overflow:hidden;/*background:url("../img/feature/bg.jpg") no-repeat center center;background-size:cover*/}
+.content_feature{position:relative;padding:80px 0 100px;overflow:hidden;/*background:url("../img/feature/bg.jpg") no-repeat center center;background-size:cover*/}
 .content_feature .bg{position:absolute;left:-10px;top:-10px;right:-10px;bottom:-10px;background:url("../img/feature/bg.jpg") no-repeat center center;background-size:cover;z-index:1}
 .content_feature .title_box{margin-bottom:50px;text-align:center;position:relative;z-index:2}
 #feature_slide{position:relative;z-index:2}
