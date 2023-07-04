@@ -63,6 +63,13 @@ $(function() {
         return false;
     });
 
+    //cbt 팝업
+    $("#popup_cbt .btn_close").on("click", function() {
+        $("#popup_cbt").fadeOut(200);
+        $("body").removeClass("popup");
+        return false;
+    });
+
     //개인정보 팝업
     $("#btn_detail_01").on("click", function() {
         $("body").addClass("popup");

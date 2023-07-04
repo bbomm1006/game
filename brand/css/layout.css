@@ -283,7 +283,7 @@ body.popup{position:absolute;;overflow:hidden}
 .content_reserve .benefit_wrap .btn_box .btn_app.apple{background:url("../img/reserve/btn_apple.png") no-repeat center center}
 .content_reserve .benefit_wrap .btn_box .btn_app.onestore{background:url("../img/reserve/btn_onestore.png") no-repeat center center}
 .content_reserve .benefit_wrap .btn_box .btn_app.disabled{position:relative;pointer-events:none;cursor:default}
-.content_reserve .benefit_wrap .btn_box .btn_app.disabled::after{position:absolute;left:0;top:0;background:#000;width:100%;height:100%;content:"COMING SOON";color:#fff;font-size:15px;font-weight:700;opacity:0.9;line-height:53px;letter-spacing:0}
+.content_reserve .benefit_wrap .btn_box .btn_app.disabled::after{position:absolute;left:0;top:0;background:rgba(0,0,0,0.7);width:100%;height:100%;content:"COMING SOON";color:#fff;font-size:15px;font-weight:700;line-height:53px;letter-spacing:0}
 .content_reserve .benefit_wrap .btn_benefit{display:block;position:relative;margin:0 auto;/*width:474px;height:72px*/}
 /* .content_reserve .benefit_wrap .btn_benefit .icon{display:block;position:absolute;left:-22px;top:-14px;width:517px;height:115px;background:url("../img/reserve/btn_benefit.png") no-repeat center center;pointer-events:none} */
 
