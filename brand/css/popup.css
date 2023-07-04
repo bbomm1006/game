@@ -3,7 +3,7 @@
 .popup_window input[type="checkbox"]{display:none}
 .popup_window input[type="checkbox"] + label{display:inline-block;border:0;position:relative;color:#fff;opacity:0.7;padding-left:22px;font-size:12px;}
 .popup_window input[type="checkbox"] + label::after{content:"";display:block;width:18px;height:18px;border:0;position:absolute;top:1px;left:0;background:url("../img/popup/checkbox.png") no-repeat 0 0}
-.popup_window input[id="check1"]:checked + label::after{background-position-x:100%}
+.popup_window input:checked + label::after{background-position-x:100%}
 
 /* 팝업 비디오 */
 #popup_video{display:none;position:fixed;left:0;top:0;bottom:0;right:0;overflow:hidden;overflow-y:auto;background:rgba(0,0,0,0.7);z-index:1000}
