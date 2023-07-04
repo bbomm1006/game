@@ -164,10 +164,11 @@ $(function() {
     //스크롤
     var videoBox = $("#popup_video .video_box");
     $(window).on("scroll resize", function() {
+        var getWidth = $(window).width();
         var getScrollTop = $(window).scrollTop();
         var getHeight = $(window).height() / 3;
         var posMargin = 95;
-        if($("#header .header_menu .btn_mobile").is(":visible")) {
+        if(getWidth < 1000) {
             getHeight = $(window).height() / 2;
             posMargin = 80;
         }
@@ -408,7 +409,8 @@ $(function() {
     }
 
     function charSlideInit() {
-        var charLength = $("#header .header_menu .btn_mobile").is(":visible") ? 5 : 7;
+        var getWidth = $(window).width();
+        var charLength = getWidth < 1000 ? 5 : 7;
         $(".char_slide_wrap .thumb_slide").each(function() {
             $(this).removeClass("light noscroll");
             var charBtnLength = $(this).find(".char_thumb_slide .btn_char").length;
@@ -581,6 +583,16 @@ $(function() {
                 return false;
             });
         });
+        $(window).on("resize", function() {
+            var getWidth = $(window).width();
+            $(".media_tab_wrap .tab_panel").each(function() {
+                var slideLength = $(this).find(".media_slide .swiper-slide").length;
+                $(this).find(".thumb_wrap").removeClass("noscroll");
+                if(slideLength <= (getWidth < 762 ? 3 : 5)) {
+                    $(this).find(".thumb_wrap").addClass("noscroll");
+                }
+            });
+        }).trigger("resize");
 
         //영상 플레이
         $(".media_slide .btn_video").on("click", function() {

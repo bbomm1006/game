@@ -104,7 +104,7 @@ body{overflow:hidden;overflow-y:auto;background:#000}
 .mobile{display:none!important}
 
 /* 헤더 */
-#header{position:fixed;left:0;top:0;right:0;height:90px;z-index:100}
+#header{position:fixed;left:0;top:0;right:0;height:0;z-index:100}
 #header::before{display:block;content:"";position:absolute;left:0;top:0;right:0;bottom:0;z-index:1}
 #header .logo{position:absolute;left:10px;top:15px;z-index:2}
 #header .logo a,
@@ -443,6 +443,8 @@ body.popup{position:absolute;;overflow:hidden}
 .content_media .thumb_wrap .btn_slide{display:block;position:absolute;left:-60px;top:50%;margin-top:-25px;width:40px;height:50px;background:url("../img/icon/btn_arrow.png") no-repeat center center;opacity:0.5;z-index:20}
 .content_media .thumb_wrap .btn_slide.next{left:auto;right:-60px;transform:rotate(180deg)}
 .content_media .thumb_wrap .btn_slide:hover{opacity:1}
+.content_media .thumb_wrap.noscroll .btn_slide,
+.content_media .thumb_wrap.noscroll .swiper-scrollbar{display:none}
 .content_media .media_slide_thumb{padding:2px 0;overflow:hidden}
 .content_media .media_slide_thumb .btn_thumb{display:block;position:relative;overflow:hidden}
 /* .content_media .media_slide_thumb .btn_thumb::before{display:block;content:"";position:absolute;left:0;top:0;width:100%;height:100%;border-radius:10px;box-shadow:5px 5px 20px rgba(0,0,0,0.5)} */
