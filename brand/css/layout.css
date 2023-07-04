@@ -283,7 +283,7 @@ body.popup{position:absolute;;overflow:hidden}
 .content_reserve .benefit_wrap .btn_box .btn_app.apple{background:url("../img/reserve/btn_apple.png") no-repeat center center}
 .content_reserve .benefit_wrap .btn_box .btn_app.onestore{background:url("../img/reserve/btn_onestore.png") no-repeat center center}
 .content_reserve .benefit_wrap .btn_box .btn_app.disabled{position:relative;pointer-events:none;cursor:default}
-.content_reserve .benefit_wrap .btn_box .btn_app.disabled::after{position:absolute;left:0;top:0;background:#000;width:100%;height:100%;content:"COMING SOON";color:#fff;font-size:14px;opacity:0.9;line-height:53px;letter-spacing:0}
+.content_reserve .benefit_wrap .btn_box .btn_app.disabled::after{position:absolute;left:0;top:0;background:#000;width:100%;height:100%;content:"COMING SOON";color:#fff;font-size:15px;font-weight:700;opacity:0.9;line-height:53px;letter-spacing:0}
 .content_reserve .benefit_wrap .btn_benefit{display:block;position:relative;margin:0 auto;/*width:474px;height:72px*/}
 /* .content_reserve .benefit_wrap .btn_benefit .icon{display:block;position:absolute;left:-22px;top:-14px;width:517px;height:115px;background:url("../img/reserve/btn_benefit.png") no-repeat center center;pointer-events:none} */
 
@@ -614,6 +614,7 @@ body.popup{position:absolute;;overflow:hidden}
     .content_reserve .benefit_wrap .benefit_box{padding:30px 0 40px}
     .content_reserve .benefit_wrap .btn_box{padding:0 30px;margin-bottom:30px}
     .content_reserve .benefit_wrap .btn_box .btn_app{flex:0 0 33%;height:44px;background-size:contain!important}
+    .content_reserve .benefit_wrap .btn_box .btn_app.disabled::after{line-height:44px;font-size:13px}
 
     /* .content_event{background:url("../img/event/bg_m.jpg") no-repeat center center;background-size:cover} */
     .content_event .bg{background:url("../img/event/bg_m.jpg") no-repeat center center;background-size:cover}
@@ -635,7 +636,7 @@ body.popup{position:absolute;;overflow:hidden}
     .content_char .char_wrap .char_text{padding-top:50%;width:100%}
     .content_char .char_text .char_title{display:flex;justify-content:center}
     .content_char .char_text .char_title .title{margin:0}
-    .content_char .char_text .text_box{max-height:none;text-align:center;background:transparent;height:130px}
+    .content_char .char_text .text_box{max-height:none;text-align:center;height:130px;width:calc(100% - 60px);background:rgba(0,0,0,0.55);margin:20px auto 0}
     .content_char .char_wrap .btn_char_video{width:100%}
     .content_char .char_wrap .btn_voice{right:-30px;top:50px;transform:scale(0.8)}
     .content_char .char_text .btn_relation{position:absolute;left:50%;bottom:-405px;margin:0 0 0 -92px}
