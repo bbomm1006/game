@@ -42,6 +42,7 @@ $(function() {
     $("#popup_video .btn_close").on("click", function() {
         $("#popup_video").fadeOut(200, function() {
             $("#popup_video .video_frame").empty();
+            $("body").removeClass("popup");
         });
         return false;
     });
@@ -604,6 +605,7 @@ $(function() {
         //영상 플레이
         $(".media_slide .btn_video").on("click", function() {
             var getYoutube = $(this).data("youtube");
+            $("body").addClass("popup");
             $("#popup_video").fadeIn(200).find(".video_frame").html('<iframe src="https://www.youtube.com/embed/' + getYoutube + '?autoplay=1&mute=1" autoplay frameborder="0" allowfullscreen="" class="video"></iframe>');
             return false;
         });
