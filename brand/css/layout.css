@@ -639,6 +639,7 @@ body.popup{position:absolute;;overflow:hidden}
     .content_char .char_wrap .char_text{padding-top:50%;width:100%}
     .content_char .char_text .char_title{display:flex;justify-content:center}
     .content_char .char_text .char_title .title{margin:0}
+    .content_char .char_text .char_title .title img{max-width:100%}
     .content_char .char_text .text_box{max-height:none;text-align:center;height:130px;width:calc(100% - 60px);background:rgba(0,0,0,0.55);margin:20px auto 0}
     .content_char .char_wrap .btn_char_video{width:100%}
     .content_char .char_wrap .btn_voice{right:-30px;top:50px;transform:scale(0.8)}
