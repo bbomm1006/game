@@ -369,6 +369,7 @@ body.popup{position:absolute;;overflow:hidden}
 .content_char .char_thumb_slide .btn_char span{display:block;position:absolute;left:0;bottom:0;right:0;height:46px;line-height:36px;text-align:center;font-size:1.6em;color:#fff;font-weight:700;z-index:3}
 @media screen and (min-width:780px) {
     .content_char .char_thumb_slide .btn_char:hover::after{opacity:1}
+    .content_char .char_img .char_video{top:-80px}
 }
 .content_char .char_thumb_slide .btn_char.active::after{opacity:1}
 .content_char .char_nation{position:absolute;left:240px;bottom:0;right:240px;height:87px;z-index:11}
