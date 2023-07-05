@@ -342,8 +342,8 @@ body.popup{position:absolute;;overflow:hidden}
 .content_char .char_text .char_title .title{display:block;margin:0 0 2% -3%}
 .content_char .char_text .text_box{height:210px;background:rgba(0,0,0,0.25);padding:20px}
 .content_char .char_text .text_box p{font-size:1.5em;color:#fff}
-.content_char .char_text .btn_relation{display:block;margin-top:35px;width:183px;height:52px;box-shadow:10px 10px 10px 0 rgba(0,0,0,0.25);background:url("../img/char/btn_relation.png") no-repeat center center;opacity:0}
-.swiper-slide.swiper-slide-active .char_text .btn_relation{opacity:1}
+.content_char .char_text .btn_relation{display:none;margin-top:35px;width:183px;height:52px;box-shadow:10px 10px 10px 0 rgba(0,0,0,0.25);background:url("../img/char/btn_relation.png") no-repeat center center}
+.swiper-slide.swiper-slide-active .char_text .btn_relation{display:block}
 .content_char .char_img{position:absolute;right:-20%;top:-30%;left:-20%}
 .content_char .char_img img{display:block;width:100%}
 .content_char .char_img .mobile{display:none}

@@ -166,7 +166,7 @@
     #popup_download .download_box img{width:100%}
     #popup_download .btn_box .btn_app{display:block;margin:10px auto;width:calc(100% - 200px)}
     #popup_download .btn_box .btn_app.disabled::after{line-height:5em}
-    
+
     #popup_download .download_box .popup_checkbox{bottom:-35px}
     .popup_window input[type="checkbox"] + label{font-size:16px}
     .popup_window input[type="checkbox"] + label::after{top:5px}

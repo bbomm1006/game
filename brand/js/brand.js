@@ -36,6 +36,7 @@ $(function() {
     //영상 팝업
     $(".content_top .btn_video").on("click", function() {
         var getYoutube = $(this).data("youtube");
+        $("body").addClass("popup");
         $("#popup_video").fadeIn(200).find(".video_frame").html('<iframe src="https://www.youtube.com/embed/' + getYoutube + '?autoplay=1&mute=1" autoplay frameborder="0" allowfullscreen="" class="video"></iframe>');
         return false;
     });
