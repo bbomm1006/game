@@ -8,6 +8,7 @@
 
 function iOS() {
   return [
+    'Mac',
     'iPad Simulator',
     'iPhone Simulator',
     'iPod Simulator',
@@ -16,5 +17,5 @@ function iOS() {
     'iPod'
   ].includes(navigator.platform)
   // iPad on iOS 13 detection
-  || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+  || (navigator.userAgent.includes("Mac"))
 }
