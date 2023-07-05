@@ -16,10 +16,10 @@ $(function() {
     }, 10);
 
     //임시 사전예약하기
-    $(".content_reserve .btn_reserve").on("click", function() {
-        $(".content_reserve .reserve_form").removeClass("active").eq(1).addClass("active");
-        return false;
-    });
+    // $(".content_reserve .btn_reserve").on("click", function() {
+    //     $(".content_reserve .reserve_form").removeClass("active").eq(1).addClass("active");
+    //     return false;
+    // });
 
     //common
     //공유 팝업
@@ -49,7 +49,7 @@ $(function() {
     });
 
     //스토어 사전등록 혜택 확인 팝업
-    $(".content_reserve .benefit_wrap .btn_benefit").on("click", function() {
+    $(".content_reserve .benefit_wrap .benefit_box .btn_benefit").on("click", function() {
         $("body").addClass("popup");
         $("#popup_benefit").fadeToggle(200);
         return false;
