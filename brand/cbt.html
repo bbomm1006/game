@@ -49,7 +49,7 @@
             </div>
         </div>
     </header>
-    <div id="header_menu"><!-- ##런칭 후 추가 class="launching" -->
+    <div id="header_menu" class="launching"><!-- ##런칭 후 추가 class="launching" -->
         <div class="menu_wrap">
             <a href="#" class="btn_close"></a>
             <div class="header_top">
@@ -80,7 +80,7 @@
     </div>
 
     <!-- fixed 메뉴 -->
-    <div id="fixed_menu"><!-- ##런칭 후 추가 class="launching" -->
+    <div id="fixed_menu" class="launching"><!-- ##런칭 후 추가 class="launching" -->
         <ul class="menu_list">
             <li><a href="./index.html#01" data-tab="01" class="btn_menu"><span class="eng">Reservation</span><span class="kor">사전예약</span></a></li>
             <li><a href="./index.html#02" data-tab="02" class="btn_menu"><span class="eng">Reservation</span><span class="kor">사전예약 이벤트</span></a></li>
@@ -155,13 +155,13 @@
                     </div>                    
                 </div>
                 <div class="content_event animate">
-                    <div class="process_box">
+                    <!-- <div class="process_box">
                         <img src="img/cbt/bg_sect1_before.png" alt="CBT 참여 방법" class="box pc">
                         <img src="img/cbt/bg_sect1_before_m.png" alt="CBT 참여 방법" class="box mobile">
-                    </div>
+                    </div> -->
 
                     <!-- ##런칭 후 공개 -->
-                    <!-- <div class="process_box">
+                    <div class="process_box">
                         <img src="img/cbt/bg_sect1.png" alt="CBT 참여 방법" class="box pc">
                         <img src="img/cbt/bg_sect1_m.png" alt="CBT 참여 방법" class="box mobile">
                         <div class="btn_box">
@@ -169,7 +169,7 @@
                                 <img src="img/cbt/btn_download.png" alt="라그나돌 다운로드">
                             </a>
                         </div>
-                    </div> -->
+                    </div>
 
                     <p class="notice">* IOS기기는 CBT에 참여할 수 없습니다.</p>
                 </div>
@@ -237,6 +237,25 @@
                     <!-- <iframe src="https://www.youtube.com/embed/KhEeWiN__kM" frameborder="0" allowfullscreen="" class="video"></iframe> -->
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- 라그나돌 CBT 진행 사전안내 팝업 -->
+    <div id="popup_cbt" class="popup_window" style="display: block;">
+        <div class="cbt_box">
+            <a href="#" class="btn_close"></a>
+            <div class="inner">
+                <img src="img/popup/cbt2.png" alt="CBT OPEN" />
+                <div class="btn_box">
+                    <a href="#" class="btn_download">
+                        <img src="img/popup/btn_cbt.png" alt="CBT 참여하기" />
+                    </a>
+                </div>
+            </div>
+            <p class="popup_checkbox">
+                <input type="checkbox" id="check2">
+                <label for="check2">오늘 하루 그만 보기</label>
+            </p>
         </div>
     </div>
 
