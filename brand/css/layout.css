@@ -567,7 +567,8 @@ body.popup{position:absolute;;overflow:hidden}
 @media screen and (max-width:1000px) {
 
     .content_reserve{background:#0b1844 url("../img/reserve/bg_m.jpg") no-repeat center bottom;background-size:100% auto}
-    .content_reserve .reserve_form .agree_list .btn_detail{font-size:0.7em}
+
+    .content_reserve .reserve_form .agree_list li .btn_detail{font-size:13px}
 
     .content_event{padding:60px 0 80px 0}
     .content_event .event_box{padding:0 10px}
@@ -701,6 +702,9 @@ body.popup{position:absolute;;overflow:hidden}
 
 @media screen and (max-width:400px) {
     #header_menu .menu_wrap{width:100%}
+
+    .content_reserve .reserve_form .agree_list li .check_box .text,
+    .content_reserve .reserve_form .agree_list li .btn_detail{font-size:11px}
 }
 
 @media screen and (max-height:700px) and (orientation:landscape) {

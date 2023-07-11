@@ -175,8 +175,22 @@
     .popup_window input[type="checkbox"] + label::after{top:5px}
 
     /* CBT 팝업 */
-    #popup_cbt .cbt_box{width:calc(100% - 40px);}
+    #popup_cbt .cbt_box{width:calc(100% - 40px)}
     #popup_cbt .cbt_box img{width:100%}
     #popup_cbt .btn_box{bottom:8%}
     #popup_cbt .btn_box a{width:80vw}
+}
+
+@media screen and (max-height:700px) and (orientation:landscape) {
+    /* 가로 모드일 경우 */
+    #popup_benefit .btn_close, #popup_reserve_01 .btn_close, #popup_reserve_02 .btn_close, #popup_reserve_03 .btn_close{top:10px;right:10px}
+
+    #popup_reserve_01 .notice_box,
+    #popup_reserve_02 .notice_box,
+    #popup_reserve_03 .notice_box{max-height:calc(100vh - 50px);}
+
+    #popup_cbt .cbt_box{max-height:calc(100vh - 100px);width:auto;margin:0 auto;padding-bottom:10px}
+    #popup_cbt .cbt_box .inner{text-align:center;padding-bottom:0}
+    #popup_cbt .cbt_box img{max-height:calc(100vh - 100px);width:auto;margin:0 auto}
+    #popup_cbt .btn_close{top:10px;right:10px}
 }
