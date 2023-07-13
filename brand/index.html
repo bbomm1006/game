@@ -62,6 +62,7 @@
                     <li><a href="#" data-tab="char" class="btn_menu">캐릭터</a></li>
                     <li><a href="#" data-tab="feature" class="btn_menu">게임 특징</a></li>
                     <li><a href="#" data-tab="media" class="btn_menu">미디어</a></li>
+                    <li><a href="#" data-tab="goods" class="btn_menu">디지털굿즈</a></li>
                     <!-- <li><a href="./cbt.html" data-tab="event" class="btn_menu">CBT</a></li> -->
                     <li>
                         <div class="header_menu">
@@ -87,6 +88,7 @@
             <li><a href="#" data-tab="char" class="btn_menu"><span class="eng">Character</span><span class="kor">캐릭터</span></a></li>
             <li><a href="#" data-tab="feature" class="btn_menu"><span class="eng">Feature</span><span class="kor">게임 특징</span></a></li>
             <li><a href="#" data-tab="media" class="btn_menu"><span class="eng">Media</span><span class="kor">미디어</span></a></li>
+            <li><a href="#" data-tab="goods" class="btn_menu"><span class="eng">Goods</span><span class="kor">디지털굿즈</span></a></li>
             <!-- <li><a href="./cbt.html" data-tab="event" class="btn_menu"><span class="eng">CBT</span><span class="kor">CBT</span></a></li> -->
         </ul>
         <!-- ##런칭 후 공개 -->
@@ -2055,6 +2057,61 @@
             </div>
         </div>
 
+        <!-- 디지털굿즈 -->
+        <div data-tab="goods" class="content_wrap content_goods">
+            <div class="bg animate"></div>
+            <div class="title_box animate">
+                <img src="img/goods/title.png" alt="게임 특징" class="text">
+            </div>
+            <div class="goods_wrap">
+                <div class="goods_tab animate">
+                    <a href="#" data-tab="bubble" class="btn_tab active"><span>말풍선 짤</span></a>
+                    <a href="#" data-tab="emot1" class="btn_tab"><span>오리지널 요괴티콘</span></a>
+                    <a href="#" data-tab="emot2" class="btn_tab"><span>낡은창고 요괴티콘</span></a>
+                </div>
+
+                <div class="goods_bubble bubble goods_panel">
+                    <div id="goods_slide" class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" data-img="img/feature/slide_1.jpg" class="btn_goods">
+                                    <img src="img/feature/slide_1.jpg" alt="" class="goods animate">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" data-img="img/feature/slide_2.jpg" class="btn_goods">
+                                    <img src="img/feature/slide_2.jpg" alt="" class="goods animate">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" data-img="img/feature/slide_3.jpg" class="btn_goods">
+                                    <img src="img/feature/slide_3.jpg" alt="" class="goods animate">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" data-img="img/feature/slide_4.jpg" class="btn_goods">
+                                    <img src="img/feature/slide_4.jpg" alt="" class="goods animate">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" data-img="img/feature/slide_5.jpg" class="btn_goods">
+                                    <img src="img/feature/slide_5.jpg" alt="" class="goods animate">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" data-img="img/feature/slide_6.jpg" class="btn_goods">
+                                    <img src="img/feature/slide_6.jpg" alt="" class="goods animate">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" id="btn_goods_prev" class="btn_goods_slide prev"></a>
+                    <a href="#" id="btn_goods_next" class="btn_goods_slide next"></a>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
     <!-- 푸터 -->
@@ -2104,6 +2161,14 @@
         <div class="media_box">
             <a href="#" class="btn_close"></a>
             <div class="image_box"></div>
+        </div>
+    </div>
+
+    <!-- 디지털굿즈 팝업 -->
+    <div id="popup_goods" class="popup_window">
+        <div class="goods_box">
+            <a href="#" class="btn_close"></a>
+            <img src="#" alt="" class="goods">
         </div>
     </div>
 

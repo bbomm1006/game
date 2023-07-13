@@ -504,7 +504,6 @@ $(function() {
         $("#popup_feature").fadeOut(200);
         return false;
     });
-
     //media
     if($(".media_tab_wrap").length > 0) {
         var btnMediaTab = $(".media_tab .btn_tab").on("click", function() {
@@ -624,6 +623,38 @@ $(function() {
             return false;
         });
     }
+    // goods
+    if($("#goods_slide").length > 0) {
+        new Swiper($("#goods_slide").get(0), {
+            autoplay: false,
+            loop: true,
+            loopedSlides: 10,
+            delay: 4000,
+            spaceBetween: 60,
+            slidesPerView: "auto",
+            centeredSlides: true,
+            navigation: {
+                prevEl: "#btn_goods_prev",
+                nextEl: "#btn_goods_next"
+            },
+            breakpoints: {
+                780: {
+                    spaceBetween: 70
+                }
+            }
+        });
+    }
+    $("#goods_slide .btn_goods").on("click", function() {
+        var getImg = $(this).data("img");
+        $("body").addClass("popup");
+        $("#popup_goods").fadeIn(200).find(".goods").attr("src", getImg);
+        return false;
+    });
+    $("#popup_goods .btn_close").on("click", function() {
+        $("body").removeClass("popup");
+        $("#popup_goods").fadeOut(200);
+        return false;
+    });
 
     //팝업닫기
     $(".popup_window").on("click", function(e) {
